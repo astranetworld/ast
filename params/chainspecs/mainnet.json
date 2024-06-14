@@ -1,0 +1,29 @@
+{
+  "chainId": 94,
+  "homesteadBlock": 0,
+  "daoForkBlock": null,
+  "daoForkSupport": false,
+  "eip150Block": 0,
+  "eip150Hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "eip155Block": 0,
+  "eip158Block": 0,
+  "byzantiumBlock": 0,
+  "constantinopleBlock": 0,
+  "petersburgBlock": 0,
+  "istanbulBlock": 0,
+  "muirGlacierBlock": 0,
+  "berlinBlock": 0,
+  "londonBlock": 0,
+  "arrowGlacierBlock": 0,
+  "beijingBlock": 770000,
+  "consensus": "apos",
+  "apos": {
+    "period": 8,
+    "epoch": 3000,
+    "rewardEpoch": 10800,
+    "rewardLimit": 500000000000000000,
+    "depositContract": "ast85A5E24ef94fe5bDD5055133E6bd00DcEA25F37D",
+    "depositNFTContract": "astF762E4Aa8Da0B9FC8113ECBFf6c84B3a6B7B5544",
+    "depositFUJIContract": "ast8018c0ba6717FE077cB37Db5D6187B400ee76Eeb"
+  }
+}
