@@ -1,4 +1,4 @@
-// Copyright 2023 The astranet Authors
+// Copyright 2024 The astranet Authors
 // This file is part of the astranet library.
 //
 // The astranet library is free software: you can redistribute it and/or modify
