@@ -37,7 +37,7 @@ const (
 )
 
 var (
-	prefixAddress = "ast"
+	prefixAddress = "0X"
 	nullAddress   = Address{0}
 )
 

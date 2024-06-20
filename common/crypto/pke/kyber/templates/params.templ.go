@@ -6,10 +6,6 @@
 
 package internal
 
-import (
-	"github.com/astranetworld/ast/common/crypto/pke/kyber/internal/common"
-)
-
 const (
 	K             = {{.K}}
 	Eta1          = {{.Eta1}}

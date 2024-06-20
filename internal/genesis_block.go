@@ -264,7 +264,7 @@ func mainnetGenesisBlock() *conf.Genesis {
 		Nonce:     0,
 		Alloc:     readGenesisAlloc("allocs/mainnet.json"),
 		Timestamp: 1678174066,
-		Miners:    []string{"astA2142AB3F25EAA9985F22C3F5B1FF9FA378DAC21"},
+		Miners:    []string{"0xA2142AB3F25EAA9985F22C3F5B1FF9FA378DAC21"},
 		Number:    0,
 		// genesisBlock Difficulty = params.GenesisDifficulty
 		//Difficulty: uint256.NewInt(0),
@@ -279,6 +279,6 @@ func testnetGenesisBlock() *conf.Genesis {
 		Alloc:     readGenesisAlloc("allocs/testnet.json"),
 		Number:    0,
 		Timestamp: 1678174066,
-		Miners:    []string{"astA2142AB3F25EAA9985F22C3F5B1FF9FA378DAC21"},
+		Miners:    []string{"0xA2142AB3F25EAA9985F22C3F5B1FF9FA378DAC21"},
 	}
 }
