@@ -28,6 +28,9 @@ import (
 )
 
 func main() {
+	fmt.Printf("┏━┓┏━┓╺┳╸┏━┓┏━┓┏┓╻┏━╸╺┳╸\n")
+	fmt.Printf("┣━┫┗━┓ ┃ ┣┳┛┣━┫┃┗┫┣╸  ┃\n")
+	fmt.Printf("╹ ╹┗━┛ ╹ ╹┗╸╹ ╹╹ ╹┗━╸ ╹\n")
 	flags := append(networkFlags, consensusFlag...)
 	flags = append(flags, loggerFlag...)
 	flags = append(flags, pprofCfg...)
