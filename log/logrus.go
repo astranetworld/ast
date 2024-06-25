@@ -132,7 +132,7 @@ func (l *logger) Error(msg string, ctx ...interface{}) {
 }
 
 func (l *logger) Crit(msg string, ctx ...interface{}) {
-	l.write(msg, LvlCrit, ctx, skipLevel)
+	l.write(msg, LvlFatal, ctx, skipLevel)
 	os.Exit(1)
 }
 
