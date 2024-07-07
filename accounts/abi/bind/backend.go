@@ -19,12 +19,15 @@ package bind
 import (
 	"context"
 	"errors"
+	"math/big"
+
+	"github.com/holiman/uint256"
+
 	astranet "github.com/astranetworld/ast"
 	"github.com/astranetworld/ast/common/block"
 	"github.com/astranetworld/ast/common/transaction"
 	"github.com/astranetworld/ast/common/types"
-	"github.com/holiman/uint256"
-	"math/big"
+
 )
 
 var (
@@ -33,12 +36,12 @@ var (
 	// have any code associated with it (i.e. suicided).
 	ErrNoCode = errors.New("no contract code at given address")
 
-	// ErrNoPendingState is raised when attempting to perform a pending state action
+	// This error is raised when attempting to perform a pending state action
 	// on a backend that doesn't implement PendingContractCaller.
 	ErrNoPendingState = errors.New("backend does not support pending state")
 
-	// ErrNoCodeAfterDeploy is returned by WaitDeployed if contract creation leaves
-	// an empty contract behind.
+	// This error is returned by WaitDeployed if contract creation leaves an
+	// empty contract behind.
 	ErrNoCodeAfterDeploy = errors.New("no contract code after deployment")
 )
 

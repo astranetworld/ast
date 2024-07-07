@@ -24,13 +24,14 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"github.com/astranetworld/ast/accounts/abi"
-	"github.com/astranetworld/ast/log"
 	"go/format"
 	"regexp"
 	"strings"
 	"text/template"
 	"unicode"
+
+	"github.com/astranetworld/ast/accounts/abi"
+	"github.com/astranetworld/ast/log"
 )
 
 // Lang is a target programming language selector to generate bindings for.

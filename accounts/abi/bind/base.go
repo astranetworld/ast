@@ -20,6 +20,11 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"strings"
+	"sync"
+
+	"github.com/holiman/uint256"
+
 	astranet "github.com/astranetworld/ast"
 	"github.com/astranetworld/ast/accounts/abi"
 	"github.com/astranetworld/ast/common/block"
@@ -27,9 +32,6 @@ import (
 	"github.com/astranetworld/ast/common/transaction"
 	"github.com/astranetworld/ast/common/types"
 	event "github.com/astranetworld/ast/modules/event/v2"
-	"github.com/holiman/uint256"
-	"strings"
-	"sync"
 )
 
 const basefeeWiggleMultiplier = 2

@@ -19,11 +19,13 @@ package bind
 import (
 	"context"
 	"errors"
+	"time"
+
 	"github.com/astranetworld/ast/common/block"
 	"github.com/astranetworld/ast/common/transaction"
 	"github.com/astranetworld/ast/common/types"
 	"github.com/astranetworld/ast/log"
-	"time"
+
 )
 
 // NotFound is returned by API methods if the requested item does not exist.
