@@ -21,9 +21,11 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"io"
+
 	"github.com/astranetworld/ast/common/crypto"
 	"github.com/astranetworld/ast/common/types"
-	"io"
+
 )
 
 // The ABI holds information about a contract's context and available
@@ -94,7 +96,7 @@ func (abi ABI) getArguments(name string, data []byte) (Arguments, error) {
 		args = event.Inputs
 	}
 	if args == nil {
-		return nil, fmt.Errorf("abi: could not locate named method or event: %s", name)
+		return nil, errors.New("abi: could not locate named method or event")
 	}
 	return args, nil
 }
