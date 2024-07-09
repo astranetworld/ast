@@ -40,17 +40,9 @@ func makeGasSStoreFunc(clearingRefund uint64) gasFunc {
 			cost    = uint64(0)
 		)
 		evm.IntraBlockState().GetState(contract.Address(), &slot, &current)
-		// Check slot presence in the access list
-		if addrPresent, slotPresent := evm.IntraBlockState().SlotInAccessList(contract.Address(), slot); !slotPresent {
+		// If the caller cannot afford the cost, this change will be rolled back
+		if _, slotMod := evm.IntraBlockState().AddSlotToAccessList(contract.Address(), slot); slotMod {
 			cost = params.ColdSloadCostEIP2929
-			// If the caller cannot afford the cost, this change will be rolled back
-			evm.IntraBlockState().AddSlotToAccessList(contract.Address(), slot)
-			if !addrPresent {
-				// Once we're done with YOLOv2 and schedule this for mainnet, might
-				// be good to remove this panic here, which is just really a
-				// canary to have during testing
-				panic("impossible case: address was not present in access list during sstore op")
-			}
 		}
 		var value uint256.Int
 		value.Set(y)
@@ -108,12 +100,9 @@ func makeGasSStoreFunc(clearingRefund uint64) gasFunc {
 // If the pair is already in accessed_storage_keys, charge 100 gas.
 func gasSLoadEIP2929(evm VMInterpreter, contract *Contract, stack *stack.Stack, mem *Memory, memorySize uint64) (uint64, error) {
 	loc := stack.Peek()
-	slot := types.Hash(loc.Bytes32())
-	// Check slot presence in the access list
-	if _, slotPresent := evm.IntraBlockState().SlotInAccessList(contract.Address(), slot); !slotPresent {
-		// If the caller cannot afford the cost, this change will be rolled back
-		// If he does afford it, we can skip checking the same thing later on, during execution
-		evm.IntraBlockState().AddSlotToAccessList(contract.Address(), slot)
+	// If the caller cannot afford the cost, this change will be rolled back
+	// If he does afford it, we can skip checking the same thing later on, during execution
+	if _, slotMod := evm.IntraBlockState().AddSlotToAccessList(contract.Address(), loc.Bytes32()); slotMod {
 		return params.ColdSloadCostEIP2929, nil
 	}
 	return params.WarmStorageReadCostEIP2929, nil
@@ -132,8 +121,8 @@ func gasExtCodeCopyEIP2929(evm VMInterpreter, contract *Contract, stack *stack.S
 	}
 	addr := types.Address(stack.Peek().Bytes20())
 	// Check slot presence in the access list
-	if !evm.IntraBlockState().AddressInAccessList(addr) {
-		evm.IntraBlockState().AddAddressToAccessList(addr)
+	if evm.IntraBlockState().AddAddressToAccessList(addr) {
+
 		var overflow bool
 		// We charge (cold-warm), since 'warm' is already charged as constantGas
 		if gas, overflow = math.SafeAdd(gas, params.ColdAccountAccessCostEIP2929-params.WarmStorageReadCostEIP2929); overflow {
@@ -154,9 +143,7 @@ func gasExtCodeCopyEIP2929(evm VMInterpreter, contract *Contract, stack *stack.S
 func gasEip2929AccountCheck(evm VMInterpreter, contract *Contract, stack *stack.Stack, mem *Memory, memorySize uint64) (uint64, error) {
 	addr := types.Address(stack.Peek().Bytes20())
 	// Check slot presence in the access list
-	if !evm.IntraBlockState().AddressInAccessList(addr) {
-		// If the caller cannot afford the cost, this change will be rolled back
-		evm.IntraBlockState().AddAddressToAccessList(addr)
+	if evm.IntraBlockState().AddAddressToAccessList(addr) {
 		// The warm storage read cost is already charged as constantGas
 		return params.ColdAccountAccessCostEIP2929 - params.WarmStorageReadCostEIP2929, nil
 	}
@@ -166,13 +153,13 @@ func gasEip2929AccountCheck(evm VMInterpreter, contract *Contract, stack *stack.
 func makeCallVariantGasCallEIP2929(oldCalculator gasFunc) gasFunc {
 	return func(evm VMInterpreter, contract *Contract, stack *stack.Stack, mem *Memory, memorySize uint64) (uint64, error) {
 		addr := types.Address(stack.Back(1).Bytes20())
-		// Check slot presence in the access list
-		warmAccess := evm.IntraBlockState().AddressInAccessList(addr)
 		// The WarmStorageReadCostEIP2929 (100) is already deducted in the form of a constant cost, so
 		// the cost to charge for cold access, if any, is Cold - Warm
 		coldCost := params.ColdAccountAccessCostEIP2929 - params.WarmStorageReadCostEIP2929
-		if !warmAccess {
-			evm.IntraBlockState().AddAddressToAccessList(addr)
+
+		addrMod := evm.IntraBlockState().AddAddressToAccessList(addr)
+		warmAccess := !addrMod
+		if addrMod {
 			// Charge the remaining difference here already, to correctly calculate available
 			// gas for call
 			if !contract.UseGas(coldCost) {
