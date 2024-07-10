@@ -1058,8 +1058,8 @@ func overrideConfig(original *params.ChainConfig, override *params.ChainConfig) 
 		copy.MergeNetsplitBlock = block
 		canon = false
 	}
-	if timestamp := override.ShanghaiBlock; timestamp != nil {
-		copy.ShanghaiBlock = timestamp
+	if timestamp := override.ShanghaiTime; timestamp != nil {
+		copy.ShanghaiTime = timestamp
 		canon = false
 	}
 	if timestamp := override.CancunBlock; timestamp != nil {

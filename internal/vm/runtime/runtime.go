@@ -68,9 +68,10 @@ func setDefaults(cfg *Config) {
 			LondonBlock:           new(big.Int),
 			ArrowGlacierBlock:     new(big.Int),
 			GrayGlacierBlock:      new(big.Int),
-			ShanghaiBlock:         new(big.Int),
+			ShanghaiTime:          new(big.Int),
 			CancunBlock:           new(big.Int),
 			PragueTime:            new(big.Int),
+			OsakaTime:             new(big.Int),
 		}
 	}
 

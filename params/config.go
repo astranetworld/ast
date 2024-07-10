@@ -134,7 +134,7 @@ type ChainConfig struct {
 	TerminalTotalDifficultyPassed bool     `json:"terminalTotalDifficultyPassed,omitempty"` // Disable PoW sync for networks that have already passed through the Merge
 	MergeNetsplitBlock            *big.Int `json:"mergeNetsplitBlock,omitempty"`            // Virtual fork after The Merge to use as a network splitter; see FORK_NEXT_VALUE in EIP-3675
 
-	ShanghaiBlock    *big.Int `json:"shanghaiBlock,omitempty"` // Shanghai switch block (nil = no fork, 0 = already activated)
+	ShanghaiTime     *big.Int `json:"ShanghaiTime,omitempty"` // Shanghai switch block (nil = no fork, 0 = already activated)
 	CancunBlock      *big.Int `json:"cancunTime,omitempty"`
 	ShardingForkTime *big.Int `json:"shardingForkTime,omitempty"`
 	PragueTime       *big.Int `json:"pragueTime,omitempty"`
@@ -309,7 +309,7 @@ func (c *ChainConfig) String() string {
 		c.GrayGlacierBlock,
 		c.TerminalTotalDifficulty,
 		c.MergeNetsplitBlock,
-		c.ShanghaiBlock,
+		c.ShanghaiTime,
 		c.CancunBlock,
 	)
 }
@@ -492,7 +492,7 @@ func (c *ChainConfig) IsGrayGlacier(num uint64) bool {
 
 // IsShanghai returns whether num is either equal to the Shanghai fork block or greater.
 func (c *ChainConfig) IsShanghai(num uint64) bool {
-	return isForked(c.ShanghaiBlock, num)
+	return isForked(c.ShanghaiTime, num)
 }
 
 // IsCancun returns whether num is either equal to the Cancun fork block or greater.
@@ -574,7 +574,7 @@ func (c *ChainConfig) CheckConfigForkOrder() error {
 		{name: "arrowGlacierBlock", block: c.ArrowGlacierBlock, optional: true},
 		{name: "grayGlacierBlock", block: c.GrayGlacierBlock, optional: true},
 		{name: "mergeNetsplitBlock", block: c.MergeNetsplitBlock, optional: true},
-		{name: "shanghaiBlock", block: c.ShanghaiBlock},
+		{name: "ShanghaiTime", block: c.ShanghaiTime},
 		{name: "cancunBlock", block: c.CancunBlock},
 	} {
 		if lastFork.name != "" {
@@ -652,8 +652,8 @@ func (c *ChainConfig) checkCompatible(newcfg *ChainConfig, head uint64) *ConfigC
 	if isForkIncompatible(c.MergeNetsplitBlock, newcfg.MergeNetsplitBlock, head) {
 		return newCompatError("Merge netsplit block", c.MergeNetsplitBlock, newcfg.MergeNetsplitBlock)
 	}
-	if isForkIncompatible(c.ShanghaiBlock, newcfg.ShanghaiBlock, head) {
-		return newCompatError("Shanghai fork block", c.ShanghaiBlock, newcfg.ShanghaiBlock)
+	if isForkIncompatible(c.ShanghaiTime, newcfg.ShanghaiTime, head) {
+		return newCompatError("Shanghai fork block", c.ShanghaiTime, newcfg.ShanghaiTime)
 	}
 	if isForkIncompatible(c.CancunBlock, newcfg.CancunBlock, head) {
 		return newCompatError("Cancun fork block", c.CancunBlock, newcfg.CancunBlock)
