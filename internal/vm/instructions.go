@@ -18,13 +18,17 @@ package vm
 
 import (
 	"fmt"
+	"math"
+
+	"golang.org/x/crypto/sha3"
+
+	"github.com/holiman/uint256"
+
 	"github.com/astranetworld/ast/common/block"
 	"github.com/astranetworld/ast/common/types"
 	"github.com/astranetworld/ast/log"
 	"github.com/astranetworld/ast/params"
 
-	"github.com/holiman/uint256"
-	"golang.org/x/crypto/sha3"
 )
 
 func opAdd(pc *uint64, interpreter *EVMInterpreter, scope *ScopeContext) ([]byte, error) {
@@ -328,7 +332,7 @@ func opCallDataCopy(pc *uint64, interpreter *EVMInterpreter, scope *ScopeContext
 	)
 	dataOffset64, overflow := dataOffset.Uint64WithOverflow()
 	if overflow {
-		dataOffset64 = 0xffffffffffffffff
+		dataOffset64 = math.MaxUint64
 	}
 	// These values are checked for overflow during gas cost calculation
 	memOffset64 := memOffset.Uint64()
@@ -879,6 +883,26 @@ func opSelfdestruct(pc *uint64, interpreter *EVMInterpreter, scope *ScopeContext
 	}
 	interpreter.evm.IntraBlockState().AddBalance(beneficiaryAddr, balance)
 	interpreter.evm.IntraBlockState().Selfdestruct(callerAddr)
+	return nil, errStopToken
+}
+
+func opSelfdestruct6780(pc *uint64, interpreter *EVMInterpreter, scope *ScopeContext) ([]byte, error) {
+	if interpreter.readOnly {
+		return nil, ErrWriteProtection
+	}
+	beneficiary := scope.Stack.Pop()
+	callerAddr := scope.Contract.Address()
+	beneficiaryAddr := types.Address(beneficiary.Bytes20())
+	balance := interpreter.evm.IntraBlockState().GetBalance(callerAddr)
+	if interpreter.evm.Config().Debug {
+		if interpreter.cfg.Debug {
+			interpreter.cfg.Tracer.CaptureEnter(SELFDESTRUCT, callerAddr, beneficiaryAddr, false /* precompile */, false /* create */, []byte{}, 0, &balance, nil /* code */)
+			interpreter.cfg.Tracer.CaptureExit([]byte{}, 0, nil)
+		}
+	}
+	interpreter.evm.IntraBlockState().SubBalance(callerAddr, &balance)
+	interpreter.evm.IntraBlockState().AddBalance(beneficiaryAddr, &balance)
+	interpreter.evm.IntraBlockState().Selfdestruct6780(callerAddr)
 	return nil, errStopToken
 }
 
