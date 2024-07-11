@@ -142,7 +142,7 @@ func gasExtCodeCopyEIP2929(evm VMInterpreter, contract *Contract, stack *stack.S
 // - (ext) balance
 func gasEip2929AccountCheck(evm VMInterpreter, contract *Contract, stack *stack.Stack, mem *Memory, memorySize uint64) (uint64, error) {
 	addr := types.Address(stack.Peek().Bytes20())
-	// Check slot presence in the access list
+	// If the caller cannot afford the cost, this change will be rolled back
 	if evm.IntraBlockState().AddAddressToAccessList(addr) {
 		// The warm storage read cost is already charged as constantGas
 		return params.ColdAccountAccessCostEIP2929 - params.WarmStorageReadCostEIP2929, nil
@@ -219,9 +219,8 @@ func makeSelfdestructGasFn(refundsEnabled bool) gasFunc {
 			gas     uint64
 			address = types.Address(stack.Peek().Bytes20())
 		)
-		if !evm.IntraBlockState().AddressInAccessList(address) {
-			// If the caller cannot afford the cost, this change will be rolled back
-			evm.IntraBlockState().AddAddressToAccessList(address)
+		// If the caller cannot afford the cost, this change will be rolled back
+		if evm.IntraBlockState().AddAddressToAccessList(address) {
 			gas = params.ColdAccountAccessCostEIP2929
 		}
 		// if empty and transfers value
