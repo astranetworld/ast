@@ -16,7 +16,6 @@
 package vm
 
 import (
-	libcommon "github.com/astranetworld/ast/common"
 	"github.com/astranetworld/ast/common/crypto"
 	"github.com/astranetworld/ast/common/types"
 	"github.com/astranetworld/ast/common/u256"
@@ -30,8 +29,8 @@ import (
 // deployed contract addresses (relevant after the account abstraction).
 var emptyCodeHash = crypto.Keccak256Hash(nil)
 
-func (evm *EVM) precompile(addr libcommon.Address) (PrecompiledContract, bool) {
-	var precompiles map[libcommon.Address]PrecompiledContract
+func (evm *EVM) precompile(addr types.Address) (PrecompiledContract, bool) {
+	var precompiles map[types.Address]PrecompiledContract
 	switch {
 	case evm.chainRules.IsPrague:
 		precompiles = PrecompiledContractsPrague
@@ -176,7 +175,7 @@ func (evm *EVM) call(typ OpCode, caller ContractRef, addr types.Address, input [
 	}
 	if typ == CALL || typ == CALLCODE {
 		// Fail if we're trying to transfer more than the available balance
-		if !value.IsZero() && !evm.context.CanTransfer(evm.intraBlockState, caller.Address(), value) {
+		if !value.IsZero() && !evm.Context().CanTransfer(evm.intraBlockState, caller.Address(), value) {
 			if !bailout {
 				return nil, gas, ErrInsufficientBalance
 			}
@@ -211,7 +210,7 @@ func (evm *EVM) call(typ OpCode, caller ContractRef, addr types.Address, input [
 			}
 			evm.intraBlockState.CreateAccount(addr, false)
 		}
-		evm.context.Transfer(evm.intraBlockState, caller.Address(), addr, value, bailout)
+		evm.Context().Transfer(evm.intraBlockState, caller.Address(), addr, value, bailout)
 	} else if typ == STATICCALL {
 		// We do an AddBalance of zero here, just in order to trigger a touch.
 		// This doesn't matter on Mainnet, where all empties are gone at the time of Byzantium,
