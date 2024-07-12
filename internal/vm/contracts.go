@@ -34,6 +34,7 @@ import (
 
 	"github.com/astranetworld/ast/common/crypto/blake2b"
 	"github.com/astranetworld/ast/common/crypto/bn256"
+	"github.com/astranetworld/ast/common/crypto/secp256r1"
 	"github.com/astranetworld/ast/internal/avm/common"
 
 	"github.com/astranetworld/ast/common/crypto"
