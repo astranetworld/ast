@@ -22,6 +22,7 @@ import (
 	"github.com/astranetworld/ast/internal/vm/evmtypes"
 	"github.com/astranetworld/ast/params"
 	"github.com/holiman/uint256"
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"sync/atomic"
 )
 
@@ -29,21 +30,19 @@ import (
 // deployed contract addresses (relevant after the account abstraction).
 var emptyCodeHash = crypto.Keccak256Hash(nil)
 
-func (evm *EVM) precompile(addr types.Address) (PrecompiledContract, bool) {
-	var precompiles map[types.Address]PrecompiledContract
+func (evm *EVM) precompile(addr libcommon.Address) (PrecompiledContract, bool) {
+	var precompiles map[libcommon.Address]PrecompiledContract
 	switch {
-	case evm.chainRules.IsMoran:
-		precompiles = PrecompiledContractsIsMoran
-	case evm.chainRules.IsNano:
-		precompiles = PrecompiledContractsNano
+	case evm.chainRules.IsPrague:
+		precompiles = PrecompiledContractsPrague
+	case evm.chainRules.IsNapoli:
+		precompiles = PrecompiledContractsNapoli
+	case evm.chainRules.IsCancun:
+		precompiles = PrecompiledContractsCancun
 	case evm.chainRules.IsBerlin:
 		precompiles = PrecompiledContractsBerlin
 	case evm.chainRules.IsIstanbul:
-		if evm.chainRules.IsParlia {
-			precompiles = PrecompiledContractsIstanbulForBSC
-		} else {
-			precompiles = PrecompiledContractsIstanbul
-		}
+		precompiles = PrecompiledContractsIstanbul
 	case evm.chainRules.IsByzantium:
 		precompiles = PrecompiledContractsByzantium
 	default:
@@ -69,8 +68,8 @@ func run(evm *EVM, contract *Contract, input []byte, readOnly bool) ([]byte, err
 // The EVM should never be reused and is not thread safe.
 type EVM struct {
 	// Context provides auxiliary blockchain related information
-	context   evmtypes.BlockContext
-	txContext evmtypes.TxContext
+	Context evmtypes.BlockContext
+	evmtypes.TxContext
 	// IntraBlockState gives access to the underlying state
 	intraBlockState evmtypes.IntraBlockState
 
@@ -96,13 +95,19 @@ type EVM struct {
 // NewEVM returns a new EVM. The returned EVM is not thread safe and should
 // only ever be used *once*.
 func NewEVM(blockCtx evmtypes.BlockContext, txCtx evmtypes.TxContext, state evmtypes.IntraBlockState, chainConfig *params.ChainConfig, vmConfig Config) *EVM {
+	if vmConfig.NoBaseFee {
+		if txCtx.GasPrice.IsZero() {
+			blockCtx.BaseFee = new(uint256.Int)
+		}
+	}
+
 	evm := &EVM{
-		context:         blockCtx,
-		txContext:       txCtx,
+		Context:         blockCtx,
+		TxContext:       txCtx,
 		intraBlockState: state,
 		config:          vmConfig,
 		chainConfig:     chainConfig,
-		chainRules:      chainConfig.Rules(blockCtx.BlockNumber),
+		chainRules:      chainConfig.Rules(blockCtx.BlockNumber, blockCtx.Time),
 	}
 
 	evm.interpreter = NewEVMInterpreter(evm, vmConfig)

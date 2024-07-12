@@ -96,7 +96,7 @@ type EVMInterpreter struct {
 //
 //nolint:structcheck
 type VM struct {
-	evm VMInterpreter
+	evm *EVM
 	cfg Config
 
 	hasher    keccakState // Keccak256 hasher instance shared across opcodes
