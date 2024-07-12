@@ -16,13 +16,13 @@
 package vm
 
 import (
+	libcommon "github.com/astranetworld/ast/common"
 	"github.com/astranetworld/ast/common/crypto"
 	"github.com/astranetworld/ast/common/types"
 	"github.com/astranetworld/ast/common/u256"
 	"github.com/astranetworld/ast/internal/vm/evmtypes"
 	"github.com/astranetworld/ast/params"
 	"github.com/holiman/uint256"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"sync/atomic"
 )
 

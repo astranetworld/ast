@@ -20,6 +20,7 @@ import (
 	"crypto/sha256"
 	"encoding/binary"
 	"errors"
+	common "github.com/astranetworld/ast/common/types"
 	"math/big"
 
 	"github.com/consensys/gnark-crypto/ecc"
@@ -28,14 +29,10 @@ import (
 	"github.com/consensys/gnark-crypto/ecc/bls12-381/fr"
 	"github.com/holiman/uint256"
 
-	"github.com/ledgerwatch/erigon-lib/chain"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	libkzg "github.com/ledgerwatch/erigon-lib/crypto/kzg"
-
 	"github.com/astranetworld/ast/common/crypto/blake2b"
 	"github.com/astranetworld/ast/common/crypto/bn256"
 	"github.com/astranetworld/ast/common/crypto/secp256r1"
-	"github.com/astranetworld/ast/internal/avm/common"
+	libcommon "github.com/astranetworld/ast/internal/avm/common"
 
 	"github.com/astranetworld/ast/common/crypto"
 	"github.com/astranetworld/ast/common/math"
@@ -186,7 +183,7 @@ func init() {
 }
 
 // ActivePrecompiles returns the precompiles enabled with the current configuration.
-func ActivePrecompiles(rules *chain.Rules) []libcommon.Address {
+func ActivePrecompiles(rules *params.Rules) []libcommon.Address {
 	switch {
 	case rules.IsPrague:
 		return PrecompiledAddressesPrague

@@ -17,8 +17,9 @@
 package params
 
 import (
-	"github.com/holiman/uint256"
 	"math/big"
+
+	"github.com/astranetworld/ast/internal/avm/common"
 )
 
 const (

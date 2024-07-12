@@ -18,18 +18,20 @@ package params
 
 import (
 	"embed"
-	"encoding/binary"
-	"encoding/json"
 	"fmt"
-	"github.com/astranetworld/ast/common/paths"
-	"github.com/astranetworld/ast/common/types"
-	"github.com/astranetworld/ast/internal/avm/common"
-	"github.com/astranetworld/ast/params/networkname"
-	"golang.org/x/crypto/sha3"
 	"math/big"
 	"path"
 	"sort"
 	"strconv"
+
+	"encoding/binary"
+	"encoding/json"
+	"golang.org/x/crypto/sha3"
+
+	"github.com/astranetworld/ast/common/paths"
+	"github.com/astranetworld/ast/common/types"
+	"github.com/astranetworld/ast/internal/avm/common"
+	"github.com/astranetworld/ast/params/networkname"
 )
 
 //go:embed chainspecs
@@ -748,13 +750,13 @@ func (err *ConfigCompatError) Error() string {
 // Rules is a one time interface meaning that it shouldn't be used in between transition
 // phases.
 type Rules struct {
-	ChainID                                                 *big.Int
-	IsHomestead, IsTangerineWhistle, IsSpuriousDragon       bool
-	IsByzantium, IsConstantinople, IsPetersburg, IsIstanbul bool
-	IsBerlin, IsLondon, IsShanghai, IsCancun, IsPrague      bool
-	IsNano, IsMoran                                         bool
-	IsEip1559FeeCollector                                   bool
-	IsParlia, IsStarknet, IsAura, IsBeijing                 bool
+	ChainID                                           *big.Int
+	IsHomestead, IsTangerineWhistle, IsSpuriousDragon bool
+	IsByzantium, IsConstantinople, IsPetersburg       bool
+	IsIstanbul, IsBerlin, IsLondon, IsShanghai        bool
+	IsCancun, IsNapoli                                bool
+	IsPrague, IsOsaka                                 bool
+	IsAura                                            bool
 }
 
 // Rules ensures c's ChainID is not nil.
