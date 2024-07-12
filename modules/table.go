@@ -19,8 +19,6 @@ package modules
 import (
 	"sort"
 	"strings"
-
-	"github.com/ledgerwatch/erigon-lib/kv"
 )
 
 //const PlainState = "PlainState"
