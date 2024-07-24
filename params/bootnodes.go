@@ -20,7 +20,7 @@ package params
 // the main astranet network.
 var MainnetBootnodes = []string{
 	// United States, Georgia, Atlanta
-	"enr:-JG4QDY9EdRvdnU2Pzf46fC5XLwTvJgoAMmyPUOOw44KQ8frJsiXQb6L-i0S2hlIvVirz6ihkw4IjPZp5NLbehor596GAYnxxVXsgmlkgnY0gmlwhBKqbE6Jc2VjcDI1NmsxoQIX6BYmB9BHfiWcXOO7Z4lAQDcR3WrjXzhS4Xj9Y387coN0Y3CCJ2aDdWRwgidl", // bootnode-aws-us-east-1-001
+	"enr:-Je4QFvQXot9GPCaY5Mia2JnLdVcs3nXP-raX7sxCF_NmEXXfxj8YVH6556vrbCu06izRPPGO4Y-eoZUQdvnHw346qoGhmFtY0VucoQThzS3gmlkgnY0gmlwhAWhUVqJc2VjcDI1NmsxoQIEagbLEx239g4bsWUm6wj68HOOFPi4AT2FW88TIm6GJIN0Y3CCJ2aDdWRwgidl", // bootnode-aws-us-east-1-001
 }
 
 // TestnetBootnodes are the enode URLs of the P2P bootstrap nodes running on
