@@ -6,16 +6,15 @@ description: Fundamental shared values and special norms that distinguish astran
 
 ## Our Pledge
 
-As members, contributors, and leaders of astranet, 
-we commit to fostering an inclusive environment within our community.
-We strive to ensure that everyone, regardless of age, physical attributes,
-disabilities, cultural backgrounds, gender identities, levels of expertise, 
-educational backgrounds, socioeconomic statuses, nationalities, appearances, 
-races, castes, colors, religions, sexual identities, or orientations, 
-feels respected and valued. Harassment of any form will not be tolerated.
-
-We pledge to act and interact in ways that contribute to an open, welcoming,
-diverse, inclusive, and healthy community.
+As a member, contributor and leader of astranet,
+We are committed to creating an inclusive environment within our community.
+We strive to ensure that everyone, regardless of age, physical characteristics,
+Disability, cultural background, gender identity, professional level,
+Educational background, socioeconomic status, nationality, physical appearance,
+Race, caste, color, religion, sexual identity or sexual orientation,
+Feel respected and valued. Harassment of any kind will not be tolerated.
+We are committed to helping build an open, welcoming,
+Diverse, inclusive and healthy communities are ways to act and interact.
 
 ## Our Standards
 
@@ -45,10 +44,9 @@ Examples of unacceptable behavior include:
 
 ## Enforcement Responsibilities
 
-Community leaders are responsible for clarifying and enforcing our standards of
-acceptable behavior and will take appropriate and fair corrective action in
-response to any behavior that they deem inappropriate, threatening, offensive,
-or harmful.
+Community leaders are responsible for articling and enforcing our standards of
+acceptable behavior and will take appropriate and fair corrective action for
+any behavior they deem inappropriate, threatening, offensive, or harmful.
 
 Community leaders have the right and responsibility to remove, edit, or reject
 comments, commits, code, wiki edits, issues, and other contributions that are
