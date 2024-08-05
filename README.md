@@ -1,7 +1,7 @@
 # astranet
-astranet(ast) is an implementation of public blockchain (execution client), on the efficiency frontier, written in Go.
+astranet (AST) is an implementation of a public blockchain (execution client) on the efficiency frontier, written in Go.
 
-**Disclaimer: this software is currently a tech preview. We will do our best to keep it stable and make no breaking changes, but we don't guarantee anything. Things can and will break.**
+**Disclaimer: This software is currently a tech preview. We will do our best to keep it stable and avoid breaking changes, but we make no guarantees. Things can and will break.**
 
 ## System Requirements
 
