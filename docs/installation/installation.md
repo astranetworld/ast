@@ -35,9 +35,8 @@ Prior to purchasing an NVMe drive, it is advisable to research and determine whe
 
 ### Disk
 
-There are multiple types of disks to sync ast, with varying size requirements, depending on the syncing mode.
-NVMe drives are recommended for the best performance, with SSDs being a cheaper alternative. HDDs are the cheapest option, but they will take the longest to sync, and are not recommended.
-
+There are several types of disks you can use to sync ast, each with different size requirements based on the syncing mode.
+For optimal performance, NVMe drives are recommended, with SSDs being a more affordable alternative. HDDs are the cheapest option but will take the longest to sync and are not recommended.
 > **Note**
 >
 > It is highly recommended to choose a TLC drive when using NVMe, and not a QLC drive. See [the note](#qlc-and-tlc) above. A list of recommended drives can be found [here]( https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038).
@@ -50,21 +49,21 @@ Therefore, the number of cores is less important, but generally higher clock spe
 
 ### Memory
 
-It is recommended to use at least 8GB of RAM.
+It is recommended to have at least 8GB of RAM.
 
 Unless you are under heavy RPC load, most of ast's components tend to consume a low amount of memory, so this should matter less than the other requirements.
 
-Higher memory is generally better as it allows for better caching, resulting in less stress on the disk.
+Having more memory is generally beneficial as it allows for better caching, which reduces stress on the disk.
 
 ### Bandwidth
 
-A stable and reliable internet connection is crucial for both syncing a node from genesis and for keeping up with the chain's tip.
+A stable and reliable internet connection is essential  for both syncing a node from genesis and for keeping up with the chain's tip.
 
 Once you're synced to the tip, you will need a reliable connection, especially if you're operating a validator. A 24Mbps connection is recommended, but you can probably get away with less. Ensure your ISP does not cap your bandwidth.
 
 ## What hardware can I get?
 
-If you are buying your own NVMe SSD, please consult this actively maintained hardware comparison. We do not recommend purchasing DRAM-less or QLC devices as these are noticeably slower.
+If you're planning to buy your own NVMe SSD, please consult this actively maintained hardware comparison. We do not recommend purchasing DRAM-less or QLC devices as they tend to be noticeably slower.
 
-All our benchmarks have been produced on Latitude.sh, a bare metal provider. We use c3.large.x86 boxes, and also recommend trying the s2.small.x86 box for pruned/full nodes. So far, our experience has been smooth, with some users reporting that the NVMe there outperforms AWS NVMe by 3x or more. We are excited for more ast nodes on Latitude.sh, so for a limited time, you can use a discount to get $250 off. Run a node now!
+All our benchmarks have been conducted on Latitude.sh, a bare metal provider. We use c3.large.x86 boxes and also suggest trying the s2.small.x86 box for pruned/full nodes. So far, our experience has been smooth, with some users reporting that the NVMe there outperforms AWS NVMe by 3x or more. We're excited to see more ast nodes on Latitude.sh, so for a limited time, you can use a discount code to get $250 off. Run a node now!
 
