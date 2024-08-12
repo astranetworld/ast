@@ -5,9 +5,7 @@ astranet (AST) is an implementation of a public blockchain (execution client) on
 
 ## System Requirements
 
-* For an Full node :  >=200GB  storage space.
-
-SSD or NVMe. Do not recommend HDD.
+* For an Full node : ≥ 200 GB of storage space (SSD or NVMe recommended; HDD is not recommended).
 
 RAM: >=16GB, 64-bit architecture, [Golang version >= 1.19](https://golang.org/doc/install)
 
