@@ -17,7 +17,7 @@ For building the latest alpha release (this will be suitable for most users just
 
 ast is written in Go, so building from source code requires the most recent version of Go to be installed.
 Instructions for installing Go are available at the [Go installation page](https://golang.org/doc/install) and necessary bundles can be downloaded from the [Go download page](https://golang.org/dl/).
-And the repository should be cloned to a local repository. Then, the command make ast configures everything for a temporary build and cleans up afterwards. This method of building only works on UNIX-like operating systems
+The repository should be cloned to a local environment. Once cloned, running the command `make ast` configures everything for a temporary build and then cleans up afterward. Please note that this build method is only compatible with UNIX-like operating systems.
 ```sh
 git clone https://github.com/astranetworld/ast.git
 cd ast
