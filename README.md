@@ -3,7 +3,7 @@ Astranet (AST) is an implementation of a public blockchain (execution client) on
 
 **Disclaimer: This software is currently a tech preview. We will do our best to keep it stable and avoid breaking changes, but we make no guarantees. Things can and will break.**
 
-## System Requirements
+## System Requirements  
 
 * For an Full node : ≥ 200 GB of storage space (SSD or NVMe recommended; HDD is not recommended).
 
