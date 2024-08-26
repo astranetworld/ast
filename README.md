@@ -15,7 +15,7 @@ For building the latest alpha release (this will be suitable for most users just
 
 ### Most Linux systems and macOS
 
-ast is written in Go, so building from source code requires the most recent version of Go to be installed.
+Since ast is written in Go, you'll need the latest version of Go installed to build it from source code.
 Instructions for installing Go are available at the [Go installation page](https://golang.org/doc/install) and necessary bundles can be downloaded from the [Go download page](https://golang.org/dl/).
 The repository should be cloned to a local environment. Once cloned, running the command `make ast` configures everything for a temporary build and then cleans up afterward. Please note that this build method is only compatible with UNIX-like operating systems.
 ```sh
