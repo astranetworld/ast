@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/astranetworld/ast/modules/ethdb"
+	"github.com/N42world/ast/modules/ethdb"
 	"github.com/ledgerwatch/erigon-lib/kv"
 )
 

@@ -3,10 +3,10 @@ package p2p
 import (
 	"bytes"
 	"fmt"
-	"github.com/astranetworld/ast/common/types"
-	"github.com/astranetworld/ast/internal/p2p/enode"
-	"github.com/astranetworld/ast/internal/p2p/enr"
-	"github.com/astranetworld/ast/utils"
+	"github.com/N42world/ast/common/types"
+	"github.com/N42world/ast/internal/p2p/enode"
+	"github.com/N42world/ast/internal/p2p/enr"
+	"github.com/N42world/ast/utils"
 	"github.com/holiman/uint256"
 	"github.com/pkg/errors"
 )

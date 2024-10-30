@@ -6,9 +6,9 @@ package initialsync
 import (
 	"context"
 	"fmt"
-	"github.com/astranetworld/ast/common"
-	"github.com/astranetworld/ast/internal/p2p"
-	event "github.com/astranetworld/ast/modules/event/v2"
+	"github.com/N42world/ast/common"
+	"github.com/N42world/ast/internal/p2p"
+	event "github.com/N42world/ast/modules/event/v2"
 	"github.com/holiman/uint256"
 	"github.com/libp2p/go-libp2p/core/peer"
 	"github.com/paulbellamy/ratecounter"

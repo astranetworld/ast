@@ -8,7 +8,7 @@ release:
 builds:
   - id: darwin-amd64
     main: ./cmd/ast
-    binary: astranet
+    binary: N42
     goos: [ darwin ]
     goarch: [ amd64 ]
     env:
@@ -19,7 +19,7 @@ builds:
 
   - id: darwin-arm64
     main: ./cmd/ast
-    binary: astranet
+    binary: N42
     goos: [ darwin ]
     goarch: [ arm64 ]
     env:
@@ -30,7 +30,7 @@ builds:
 
   - id: linux-amd64
     main: ./cmd/ast
-    binary: astranet
+    binary: N42
     goos: [ linux ]
     goarch: [ amd64 ]
     env:
@@ -41,7 +41,7 @@ builds:
 
   - id: linux-arm64
     main: ./cmd/ast
-    binary: astranet
+    binary: N42
     goos: [ linux ]
     goarch: [ arm64 ]
     env:
@@ -52,7 +52,7 @@ builds:
 
   - id: windows-amd64
     main: ./cmd/ast
-    binary: astranet
+    binary: N42
     goos: [ windows ]
     goarch: [ amd64 ]
     env:
@@ -64,7 +64,7 @@ builds:
 
 dockers:
   - image_templates:
-      - astranet/{{ .ProjectName }}:{{ .Version }}-amd64
+      - N42/{{ .ProjectName }}:{{ .Version }}-amd64
     dockerfile: Dockerfile.release
     use: buildx
     skip_push: true
@@ -75,7 +75,7 @@ dockers:
       - --platform=linux/amd64
 
   - image_templates:
-      - astranet/{{ .ProjectName }}:{{ .Version }}-arm64
+      - N42/{{ .ProjectName }}:{{ .Version }}-arm64
     dockerfile: Dockerfile.release
     skip_push: true
     use: buildx
@@ -86,14 +86,14 @@ dockers:
       - --platform=linux/arm64/v8
 
 docker_manifests:
-  - name_template: astranet/{{ .ProjectName }}:{{ .Version }}
+  - name_template: N42/{{ .ProjectName }}:{{ .Version }}
     skip_push: true
     image_templates:
-      - astranet/{{ .ProjectName }}:{{ .Version }}-amd64
-      - astranet/{{ .ProjectName }}:{{ .Version }}-arm64
+      - N42/{{ .ProjectName }}:{{ .Version }}-amd64
+      - N42/{{ .ProjectName }}:{{ .Version }}-arm64
 
-  - name_template: astranet/{{ .ProjectName }}:latest
+  - name_template: N42/{{ .ProjectName }}:latest
     skip_push: true
     image_templates:
-      - astranet/{{ .ProjectName }}:{{ .Version }}-amd64
-      - astranet/{{ .ProjectName }}:{{ .Version }}-arm64
+      - N42/{{ .ProjectName }}:{{ .Version }}-amd64
+      - N42/{{ .ProjectName }}:{{ .Version }}-arm64

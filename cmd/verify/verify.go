@@ -1,35 +1,35 @@
-// Copyright 2023 The astranet Authors
-// This file is part of the astranet library.
+// Copyright 2023 The N42 Authors
+// This file is part of the N42 library.
 //
-// The astranet library is free software: you can redistribute it and/or modify
+// The N42 library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The astranet library is distributed in the hope that it will be useful,
+// The N42 library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the astranet library. If not, see <http://www.gnu.org/licenses/>.
+// along with the N42 library. If not, see <http://www.gnu.org/licenses/>.
 
 package main
 
 import (
 	"context"
 	"fmt"
-	common2 "github.com/astranetworld/ast/common"
-	block2 "github.com/astranetworld/ast/common/block"
-	"github.com/astranetworld/ast/common/transaction"
-	"github.com/astranetworld/ast/common/types"
-	"github.com/astranetworld/ast/internal"
-	"github.com/astranetworld/ast/internal/consensus/apos"
-	"github.com/astranetworld/ast/internal/consensus/misc"
-	"github.com/astranetworld/ast/internal/vm"
-	"github.com/astranetworld/ast/modules/ethdb/olddb"
-	"github.com/astranetworld/ast/modules/state"
-	"github.com/astranetworld/ast/params"
+	common2 "github.com/N42world/ast/common"
+	block2 "github.com/N42world/ast/common/block"
+	"github.com/N42world/ast/common/transaction"
+	"github.com/N42world/ast/common/types"
+	"github.com/N42world/ast/internal"
+	"github.com/N42world/ast/internal/consensus/apos"
+	"github.com/N42world/ast/internal/consensus/misc"
+	"github.com/N42world/ast/internal/vm"
+	"github.com/N42world/ast/modules/ethdb/olddb"
+	"github.com/N42world/ast/modules/state"
+	"github.com/N42world/ast/params"
 	"unsafe"
 )
 

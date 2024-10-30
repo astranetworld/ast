@@ -1,4 +1,4 @@
-// Package sync includes all chain-synchronization logic for the astranet node,
+// Package sync includes all chain-synchronization logic for the N42 node,
 // including gossip-sub blocks, txs, and other p2p
 // messages, as well as ability to process and respond to block requests
 // by peers.
@@ -6,11 +6,11 @@ package sync
 
 import (
 	"context"
-	"github.com/astranetworld/ast/common"
-	block2 "github.com/astranetworld/ast/common/block"
-	"github.com/astranetworld/ast/common/types"
-	"github.com/astranetworld/ast/internal/p2p"
-	"github.com/astranetworld/ast/utils"
+	"github.com/N42world/ast/common"
+	block2 "github.com/N42world/ast/common/block"
+	"github.com/N42world/ast/common/types"
+	"github.com/N42world/ast/internal/p2p"
+	"github.com/N42world/ast/utils"
 	lru "github.com/hashicorp/golang-lru/v2"
 	"sync"
 	"time"

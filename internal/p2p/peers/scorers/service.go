@@ -2,7 +2,7 @@ package scorers
 
 import (
 	"context"
-	"github.com/astranetworld/ast/internal/p2p/peers/peerdata"
+	"github.com/N42world/ast/internal/p2p/peers/peerdata"
 	"math"
 	"time"
 

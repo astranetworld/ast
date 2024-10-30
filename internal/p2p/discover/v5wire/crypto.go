@@ -23,9 +23,9 @@ import (
 	"crypto/elliptic"
 	"errors"
 	"fmt"
-	"github.com/astranetworld/ast/common/crypto"
-	"github.com/astranetworld/ast/common/math"
-	"github.com/astranetworld/ast/internal/p2p/enode"
+	"github.com/N42world/ast/common/crypto"
+	"github.com/N42world/ast/common/math"
+	"github.com/N42world/ast/internal/p2p/enode"
 	"hash"
 
 	"golang.org/x/crypto/hkdf"

@@ -1,8 +1,8 @@
 package p2p
 
 import (
-	"github.com/astranetworld/ast/common/hash"
-	"github.com/astranetworld/ast/common/types"
+	"github.com/N42world/ast/common/hash"
+	"github.com/N42world/ast/common/types"
 	pubsubpb "github.com/libp2p/go-libp2p-pubsub/pb"
 )
 

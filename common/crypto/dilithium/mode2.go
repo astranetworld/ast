@@ -4,8 +4,8 @@ package dilithium
 
 import (
 	"fmt"
-	"github.com/astranetworld/ast/common/crypto/dilithium/internal/common"
-	"github.com/astranetworld/ast/common/crypto/dilithium/mode2"
+	"github.com/N42world/ast/common/crypto/dilithium/internal/common"
+	"github.com/N42world/ast/common/crypto/dilithium/mode2"
 	"io"
 
 )

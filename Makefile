@@ -2,11 +2,11 @@ BUILD_TIME := $(shell date +"%Y-%m-%d %H:%M:%S")
 #GIT_COMMIT := $(shell git show -s --pretty=format:%h)
 GO_VERSION := $(shell go version)
 BUILD_PATH := ./build/bin/
-APP_NAME := astranet
+APP_NAME := N42
 APP_PATH := ./cmd/ast
 SHELL := /bin/bash
 GO = go
-#LDFLAGS := -ldflags "-w -s -X github.com/astranetworld/ast/version.BuildNumber=${GIT_COMMIT} -X 'github.com/astranetworld/ast/version.BuildTime=${BUILD_TIME}' -X 'github.com/astranetworld/ast/version.GoVersion=${GO_VERSION}'"
+#LDFLAGS := -ldflags "-w -s -X github.com/N42world/ast/version.BuildNumber=${GIT_COMMIT} -X 'github.com/N42world/ast/version.BuildTime=${BUILD_TIME}' -X 'github.com/N42world/ast/version.GoVersion=${GO_VERSION}'"
 
 
 # Variables below for building on host OS, and are ignored for docker
@@ -27,7 +27,7 @@ CGO_CFLAGS += -Wno-unknown-warning-option -Wno-enum-int-mismatch -Wno-strict-pro
 GIT_COMMIT ?= $(shell git rev-list -1 HEAD)
 GIT_BRANCH ?= $(shell git rev-parse --abbrev-ref HEAD)
 GIT_TAG    ?= $(shell git describe --tags '--match=v*' --dirty)
-PACKAGE = github.com/astranetworld/ast
+PACKAGE = github.com/N42world/ast
 
 BUILD_TAGS = nosqlite,noboltdb
 GO_FLAGS += -trimpath -tags $(BUILD_TAGS) -buildvcs=false
@@ -77,7 +77,7 @@ ast: deps
 
 images:
 	@echo "docker images build ..."
-	DOCKER_BUILDKIT=1 docker build -t astranet/ast:local .
+	DOCKER_BUILDKIT=1 docker build -t N42/ast:local .
 	@echo "Compile done!"
 
 up:
@@ -87,7 +87,7 @@ up:
 down:
 	@echo "docker compose down $(APP_NAME) ..."
 	docker-compose  --project-name $(APP_NAME) down
-	docker volume ls -q | grep 'astranet' | xargs -I % docker volume rm %
+	docker volume ls -q | grep 'N42' | xargs -I % docker volume rm %
 	@echo "done!"
 stop:
 	@echo "docker compose stop $(APP_NAME) ..."
@@ -126,7 +126,7 @@ release:
 		ghcr.io/goreleaser/goreleaser-cross:${GOLANG_CROSS_VERSION} \
 		--clean --skip-validate
 
-		@docker image push --all-tags astranet/ast
+		@docker image push --all-tags N42/ast
 
 
 #== mobiles start

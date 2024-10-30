@@ -5,8 +5,8 @@ import (
 	"bytes"
 	cryptoRand "crypto/rand"
 	"crypto/subtle"
-	"github.com/astranetworld/ast/common/crypto/kem"
-	"github.com/astranetworld/ast/common/crypto/sha3"
+	"github.com/N42world/ast/common/crypto/kem"
+	"github.com/N42world/ast/common/crypto/sha3"
 	"io"
 )
 

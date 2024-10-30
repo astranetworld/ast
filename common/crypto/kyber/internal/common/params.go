@@ -1,7 +1,7 @@
 package common
 
 import (
-	"github.com/astranetworld/ast/common/crypto/kyber/internal/common/params"
+	"github.com/N42world/ast/common/crypto/kyber/internal/common/params"
 )
 
 const (

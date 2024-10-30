@@ -19,9 +19,9 @@ package enode
 import (
 	"crypto/ecdsa"
 	"fmt"
-	"github.com/astranetworld/ast/internal/p2p/enr"
-	"github.com/astranetworld/ast/internal/p2p/netutil"
-	"github.com/astranetworld/ast/log"
+	"github.com/N42world/ast/internal/p2p/enr"
+	"github.com/N42world/ast/internal/p2p/netutil"
+	"github.com/N42world/ast/log"
 	"net"
 	"reflect"
 	"strconv"

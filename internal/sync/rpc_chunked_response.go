@@ -2,12 +2,12 @@ package sync
 
 import (
 	"fmt"
-	"github.com/astranetworld/ast/api/protocol/types_pb"
-	"github.com/astranetworld/ast/common"
-	types "github.com/astranetworld/ast/common/block"
-	"github.com/astranetworld/ast/internal/p2p"
-	"github.com/astranetworld/ast/internal/p2p/encoder"
-	"github.com/astranetworld/ast/utils"
+	"github.com/N42world/ast/api/protocol/types_pb"
+	"github.com/N42world/ast/common"
+	types "github.com/N42world/ast/common/block"
+	"github.com/N42world/ast/internal/p2p"
+	"github.com/N42world/ast/internal/p2p/encoder"
+	"github.com/N42world/ast/utils"
 	libp2pcore "github.com/libp2p/go-libp2p/core"
 	"github.com/pkg/errors"
 )

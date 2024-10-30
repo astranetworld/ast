@@ -2,7 +2,7 @@ package scorers
 
 import (
 	"fmt"
-	"github.com/astranetworld/ast/internal/p2p/peers/peerdata"
+	"github.com/N42world/ast/internal/p2p/peers/peerdata"
 	"math"
 	"math/rand"
 	"sort"

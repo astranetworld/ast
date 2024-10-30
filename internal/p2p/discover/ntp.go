@@ -21,7 +21,7 @@ package discover
 
 import (
 	"fmt"
-	"github.com/astranetworld/ast/log"
+	"github.com/N42world/ast/log"
 	"net"
 	"sort"
 	"time"

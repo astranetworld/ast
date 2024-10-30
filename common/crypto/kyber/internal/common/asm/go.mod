@@ -1,4 +1,4 @@
-module github.com/astranetworld/ast/common/crypto/kyber/internal/common/asm
+module github.com/N42world/ast/common/crypto/kyber/internal/common/asm
 
 go 1.21
 

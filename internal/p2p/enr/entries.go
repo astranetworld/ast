@@ -19,7 +19,7 @@ package enr
 import (
 	"errors"
 	"fmt"
-	"github.com/astranetworld/ast/internal/avm/rlp"
+	"github.com/N42world/ast/internal/avm/rlp"
 	"io"
 	"net"
 )

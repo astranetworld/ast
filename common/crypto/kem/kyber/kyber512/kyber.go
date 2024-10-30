@@ -10,11 +10,11 @@ package kyber512
 import (
 	"bytes"
 	"crypto/subtle"
-	"github.com/astranetworld/ast/common/crypto/kem"
+	"github.com/N42world/ast/common/crypto/kem"
 	"io"
-	"github.com/astranetworld/ast/common/crypto/sha3"
+	"github.com/N42world/ast/common/crypto/sha3"
 	cryptoRand "crypto/rand"
-	cpapke "github.com/astranetworld/ast/common/crypto/pke/kyber/kyber512"
+	cpapke "github.com/N42world/ast/common/crypto/pke/kyber/kyber512"
 )
 
 const (

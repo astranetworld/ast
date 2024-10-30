@@ -7,7 +7,7 @@ RUN apk add --no-cache build-base  linux-headers git bash ca-certificates  libst
 WORKDIR /ast
 ADD . .
 ENV GO111MODULE="on"
-RUN go mod tidy && go build  -o ./build/bin/astranet ./cmd/ast
+RUN go mod tidy && go build  -o ./build/bin/N42 ./cmd/ast
 
 
 FROM alpine:3.15
@@ -36,4 +36,4 @@ WORKDIR /home/ast
 RUN echo $UID
 
 EXPOSE 20012 20013 20014 61015/udp 61016  6060
-ENTRYPOINT ["astranet"]
+ENTRYPOINT ["N42"]

@@ -1,31 +1,31 @@
-// Copyright 2022 The astranet Authors
-// This file is part of the astranet library.
+// Copyright 2022 The N42 Authors
+// This file is part of the N42 library.
 //
-// The astranet library is free software: you can redistribute it and/or modify
+// The N42 library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The astranet library is distributed in the hope that it will be useful,
+// The N42 library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the astranet library. If not, see <http://www.gnu.org/licenses/>.
+// along with the N42 library. If not, see <http://www.gnu.org/licenses/>.
 
 package network
 
 import (
 	"context"
 	"crypto/rand"
-	"github.com/astranetworld/ast/api/protocol/msg_proto"
-	"github.com/astranetworld/ast/common"
-	"github.com/astranetworld/ast/common/message"
-	"github.com/astranetworld/ast/conf"
-	"github.com/astranetworld/ast/log"
-	event "github.com/astranetworld/ast/modules/event/v2"
-	"github.com/astranetworld/ast/utils"
+	"github.com/N42world/ast/api/protocol/msg_proto"
+	"github.com/N42world/ast/common"
+	"github.com/N42world/ast/common/message"
+	"github.com/N42world/ast/conf"
+	"github.com/N42world/ast/log"
+	event "github.com/N42world/ast/modules/event/v2"
+	"github.com/N42world/ast/utils"
 	kaddht "github.com/libp2p/go-libp2p-kad-dht"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
 	"github.com/libp2p/go-libp2p/core/crypto"

@@ -1,18 +1,18 @@
-// Copyright 2022 The astranet Authors
-// This file is part of the astranet library.
+// Copyright 2022 The N42 Authors
+// This file is part of the N42 library.
 //
-// The astranet library is free software: you can redistribute it and/or modify
+// The N42 library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The astranet library is distributed in the hope that it will be useful,
+// The N42 library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the astranet library. If not, see <http://www.gnu.org/licenses/>.
+// along with the N42 library. If not, see <http://www.gnu.org/licenses/>.
 
 package api
 
@@ -21,18 +21,18 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/astranetworld/ast/log"
+	"github.com/N42world/ast/log"
 	"github.com/holiman/uint256"
 	"math/big"
 
-	"github.com/astranetworld/ast/common/block"
-	"github.com/astranetworld/ast/common/hexutil"
-	"github.com/astranetworld/ast/common/math"
-	"github.com/astranetworld/ast/common/transaction"
-	"github.com/astranetworld/ast/common/types"
-	mvm_common "github.com/astranetworld/ast/internal/avm/common"
-	mvm_types "github.com/astranetworld/ast/internal/avm/types"
-	"github.com/astranetworld/ast/modules/rpc/jsonrpc"
+	"github.com/N42world/ast/common/block"
+	"github.com/N42world/ast/common/hexutil"
+	"github.com/N42world/ast/common/math"
+	"github.com/N42world/ast/common/transaction"
+	"github.com/N42world/ast/common/types"
+	mvm_common "github.com/N42world/ast/internal/avm/common"
+	mvm_types "github.com/N42world/ast/internal/avm/types"
+	"github.com/N42world/ast/modules/rpc/jsonrpc"
 )
 
 // TransactionArgs represents

@@ -2,9 +2,9 @@ package txspool
 
 import (
 	"context"
-	"github.com/astranetworld/ast/common/account"
-	"github.com/astranetworld/ast/common/types"
-	"github.com/astranetworld/ast/modules"
+	"github.com/N42world/ast/common/account"
+	"github.com/N42world/ast/common/types"
+	"github.com/N42world/ast/modules"
 	"github.com/holiman/uint256"
 	"github.com/ledgerwatch/erigon-lib/kv"
 )

@@ -19,10 +19,10 @@ package enode
 import (
 	"crypto/ecdsa"
 	"fmt"
-	"github.com/astranetworld/ast/common/crypto"
-	"github.com/astranetworld/ast/common/math"
-	"github.com/astranetworld/ast/internal/avm/rlp"
-	"github.com/astranetworld/ast/internal/p2p/enr"
+	"github.com/N42world/ast/common/crypto"
+	"github.com/N42world/ast/common/math"
+	"github.com/N42world/ast/internal/avm/rlp"
+	"github.com/N42world/ast/internal/p2p/enr"
 	"golang.org/x/crypto/sha3"
 	"io"
 )

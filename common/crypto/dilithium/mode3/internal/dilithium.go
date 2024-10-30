@@ -3,7 +3,7 @@ package internal
 import (
 	cryptoRand "crypto/rand"
 	"crypto/subtle"
-	"github.com/astranetworld/ast/common/crypto/dilithium/internal/common"
+	"github.com/N42world/ast/common/crypto/dilithium/internal/common"
 	"golang.org/x/crypto/sha3"
 	"io"
 )

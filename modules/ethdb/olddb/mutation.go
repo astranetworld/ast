@@ -10,7 +10,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/astranetworld/ast/modules/ethdb"
+	"github.com/N42world/ast/modules/ethdb"
 	"github.com/google/btree"
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"

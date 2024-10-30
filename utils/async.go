@@ -2,7 +2,7 @@ package utils
 
 import (
 	"context"
-	"github.com/astranetworld/ast/log"
+	"github.com/N42world/ast/log"
 	"reflect"
 	"runtime"
 	"time"

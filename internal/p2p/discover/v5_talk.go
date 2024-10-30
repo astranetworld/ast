@@ -17,9 +17,9 @@
 package discover
 
 import (
-	"github.com/astranetworld/ast/internal/p2p/discover/v5wire"
-	"github.com/astranetworld/ast/internal/p2p/enode"
-	"github.com/astranetworld/ast/log"
+	"github.com/N42world/ast/internal/p2p/discover/v5wire"
+	"github.com/N42world/ast/internal/p2p/enode"
+	"github.com/N42world/ast/log"
 	"net"
 	"sync"
 	"time"

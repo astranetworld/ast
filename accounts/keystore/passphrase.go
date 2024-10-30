@@ -1,18 +1,18 @@
-// Copyright 2023 The astranet Authors
-// This file is part of the astranet library.
+// Copyright 2023 The N42 Authors
+// This file is part of the N42 library.
 //
-// The astranet library is free software: you can redistribute it and/or modify
+// The N42 library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The astranet library is distributed in the hope that it will be useful,
+// The N42 library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the astranet library. If not, see <http://www.gnu.org/licenses/>.
+// along with the N42 library. If not, see <http://www.gnu.org/licenses/>.
 /*
 
 This key store behaves as KeyStorePlain with the difference that
@@ -36,10 +36,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/astranetworld/ast/accounts"
-	"github.com/astranetworld/ast/common/crypto"
-	"github.com/astranetworld/ast/common/math"
-	"github.com/astranetworld/ast/common/types"
+	"github.com/N42world/ast/accounts"
+	"github.com/N42world/ast/common/crypto"
+	"github.com/N42world/ast/common/math"
+	"github.com/N42world/ast/common/types"
 	"github.com/google/uuid"
 	"golang.org/x/crypto/pbkdf2"
 	"golang.org/x/crypto/scrypt"
@@ -119,7 +119,7 @@ func (ks keyStorePassphrase) StoreKey(filename string, key *Key, auth string) er
 				"This indicates that the keystore is corrupted. \n" +
 				"The corrupted file is stored at \n%v\n" +
 				"Please file a ticket at:\n\n" +
-				"https://github.com/astranetworld/ast/issues." +
+				"https://github.com/N42world/ast/issues." +
 				"The error was : %s"
 			//lint:ignore ST1005 This is a message for the user
 			return fmt.Errorf(msg, tmpName, err)

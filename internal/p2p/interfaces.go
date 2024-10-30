@@ -2,17 +2,16 @@ package p2p
 
 import (
 	"context"
-	"github.com/astranetworld/ast/api/protocol/sync_pb"
-	"github.com/astranetworld/ast/conf"
-	"github.com/astranetworld/ast/internal/p2p/encoder"
-	"github.com/astranetworld/ast/internal/p2p/enr"
-	"github.com/astranetworld/ast/internal/p2p/peers"
+	"github.com/N42world/ast/api/protocol/sync_pb"
+	"github.com/N42world/ast/conf"
+	"github.com/N42world/ast/internal/p2p/encoder"
+	"github.com/N42world/ast/internal/p2p/enr"
+	"github.com/N42world/ast/internal/p2p/peers"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
 	"github.com/libp2p/go-libp2p/core/connmgr"
 	"github.com/libp2p/go-libp2p/core/host"
 	"github.com/libp2p/go-libp2p/core/network"
 	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/multiformats/go-multiaddr"
 	"google.golang.org/protobuf/proto"
 )
 

@@ -3,9 +3,8 @@ package p2p
 import (
 	"crypto/ecdsa"
 	"fmt"
-	"github.com/astranetworld/ast/params"
-	"github.com/astranetworld/ast/utils"
-	"github.com/libp2p/go-libp2p"
+	"github.com/N42world/ast/params"
+	"github.com/N42world/ast/utils"
 	libp2pquic "github.com/libp2p/go-libp2p/p2p/transport/quic"
 	"net"
 

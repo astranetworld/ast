@@ -1,4 +1,4 @@
-module github.com/astranetworld/ast
+module github.com/N42world/ast
 
 go 1.22
 
@@ -202,7 +202,7 @@ require (
 
 //replace github.com/lucas-clemente/quic-go v0.29.0 => github.com/lucas-clemente/quic-go v0.28.1
 
-//replace github.com/torquem-ch/mdbx-go v0.30.0 => github.com/astranet/mdbx-go v0.0.0-20230203081605-fc0b6278d4f7
+//replace github.com/torquem-ch/mdbx-go v0.30.0 => github.com/N42/mdbx-go v0.0.0-20230203081605-fc0b6278d4f7
 
 replace github.com/VictoriaMetrics/metrics => github.com/ledgerwatch/victoria-metrics v0.0.4
 

@@ -1,8 +1,8 @@
 package internal
 
 import (
-	"github.com/astranetworld/ast/common/crypto/kyber/internal/common"
-	"github.com/astranetworld/ast/common/crypto/sha3"
+	"github.com/N42world/ast/common/crypto/kyber/internal/common"
+	"github.com/N42world/ast/common/crypto/sha3"
 )
 
 // A Kyber.CPAPKE private key.

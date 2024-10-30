@@ -3,10 +3,10 @@ package sync
 import (
 	"context"
 	"fmt"
-	"github.com/astranetworld/ast/api/protocol/types_pb"
-	"github.com/astranetworld/ast/common/block"
-	"github.com/astranetworld/ast/common/types"
-	"github.com/astranetworld/ast/log"
+	"github.com/N42world/ast/api/protocol/types_pb"
+	"github.com/N42world/ast/common/block"
+	"github.com/N42world/ast/common/types"
+	"github.com/N42world/ast/log"
 	"go.opencensus.io/trace"
 	"time"
 

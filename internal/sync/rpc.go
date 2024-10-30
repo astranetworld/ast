@@ -2,9 +2,9 @@ package sync
 
 import (
 	"context"
-	"github.com/astranetworld/ast/internal/p2p"
-	p2ptypes "github.com/astranetworld/ast/internal/p2p/types"
-	"github.com/astranetworld/ast/log"
+	"github.com/N42world/ast/internal/p2p"
+	p2ptypes "github.com/N42world/ast/internal/p2p/types"
+	"github.com/N42world/ast/log"
 	"reflect"
 	"runtime/debug"
 	"time"

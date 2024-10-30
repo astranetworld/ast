@@ -1,43 +1,42 @@
-// Copyright 2023 The astranet Authors
-// This file is part of the astranet library.
+// Copyright 2023 The N42 Authors
+// This file is part of the N42 library.
 //
-// The astranet library is free software: you can redistribute it and/or modify
+// The N42 library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The astranet library is distributed in the hope that it will be useful,
+// The N42 library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the astranet library. If not, see <http://www.gnu.org/licenses/>.
+// along with the N42 library. If not, see <http://www.gnu.org/licenses/>.
 
 package main
 
 import (
 	"fmt"
-	"github.com/astranetworld/ast/log"
-	"github.com/urfave/cli/v2"
+	"github.com/N42world/ast/log"
 	"os"
 
-	"github.com/astranetworld/ast/cmd/utils"
+	"github.com/N42world/ast/cmd/utils"
 
-	"github.com/astranetworld/ast/accounts"
-	"github.com/astranetworld/ast/accounts/keystore"
-	"github.com/astranetworld/ast/common/crypto"
-	"github.com/astranetworld/ast/conf"
-	"github.com/astranetworld/ast/internal/node"
+	"github.com/N42world/ast/accounts"
+	"github.com/N42world/ast/accounts/keystore"
+	"github.com/N42world/ast/common/crypto"
+	"github.com/N42world/ast/conf"
+	"github.com/N42world/ast/internal/node"
 )
 
 var (
 	walletCommand = &cli.Command{
 		Name:      "wallet",
-		Usage:     "Manage astranet presale wallets",
+		Usage:     "Manage N42 presale wallets",
 		ArgsUsage: "",
 		Description: `
-    astranet wallet import /path/to/my/presale.wallet
+    N42 wallet import /path/to/my/presale.wallet
 
 will prompt for your password and imports your ether presale account.
 It can be used non-interactively with the --password option taking a
@@ -56,7 +55,7 @@ passwordfile as argument containing the wallet password in plaintext.`,
 					LightKDFFlag,
 				},
 				Description: `
-	astranet wallet [options] /path/to/my/presale.wallet
+	N42 wallet [options] /path/to/my/presale.wallet
 
 will prompt for your password and imports your ether presale account.
 It can be used non-interactively with the --password option taking a
@@ -111,7 +110,7 @@ Make sure you backup your keys regularly.`,
 					LightKDFFlag,
 				},
 				Description: `
-    astranet account new
+    N42 account new
 
 Creates a new account and prints the address.
 
@@ -136,7 +135,7 @@ password to file or expose in any other way.
 					LightKDFFlag,
 				},
 				Description: `
-    astranet account update <address>
+    N42 account update <address>
 
 Update an existing account.
 
@@ -148,7 +147,7 @@ format to the newest format or change the password for an account.
 
 For non-interactive use the password can be specified with the --password flag:
 
-    astranet account update [options] <address>
+    N42 account update [options] <address>
 
 Since only one password can be given, only format update can be performed,
 changing your password is only possible interactively.
@@ -166,7 +165,7 @@ changing your password is only possible interactively.
 				},
 				ArgsUsage: "<keyFile>",
 				Description: `
-    astranet account import <keyfile>
+    N42 account import <keyfile>
 
 Imports an unencrypted private key from <keyfile> and creates a new account.
 Prints the address.
@@ -179,7 +178,7 @@ You must remember this password to unlock your account in the future.
 
 For non-interactive use the password can be specified with the -password flag:
 
-    astranet account import [options] <keyfile>
+    N42 account import [options] <keyfile>
 
 Note:
 As you can directly copy your encrypted accounts to another ethereum instance,

@@ -3,10 +3,10 @@ package filters
 import (
 	"context"
 	"fmt"
-	"github.com/astranetworld/ast/common/block"
-	"github.com/astranetworld/ast/common/types"
-	mvm_types "github.com/astranetworld/ast/internal/avm/types"
-	"github.com/astranetworld/ast/modules/rpc/jsonrpc"
+	"github.com/N42world/ast/common/block"
+	"github.com/N42world/ast/common/types"
+	mvm_types "github.com/N42world/ast/internal/avm/types"
+	"github.com/N42world/ast/modules/rpc/jsonrpc"
 	"sync"
 	"time"
 )

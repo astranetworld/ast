@@ -1,11 +1,11 @@
 package evmtypes
 
 import (
-	"github.com/astranetworld/ast/common/block"
-	"github.com/astranetworld/ast/common/transaction"
+	"github.com/N42world/ast/common/block"
+	"github.com/N42world/ast/common/transaction"
 	"math/big"
 
-	libcommon "github.com/astranetworld/ast/common/types"
+	libcommon "github.com/N42world/ast/common/types"
 	"github.com/holiman/uint256"
 )
 

@@ -3,8 +3,8 @@ package types
 import (
 	"encoding/json"
 	"errors"
-	"github.com/astranetworld/ast/common/hexutil"
-	"github.com/astranetworld/ast/internal/avm/common"
+	"github.com/N42world/ast/common/hexutil"
+	"github.com/N42world/ast/internal/avm/common"
 )
 
 type Log struct {

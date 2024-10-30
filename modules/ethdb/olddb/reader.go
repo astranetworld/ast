@@ -2,10 +2,10 @@ package olddb
 
 import (
 	"bytes"
-	"github.com/astranetworld/ast/common/account"
-	"github.com/astranetworld/ast/common/crypto"
-	"github.com/astranetworld/ast/common/types"
-	"github.com/astranetworld/ast/modules"
+	"github.com/N42world/ast/common/account"
+	"github.com/N42world/ast/common/crypto"
+	"github.com/N42world/ast/common/types"
+	"github.com/N42world/ast/modules"
 	"unsafe"
 
 	"github.com/ledgerwatch/erigon-lib/kv"

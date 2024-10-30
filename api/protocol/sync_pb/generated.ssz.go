@@ -3,7 +3,7 @@
 package sync_pb
 
 import (
-	types_pb "github.com/astranetworld/ast/api/protocol/types_pb"
+	types_pb "github.com/N42world/ast/api/protocol/types_pb"
 	ssz "github.com/prysmaticlabs/fastssz"
 )
 

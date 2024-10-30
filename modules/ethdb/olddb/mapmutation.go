@@ -4,12 +4,12 @@ import (
 	"context"
 	"encoding/binary"
 	"fmt"
-	"github.com/astranetworld/ast/modules"
+	"github.com/N42world/ast/modules"
 	"sync"
 	"time"
 	"unsafe"
 
-	"github.com/astranetworld/ast/modules/ethdb"
+	"github.com/N42world/ast/modules/ethdb"
 	"github.com/ledgerwatch/erigon-lib/etl"
 	"github.com/ledgerwatch/erigon-lib/kv"
 )

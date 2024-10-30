@@ -2,7 +2,7 @@ package initialsync
 
 import (
 	"context"
-	"github.com/astranetworld/ast/internal/p2p/peers/scorers"
+	"github.com/N42world/ast/internal/p2p/peers/scorers"
 	"math"
 	"sync"
 	"time"

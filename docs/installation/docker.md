@@ -18,19 +18,19 @@ ast docker images for both x86_64 and ARM64 machines are published with every re
 You can obtain the latest image with:
 
 ```bash
-docker pull astranet/ast
+docker pull N42/ast
 ```
 
 Or a specific version (e.g. v0.1.0) with:
 
 ```bash
-docker pull astranet/ast:0.1.0
+docker pull N42/ast:0.1.0
 ```
 
 You can test the image with:
 
 ```bash
-docker run --rm astranet/ast:0.1.0-amd64
+docker run --rm N42/ast:0.1.0-amd64
 ```
 
 If you see the latest ast release version, then you've successfully installed ast via Docker.
@@ -46,7 +46,7 @@ make images
 The build will likely take several minutes. Once it's built, test it with:
 
 ```bash
-docker run astranet/ast:local --version
+docker run N42/ast:local --version
 ```
 
 ## Using the Docker image
@@ -60,12 +60,12 @@ There are two ways to use the Docker image:
 To run ast with Docker, execute:
 
 ```
-docker run -p 6060:6060 -p 61016: 61016 -p 61015: 61015/udp -v astdata:/home/ast/data astranet/ast:local --metrics --metrics.addr '0.0.0.0' 
+docker run -p 6060:6060 -p 61016: 61016 -p 61015: 61015/udp -v astdata:/home/ast/data N42/ast:local --metrics --metrics.addr '0.0.0.0' 
 ```
 
 The above command will create a container named ast and a named volume called astdata for data persistence. It will also expose port 61016 TCP and 61015 UDP for peering with other nodes and port 6060 for metrics.
 
-It will use the local image ast:local. If you want to use the DockerHub Container Registry remote image, use astranet/ast with your preferred tag.
+It will use the local image ast:local. If you want to use the DockerHub Container Registry remote image, use N42/ast with your preferred tag.
 
 ### Using Docker Compose
 

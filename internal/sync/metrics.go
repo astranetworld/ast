@@ -2,8 +2,8 @@ package sync
 
 import (
 	"fmt"
-	"github.com/astranetworld/ast/internal/p2p"
-	"github.com/astranetworld/ast/log"
+	"github.com/N42world/ast/internal/p2p"
+	"github.com/N42world/ast/log"
 	"strings"
 
 	"github.com/prometheus/client_golang/prometheus"

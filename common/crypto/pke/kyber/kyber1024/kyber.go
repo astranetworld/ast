@@ -9,7 +9,7 @@ package kyber1024
 
 import (
 	cryptoRand "crypto/rand"
-	"github.com/astranetworld/ast/common/crypto/pke/kyber/kyber1024/internal"
+	"github.com/N42world/ast/common/crypto/pke/kyber/kyber1024/internal"
 	"io"
 
 )

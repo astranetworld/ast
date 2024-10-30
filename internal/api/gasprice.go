@@ -1,32 +1,32 @@
-// Copyright 2023 The astranet Authors
-// This file is part of the astranet library.
+// Copyright 2023 The N42 Authors
+// This file is part of the N42 library.
 //
-// The astranet library is free software: you can redistribute it and/or modify
+// The N42 library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The astranet library is distributed in the hope that it will be useful,
+// The N42 library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the astranet library. If not, see <http://www.gnu.org/licenses/>.
+// along with the N42 library. If not, see <http://www.gnu.org/licenses/>.
 
 package api
 
 import (
 	"context"
-	common2 "github.com/astranetworld/ast/common"
-	"github.com/astranetworld/ast/common/transaction"
-	types2 "github.com/astranetworld/ast/common/types"
-	"github.com/astranetworld/ast/conf"
-	"github.com/astranetworld/ast/internal/avm/types"
-	"github.com/astranetworld/ast/log"
-	event "github.com/astranetworld/ast/modules/event/v2"
-	"github.com/astranetworld/ast/modules/rpc/jsonrpc"
-	"github.com/astranetworld/ast/params"
+	common2 "github.com/N42world/ast/common"
+	"github.com/N42world/ast/common/transaction"
+	types2 "github.com/N42world/ast/common/types"
+	"github.com/N42world/ast/conf"
+	"github.com/N42world/ast/internal/avm/types"
+	"github.com/N42world/ast/log"
+	event "github.com/N42world/ast/modules/event/v2"
+	"github.com/N42world/ast/modules/rpc/jsonrpc"
+	"github.com/N42world/ast/params"
 	lru "github.com/hashicorp/golang-lru"
 	"github.com/holiman/uint256"
 	"math/big"

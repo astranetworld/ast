@@ -1,18 +1,18 @@
-// Copyright 2023 The astranet Authors
-// This file is part of the astranet library.
+// Copyright 2023 The N42 Authors
+// This file is part of the N42 library.
 //
-// The astranet library is free software: you can redistribute it and/or modify
+// The N42 library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The astranet library is distributed in the hope that it will be useful,
+// The N42 library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the astranet library. If not, see <http://www.gnu.org/licenses/>.
+// along with the N42 library. If not, see <http://www.gnu.org/licenses/>.
 
 package tracetest
 
@@ -21,8 +21,8 @@ import (
 	"unicode"
 
 	// Force-load native and js packages, to trigger registration
-	_ "github.com/astranetworld/ast/internal/tracers/js"
-	_ "github.com/astranetworld/ast/internal/tracers/native"
+	_ "github.com/N42world/ast/internal/tracers/js"
+	_ "github.com/N42world/ast/internal/tracers/native"
 )
 
 // To generate a new callTracer test, copy paste the makeTest method below into

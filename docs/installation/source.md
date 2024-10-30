@@ -29,7 +29,7 @@ Now, via the command line, the binary will be accessible as ast and resides in .
 
 Compilation may take around 1 minute. If `ast --help` displays the [command-line documentation](../cli/cli.md).
 
-If you run into any issues, please check the [Troubleshooting](#troubleshooting) section, or reach out to us on [Telegram](https://t.me/astranett).
+If you run into any issues, please check the [Troubleshooting](#troubleshooting) section, or reach out to us on [Telegram](https://t.me/N42t).
 
 ## Update ast
 

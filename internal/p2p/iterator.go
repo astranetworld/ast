@@ -2,7 +2,7 @@ package p2p
 
 import (
 	"context"
-	"github.com/astranetworld/ast/internal/p2p/enode"
+	"github.com/N42world/ast/internal/p2p/enode"
 )
 
 // filterNodes wraps an iterator such that Next only returns nodes for which

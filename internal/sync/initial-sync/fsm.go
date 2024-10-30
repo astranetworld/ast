@@ -3,7 +3,7 @@ package initialsync
 import (
 	"errors"
 	"fmt"
-	"github.com/astranetworld/ast/api/protocol/types_pb"
+	"github.com/N42world/ast/api/protocol/types_pb"
 	"github.com/holiman/uint256"
 	"sort"
 	"time"

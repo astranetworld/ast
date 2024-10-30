@@ -1,18 +1,18 @@
-// Copyright 2023 The astranet Authors
-// This file is part of the astranet library.
+// Copyright 2023 The N42 Authors
+// This file is part of the N42 library.
 //
-// The astranet library is free software: you can redistribute it and/or modify
+// The N42 library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The astranet library is distributed in the hope that it will be useful,
+// The N42 library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the astranet library. If not, see <http://www.gnu.org/licenses/>.
+// along with the N42 library. If not, see <http://www.gnu.org/licenses/>.
 
 package bind
 
@@ -20,13 +20,13 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	astranet "github.com/astranetworld/ast"
-	"github.com/astranetworld/ast/accounts/abi"
-	"github.com/astranetworld/ast/common/block"
-	"github.com/astranetworld/ast/common/crypto"
-	"github.com/astranetworld/ast/common/transaction"
-	"github.com/astranetworld/ast/common/types"
-	event "github.com/astranetworld/ast/modules/event/v2"
+	N42 "github.com/N42world/ast"
+	"github.com/N42world/ast/accounts/abi"
+	"github.com/N42world/ast/common/block"
+	"github.com/N42world/ast/common/crypto"
+	"github.com/N42world/ast/common/transaction"
+	"github.com/N42world/ast/common/types"
+	event "github.com/N42world/ast/modules/event/v2"
 	"github.com/holiman/uint256"
 	"strings"
 	"sync"
@@ -162,7 +162,7 @@ func (c *BoundContract) Call(opts *CallOpts, results *[]interface{}, method stri
 		return err
 	}
 	var (
-		msg    = astranet.CallMsg{From: opts.From, To: &c.address, Data: input}
+		msg    = N42.CallMsg{From: opts.From, To: &c.address, Data: input}
 		ctx    = ensureContext(opts.Context)
 		code   []byte
 		output []byte
@@ -337,7 +337,7 @@ func (c *BoundContract) estimateGasLimit(opts *TransactOpts, contract *types.Add
 			return 0, ErrNoCode
 		}
 	}
-	msg := astranet.CallMsg{
+	msg := N42.CallMsg{
 		From:      opts.From,
 		To:        contract,
 		GasPrice:  gasPrice,
@@ -421,7 +421,7 @@ func (c *BoundContract) FilterLogs(opts *FilterOpts, name string, query ...[]int
 	// Start the background filtering
 	logs := make(chan block.Log, 128)
 
-	config := astranet.FilterQuery{
+	config := N42.FilterQuery{
 		Addresses: []types.Address{c.address},
 		Topics:    topics,
 		FromBlock: uint256.NewInt(opts.Start),
@@ -470,7 +470,7 @@ func (c *BoundContract) WatchLogs(opts *WatchOpts, name string, query ...[]inter
 	// Start the background filtering
 	logs := make(chan block.Log, 128)
 
-	config := astranet.FilterQuery{
+	config := N42.FilterQuery{
 		Addresses: []types.Address{c.address},
 		Topics:    topics,
 	}

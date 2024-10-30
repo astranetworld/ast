@@ -1,18 +1,18 @@
-// Copyright 2022 The astranet Authors
-// This file is part of the astranet library.
+// Copyright 2022 The N42 Authors
+// This file is part of the N42 library.
 //
-// The astranet library is free software: you can redistribute it and/or modify
+// The N42 library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The astranet library is distributed in the hope that it will be useful,
+// The N42 library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the astranet library. If not, see <http://www.gnu.org/licenses/>.
+// along with the N42 library. If not, see <http://www.gnu.org/licenses/>.
 
 package node
 
@@ -20,31 +20,30 @@ import (
 	"context"
 	"crypto/rand"
 	"fmt"
-	"github.com/astranetworld/ast/common/hexutil"
-	"github.com/astranetworld/ast/contracts/deposit"
-	amtdeposit "github.com/astranetworld/ast/contracts/deposit/AMT"
-	fujideposit "github.com/astranetworld/ast/contracts/deposit/FUJI"
-	nftdeposit "github.com/astranetworld/ast/contracts/deposit/NFT"
-	"github.com/astranetworld/ast/internal/debug"
-	"github.com/astranetworld/ast/internal/metrics/prometheus"
-	"github.com/astranetworld/ast/internal/p2p"
-	astsync "github.com/astranetworld/ast/internal/sync"
-	initialsync "github.com/astranetworld/ast/internal/sync/initial-sync"
-	"github.com/astranetworld/ast/internal/tracers"
+	"github.com/N42world/ast/common/hexutil"
+	"github.com/N42world/ast/contracts/deposit"
+	amtdeposit "github.com/N42world/ast/contracts/deposit/AMT"
+	fujideposit "github.com/N42world/ast/contracts/deposit/FUJI"
+	nftdeposit "github.com/N42world/ast/contracts/deposit/NFT"
+	"github.com/N42world/ast/internal/debug"
+	"github.com/N42world/ast/internal/metrics/prometheus"
+	"github.com/N42world/ast/internal/p2p"
+	astsync "github.com/N42world/ast/internal/sync"
+	initialsync "github.com/N42world/ast/internal/sync/initial-sync"
+	"github.com/N42world/ast/internal/tracers"
 	"github.com/gofrs/flock"
 	"github.com/ledgerwatch/erigon-lib/common/cmp"
 	"github.com/pkg/errors"
-	"github.com/urfave/cli/v2"
 	"hash/crc32"
 	"net"
 	"path"
 	"runtime"
 	"strings"
 
-	"github.com/astranetworld/ast/internal"
-	"github.com/astranetworld/ast/internal/api"
+	"github.com/N42world/ast/internal"
+	"github.com/N42world/ast/internal/api"
 
-	"github.com/astranetworld/ast/modules"
+	"github.com/N42world/ast/modules"
 	"github.com/c2h5oh/datasize"
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/erigon-lib/kv/mdbx"
@@ -52,29 +51,29 @@ import (
 	log2 "github.com/ledgerwatch/log/v3"
 	"golang.org/x/sync/semaphore"
 
-	"github.com/astranetworld/ast/log"
+	"github.com/N42world/ast/log"
 	"os"
 	"path/filepath"
 	"strconv"
 
-	"github.com/astranetworld/ast/accounts"
-	"github.com/astranetworld/ast/accounts/keystore"
-	"github.com/astranetworld/ast/common"
-	"github.com/astranetworld/ast/common/block"
-	"github.com/astranetworld/ast/common/transaction"
-	"github.com/astranetworld/ast/common/types"
-	"github.com/astranetworld/ast/conf"
+	"github.com/N42world/ast/accounts"
+	"github.com/N42world/ast/accounts/keystore"
+	"github.com/N42world/ast/common"
+	"github.com/N42world/ast/common/block"
+	"github.com/N42world/ast/common/transaction"
+	"github.com/N42world/ast/common/types"
+	"github.com/N42world/ast/conf"
 	"sync"
 
-	"github.com/astranetworld/ast/internal/consensus"
-	"github.com/astranetworld/ast/internal/consensus/apoa"
-	"github.com/astranetworld/ast/internal/consensus/apos"
-	"github.com/astranetworld/ast/internal/miner"
-	"github.com/astranetworld/ast/internal/txspool"
-	"github.com/astranetworld/ast/modules/rawdb"
-	"github.com/astranetworld/ast/modules/rpc/jsonrpc"
-	"github.com/astranetworld/ast/params"
-	"github.com/astranetworld/ast/utils"
+	"github.com/N42world/ast/internal/consensus"
+	"github.com/N42world/ast/internal/consensus/apoa"
+	"github.com/N42world/ast/internal/consensus/apos"
+	"github.com/N42world/ast/internal/miner"
+	"github.com/N42world/ast/internal/txspool"
+	"github.com/N42world/ast/modules/rawdb"
+	"github.com/N42world/ast/modules/rpc/jsonrpc"
+	"github.com/N42world/ast/params"
+	"github.com/N42world/ast/utils"
 	"go.uber.org/zap"
 )
 

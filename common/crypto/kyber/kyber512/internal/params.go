@@ -3,7 +3,7 @@
 package internal
 
 import (
-	"github.com/astranetworld/ast/common/crypto/kyber/internal/common"
+	"github.com/N42world/ast/common/crypto/kyber/internal/common"
 )
 
 const (

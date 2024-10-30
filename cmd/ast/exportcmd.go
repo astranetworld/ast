@@ -1,18 +1,18 @@
-// Copyright 2023 The astranet Authors
-// This file is part of the astranet library.
+// Copyright 2023 The N42 Authors
+// This file is part of the N42 library.
 //
-// The astranet library is free software: you can redistribute it and/or modify
+// The N42 library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The astranet library is distributed in the hope that it will be useful,
+// The N42 library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the astranet library. If not, see <http://www.gnu.org/licenses/>.
+// along with the N42 library. If not, see <http://www.gnu.org/licenses/>.
 
 package main
 
@@ -20,16 +20,15 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/astranetworld/ast/common/account"
-	common "github.com/astranetworld/ast/common/types"
-	"github.com/astranetworld/ast/internal/node"
-	"github.com/astranetworld/ast/log"
-	"github.com/astranetworld/ast/modules"
-	"github.com/astranetworld/ast/params"
-	"github.com/astranetworld/ast/turbo/backup"
+	"github.com/N42world/ast/common/account"
+	common "github.com/N42world/ast/common/types"
+	"github.com/N42world/ast/internal/node"
+	"github.com/N42world/ast/log"
+	"github.com/N42world/ast/modules"
+	"github.com/N42world/ast/params"
+	"github.com/N42world/ast/turbo/backup"
 	"github.com/holiman/uint256"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/urfave/cli/v2"
 	"math/big"
 	"os"
 	"time"
@@ -38,13 +37,13 @@ import (
 var (
 	exportCommand = &cli.Command{
 		Name:        "export",
-		Usage:       "Export astranet data",
+		Usage:       "Export N42 data",
 		ArgsUsage:   "",
 		Description: ``,
 		Subcommands: []*cli.Command{
 			{
 				Name:      "txs",
-				Usage:     "Export All astranet Transactions",
+				Usage:     "Export All N42 Transactions",
 				ArgsUsage: "",
 				Action:    exportTransactions,
 				Flags: []cli.Flag{
@@ -54,7 +53,7 @@ var (
 			},
 			{
 				Name:      "balance",
-				Usage:     "Export All astranet account balance",
+				Usage:     "Export All N42 account balance",
 				ArgsUsage: "",
 				Action:    exportBalance,
 				Flags: []cli.Flag{

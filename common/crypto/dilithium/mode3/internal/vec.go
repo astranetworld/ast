@@ -1,7 +1,7 @@
 package internal
 
 import (
-	"github.com/astranetworld/ast/common/crypto/dilithium/internal/common"
+	"github.com/N42world/ast/common/crypto/dilithium/internal/common"
 )
 
 // A vector of L polynomials.

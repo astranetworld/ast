@@ -1,12 +1,12 @@
 ---
-description: Fundamental shared values and special norms that distinguish astranet's community.
+description: Fundamental shared values and special norms that distinguish N42's community.
 ---
 
-# astranet Code of Conduct
+# N42 Code of Conduct
 
 ## Our Pledge
 
-As a member, contributor and leader of astranet,
+As a member, contributor and leader of N42,
 We are committed to creating an inclusive environment within our community.
 We strive to ensure that everyone, regardless of age, physical characteristics,
 Disability, cultural background, gender identity, professional level,
@@ -64,7 +64,7 @@ representative at an online or offline event.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at astranet Discord.
+reported to the community leaders responsible for enforcement at N42 Discord.
 All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the

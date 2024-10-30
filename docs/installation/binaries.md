@@ -5,6 +5,6 @@ Archives of pre-compiled binary files ready for Windows, macOS, and Linux are av
 If you use macOS Homebrew or Linuxbrew, you can install ast from Amaze's homebrew tap:
 
 ```text
-brew install astranet/ast
+brew install N42/ast
 ```
 

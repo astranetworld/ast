@@ -3,7 +3,7 @@
 ast provides a variety of metrics, listed here. To serve them from an HTTP endpoint, add the `--metrics` flag:
 
 ```bash
-astranet --metrics --metrics.addr '0.0.0.0' --metrics.port '6060'
+N42 --metrics --metrics.addr '0.0.0.0' --metrics.port '6060'
 ```
 
 While the node is running, you can use the `curl` command to access the endpoint specified by the `--metrics.port` flag to obtain a text dump of the metrics:

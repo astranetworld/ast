@@ -19,8 +19,8 @@ package prometheus
 
 import (
 	"fmt"
+	"github.com/N42world/ast/log"
 	metrics2 "github.com/VictoriaMetrics/metrics"
-	"github.com/astranetworld/ast/log"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/common/expfmt"
 

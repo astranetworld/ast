@@ -3,11 +3,11 @@ package sync
 import (
 	"context"
 	"fmt"
-	ssztype "github.com/astranetworld/ast/common/types/ssz"
-	"github.com/astranetworld/ast/internal/p2p"
-	p2ptypes "github.com/astranetworld/ast/internal/p2p/types"
-	"github.com/astranetworld/ast/log"
-	"github.com/astranetworld/ast/utils"
+	ssztype "github.com/N42world/ast/common/types/ssz"
+	"github.com/N42world/ast/internal/p2p"
+	p2ptypes "github.com/N42world/ast/internal/p2p/types"
+	"github.com/N42world/ast/log"
+	"github.com/N42world/ast/utils"
 	"time"
 
 	libp2pcore "github.com/libp2p/go-libp2p/core"

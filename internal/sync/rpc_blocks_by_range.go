@@ -3,11 +3,11 @@ package sync
 import (
 	"context"
 	"fmt"
-	"github.com/astranetworld/ast/api/protocol/sync_pb"
-	types "github.com/astranetworld/ast/common/block"
-	p2ptypes "github.com/astranetworld/ast/internal/p2p/types"
-	"github.com/astranetworld/ast/log"
-	"github.com/astranetworld/ast/utils"
+	"github.com/N42world/ast/api/protocol/sync_pb"
+	types "github.com/N42world/ast/common/block"
+	p2ptypes "github.com/N42world/ast/internal/p2p/types"
+	"github.com/N42world/ast/log"
+	"github.com/N42world/ast/utils"
 	"github.com/holiman/uint256"
 	"time"
 

@@ -2,10 +2,10 @@ package scorers
 
 import (
 	"errors"
-	"github.com/astranetworld/ast/api/protocol/sync_pb"
-	"github.com/astranetworld/ast/internal/p2p/peers/peerdata"
-	p2ptypes "github.com/astranetworld/ast/internal/p2p/types"
-	"github.com/astranetworld/ast/utils"
+	"github.com/N42world/ast/api/protocol/sync_pb"
+	"github.com/N42world/ast/internal/p2p/peers/peerdata"
+	p2ptypes "github.com/N42world/ast/internal/p2p/types"
+	"github.com/N42world/ast/utils"
 	"github.com/holiman/uint256"
 	"math"
 	"time"

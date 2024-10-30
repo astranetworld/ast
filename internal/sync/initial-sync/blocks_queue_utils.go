@@ -3,7 +3,7 @@ package initialsync
 import (
 	"context"
 	"errors"
-	"github.com/astranetworld/ast/utils"
+	"github.com/N42world/ast/utils"
 	"github.com/holiman/uint256"
 )
 

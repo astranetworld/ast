@@ -1,13 +1,13 @@
 package apos
 
 import (
-	"github.com/astranetworld/ast/common/block"
-	"github.com/astranetworld/ast/common/math"
-	"github.com/astranetworld/ast/common/types"
-	"github.com/astranetworld/ast/internal/consensus"
-	"github.com/astranetworld/ast/log"
-	"github.com/astranetworld/ast/modules/state"
-	"github.com/astranetworld/ast/params"
+	"github.com/N42world/ast/common/block"
+	"github.com/N42world/ast/common/math"
+	"github.com/N42world/ast/common/types"
+	"github.com/N42world/ast/internal/consensus"
+	"github.com/N42world/ast/log"
+	"github.com/N42world/ast/modules/state"
+	"github.com/N42world/ast/params"
 	"github.com/holiman/uint256"
 	"sort"
 )

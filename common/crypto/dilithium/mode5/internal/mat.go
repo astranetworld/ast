@@ -3,7 +3,7 @@
 package internal
 
 import (
-	"github.com/astranetworld/ast/common/crypto/dilithium/internal/common"
+	"github.com/N42world/ast/common/crypto/dilithium/internal/common"
 )
 
 // A k by l matrix of polynomials.

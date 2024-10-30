@@ -3,10 +3,10 @@ package initialsync
 import (
 	"context"
 	"errors"
-	"github.com/astranetworld/ast/api/protocol/types_pb"
-	"github.com/astranetworld/ast/common"
-	"github.com/astranetworld/ast/internal/p2p"
-	astsync "github.com/astranetworld/ast/internal/sync"
+	"github.com/N42world/ast/api/protocol/types_pb"
+	"github.com/N42world/ast/common"
+	"github.com/N42world/ast/internal/p2p"
+	astsync "github.com/N42world/ast/internal/sync"
 	"github.com/holiman/uint256"
 	"time"
 

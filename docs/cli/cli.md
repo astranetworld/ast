@@ -15,7 +15,7 @@ See below for the full list of commands.
 ```
 $ ast --help
 NAME:
-   ast - astranet system
+   ast - N42 system
 
 USAGE:
    ast [global options] command [command options] [arguments...]
@@ -24,9 +24,9 @@ VERSION:
    0.01.1-36074172
 
 COMMANDS:
-   wallet   Manage astranet presale wallets
+   wallet   Manage N42 presale wallets
    account  Manage accounts
-   export   Export astranet data
+   export   Export N42 data
    help, h  Shows a list of commands or help for one command
 
 GLOBAL OPTIONS:

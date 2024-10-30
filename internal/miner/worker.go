@@ -1,18 +1,18 @@
-// Copyright 2022 The astranet Authors
-// This file is part of the astranet library.
+// Copyright 2022 The N42 Authors
+// This file is part of the N42 library.
 //
-// The astranet library is free software: you can redistribute it and/or modify
+// The N42 library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The astranet library is distributed in the hope that it will be useful,
+// The N42 library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the astranet library. If not, see <http://www.gnu.org/licenses/>.
+// along with the N42 library. If not, see <http://www.gnu.org/licenses/>.
 
 package miner
 
@@ -20,33 +20,33 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/astranetworld/ast/core"
-	"github.com/astranetworld/ast/internal/api"
-	"github.com/astranetworld/ast/internal/consensus/misc"
-	"github.com/astranetworld/ast/internal/metrics/prometheus"
+	"github.com/N42world/ast/core"
+	"github.com/N42world/ast/internal/api"
+	"github.com/N42world/ast/internal/consensus/misc"
+	"github.com/N42world/ast/internal/metrics/prometheus"
 	"github.com/holiman/uint256"
 	"sort"
 	"sync"
 
-	"github.com/astranetworld/ast/modules/rawdb"
+	"github.com/N42world/ast/modules/rawdb"
 
-	"github.com/astranetworld/ast/internal"
-	vm2 "github.com/astranetworld/ast/internal/vm"
-	"github.com/astranetworld/ast/modules/state"
+	"github.com/N42world/ast/internal"
+	vm2 "github.com/N42world/ast/internal/vm"
+	"github.com/N42world/ast/modules/state"
 
 	"sync/atomic"
 	"time"
 
-	"github.com/astranetworld/ast/common"
-	"github.com/astranetworld/ast/common/block"
-	"github.com/astranetworld/ast/common/transaction"
-	"github.com/astranetworld/ast/common/types"
-	"github.com/astranetworld/ast/conf"
+	"github.com/N42world/ast/common"
+	"github.com/N42world/ast/common/block"
+	"github.com/N42world/ast/common/transaction"
+	"github.com/N42world/ast/common/types"
+	"github.com/N42world/ast/conf"
 
-	"github.com/astranetworld/ast/internal/consensus"
-	"github.com/astranetworld/ast/log"
-	event "github.com/astranetworld/ast/modules/event/v2"
-	"github.com/astranetworld/ast/params"
+	"github.com/N42world/ast/internal/consensus"
+	"github.com/N42world/ast/log"
+	event "github.com/N42world/ast/modules/event/v2"
+	"github.com/N42world/ast/params"
 
 	mapset "github.com/deckarep/golang-set"
 	"golang.org/x/sync/errgroup"

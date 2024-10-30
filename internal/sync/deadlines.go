@@ -1,7 +1,7 @@
 package sync
 
 import (
-	"github.com/astranetworld/ast/log"
+	"github.com/N42world/ast/log"
 	"strings"
 	"time"
 

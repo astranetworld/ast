@@ -26,10 +26,10 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-	"github.com/astranetworld/ast/common/mclock"
-	"github.com/astranetworld/ast/internal/avm/rlp"
-	"github.com/astranetworld/ast/internal/p2p/enode"
-	"github.com/astranetworld/ast/internal/p2p/enr"
+	"github.com/N42world/ast/common/mclock"
+	"github.com/N42world/ast/internal/avm/rlp"
+	"github.com/N42world/ast/internal/p2p/enode"
+	"github.com/N42world/ast/internal/p2p/enr"
 	"hash"
 )
 

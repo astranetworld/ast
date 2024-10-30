@@ -2,12 +2,11 @@ package utils
 
 import (
 	"crypto/ecdsa"
-	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/libp2p/go-libp2p/core/crypto"
 	"github.com/pkg/errors"
 	"math/big"
 
-	ast_crypto "github.com/astranetworld/ast/common/crypto"
+	ast_crypto "github.com/N42world/ast/common/crypto"
 )
 
 func ConvertFromInterfacePrivKey(privkey crypto.PrivKey) (*ecdsa.PrivateKey, error) {

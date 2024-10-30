@@ -5,10 +5,10 @@ package logger
 import (
 	"encoding/json"
 
-	"github.com/astranetworld/ast/common/hexutil"
-	"github.com/astranetworld/ast/common/math"
-	"github.com/astranetworld/ast/common/types"
-	"github.com/astranetworld/ast/internal/vm"
+	"github.com/N42world/ast/common/hexutil"
+	"github.com/N42world/ast/common/math"
+	"github.com/N42world/ast/common/types"
+	"github.com/N42world/ast/internal/vm"
 	"github.com/holiman/uint256"
 )
 

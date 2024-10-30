@@ -2,7 +2,7 @@ package initialsync
 
 import (
 	"context"
-	"github.com/astranetworld/ast/api/protocol/types_pb"
+	"github.com/N42world/ast/api/protocol/types_pb"
 	"github.com/holiman/uint256"
 	"github.com/libp2p/go-libp2p/core/peer"
 	"github.com/pkg/errors"

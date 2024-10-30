@@ -1,28 +1,28 @@
-// Copyright 2023 The astranet Authors
-// This file is part of the astranet library.
+// Copyright 2023 The N42 Authors
+// This file is part of the N42 library.
 //
-// The astranet library is free software: you can redistribute it and/or modify
+// The N42 library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The astranet library is distributed in the hope that it will be useful,
+// The N42 library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the astranet library. If not, see <http://www.gnu.org/licenses/>.
+// along with the N42 library. If not, see <http://www.gnu.org/licenses/>.
 
 package bind
 
 import (
 	"context"
 	"errors"
-	astranet "github.com/astranetworld/ast"
-	"github.com/astranetworld/ast/common/block"
-	"github.com/astranetworld/ast/common/transaction"
-	"github.com/astranetworld/ast/common/types"
+	N42 "github.com/N42world/ast"
+	"github.com/N42world/ast/common/block"
+	"github.com/N42world/ast/common/transaction"
+	"github.com/N42world/ast/common/types"
 	"github.com/holiman/uint256"
 	"math/big"
 )
@@ -51,7 +51,7 @@ type ContractCaller interface {
 
 	// CallContract executes an Ethereum contract call with the specified data as the
 	// input.
-	CallContract(ctx context.Context, call astranet.CallMsg, blockNumber *uint256.Int) ([]byte, error)
+	CallContract(ctx context.Context, call N42.CallMsg, blockNumber *uint256.Int) ([]byte, error)
 }
 
 // PendingContractCaller defines methods to perform contract calls on the pending state.
@@ -62,7 +62,7 @@ type PendingContractCaller interface {
 	PendingCodeAt(ctx context.Context, contract types.Address) ([]byte, error)
 
 	// PendingCallContract executes an Ethereum contract call against the pending state.
-	PendingCallContract(ctx context.Context, call astranet.CallMsg) ([]byte, error)
+	PendingCallContract(ctx context.Context, call N42.CallMsg) ([]byte, error)
 }
 
 // ContractTransactor defines the methods needed to allow operating with a contract
@@ -93,7 +93,7 @@ type ContractTransactor interface {
 	// There is no guarantee that this is the true gas limit requirement as other
 	// transactions may be added or removed by miners, but it should provide a basis
 	// for setting a reasonable default.
-	EstimateGas(ctx context.Context, call astranet.CallMsg) (gas uint64, err error)
+	EstimateGas(ctx context.Context, call N42.CallMsg) (gas uint64, err error)
 
 	// SendTransaction injects the transaction into the pending pool for execution.
 	SendTransaction(ctx context.Context, tx *transaction.Transaction) error
@@ -106,11 +106,11 @@ type ContractFilterer interface {
 	// returning all the results in one batch.
 	//
 	// TODO(karalabe): Deprecate when the subscription one can return past data too.
-	FilterLogs(ctx context.Context, query astranet.FilterQuery) ([]block.Log, error)
+	FilterLogs(ctx context.Context, query N42.FilterQuery) ([]block.Log, error)
 
 	// SubscribeFilterLogs creates a background log filtering operation, returning
 	// a subscription immediately, which can be used to stream the found events.
-	SubscribeFilterLogs(ctx context.Context, query astranet.FilterQuery, ch chan<- block.Log) (astranet.Subscription, error)
+	SubscribeFilterLogs(ctx context.Context, query N42.FilterQuery, ch chan<- block.Log) (N42.Subscription, error)
 }
 
 // DeployBackend wraps the operations needed by WaitMined and WaitDeployed.

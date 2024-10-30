@@ -2,7 +2,7 @@ package p2p
 
 import (
 	"fmt"
-	"github.com/astranetworld/ast/internal/p2p/encoder"
+	"github.com/N42world/ast/internal/p2p/encoder"
 	"strings"
 
 	pubsub "github.com/libp2p/go-libp2p-pubsub"

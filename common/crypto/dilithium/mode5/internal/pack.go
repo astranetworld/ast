@@ -3,7 +3,7 @@
 package internal
 
 import (
-	"github.com/astranetworld/ast/common/crypto/dilithium/internal/common"
+	"github.com/N42world/ast/common/crypto/dilithium/internal/common"
 )
 
 // Writes p with norm less than or equal η into buf, which must be of

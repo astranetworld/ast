@@ -2,8 +2,8 @@ package sync
 
 import (
 	"context"
-	block2 "github.com/astranetworld/ast/common/block"
-	"github.com/astranetworld/ast/log"
+	block2 "github.com/N42world/ast/common/block"
+	"github.com/N42world/ast/log"
 	"google.golang.org/protobuf/proto"
 )
 

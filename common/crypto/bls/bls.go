@@ -4,8 +4,8 @@
 package bls
 
 import (
-	"github.com/astranetworld/ast/common/crypto/bls/blst"
-	"github.com/astranetworld/ast/common/crypto/bls/common"
+	"github.com/N42world/ast/common/crypto/bls/blst"
+	"github.com/N42world/ast/common/crypto/bls/common"
 )
 
 // Initialize herumi temporarily while we transition to blst for ethdo.

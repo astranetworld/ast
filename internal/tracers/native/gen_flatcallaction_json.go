@@ -6,8 +6,8 @@ import (
 	"encoding/json"
 	"math/big"
 
-	"github.com/astranetworld/ast/common/hexutil"
-	"github.com/astranetworld/ast/common/types"
+	"github.com/N42world/ast/common/hexutil"
+	"github.com/N42world/ast/common/types"
 )
 
 var _ = (*flatCallActionMarshaling)(nil)

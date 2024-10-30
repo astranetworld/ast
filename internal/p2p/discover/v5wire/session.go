@@ -20,12 +20,12 @@ import (
 	"crypto/ecdsa"
 	crand "crypto/rand"
 	"encoding/binary"
-	"github.com/astranetworld/ast/common/crypto"
+	"github.com/N42world/ast/common/crypto"
 	lru "github.com/hashicorp/golang-lru/v2"
 	"time"
 
-	"github.com/astranetworld/ast/common/mclock"
-	"github.com/astranetworld/ast/internal/p2p/enode"
+	"github.com/N42world/ast/common/mclock"
+	"github.com/N42world/ast/internal/p2p/enode"
 )
 
 const handshakeTimeout = time.Second

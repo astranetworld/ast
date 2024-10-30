@@ -1,7 +1,7 @@
 package internal
 
 import (
-	"github.com/astranetworld/ast/common/crypto/pke/kyber/internal/common"
+	"github.com/N42world/ast/common/crypto/pke/kyber/internal/common"
 )
 
 // A vector of K polynomials

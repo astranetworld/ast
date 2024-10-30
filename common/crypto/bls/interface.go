@@ -1,6 +1,6 @@
 package bls
 
-import "github.com/astranetworld/ast/common/crypto/bls/common"
+import "github.com/N42world/ast/common/crypto/bls/common"
 
 // PublicKey represents a BLS public key.
 type PublicKey = common.PublicKey

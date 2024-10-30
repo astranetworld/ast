@@ -2,8 +2,8 @@ package vm
 
 import (
 	"fmt"
-	"github.com/astranetworld/ast/common/types"
-	"github.com/astranetworld/ast/modules/state"
+	"github.com/N42world/ast/common/types"
+	"github.com/N42world/ast/modules/state"
 	"math/big"
 
 	"github.com/holiman/uint256"

@@ -5,9 +5,9 @@ package blst
 import (
 	"fmt"
 
-	"github.com/astranetworld/ast/common/crypto/bls/common"
-	"github.com/astranetworld/ast/common/hexutil"
-	"github.com/astranetworld/ast/log"
+	"github.com/N42world/ast/common/crypto/bls/common"
+	"github.com/N42world/ast/common/hexutil"
+	"github.com/N42world/ast/log"
 	lru "github.com/hashicorp/golang-lru"
 	"github.com/pkg/errors"
 )

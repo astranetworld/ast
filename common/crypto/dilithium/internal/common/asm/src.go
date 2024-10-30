@@ -5,11 +5,7 @@
 package main
 
 import (
-	. "github.com/mmcloughlin/avo/build"   // nolint:golint,stylecheck
-	. "github.com/mmcloughlin/avo/operand" // nolint:golint,stylecheck
-	. "github.com/mmcloughlin/avo/reg"     // nolint:golint,stylecheck
-
-	"github.com/astranetworld/ast/common/crypto/dilithium/internal/common/params"
+	"github.com/N42world/ast/common/crypto/dilithium/internal/common/params"
 )
 
 // XXX align Poly on 16 bytes such that we can use aligned moves

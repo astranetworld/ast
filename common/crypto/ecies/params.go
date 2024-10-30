@@ -42,7 +42,7 @@ import (
 	"fmt"
 	"hash"
 
-	ethcrypto "github.com/astranetworld/ast/common/crypto"
+	ethcrypto "github.com/N42world/ast/common/crypto"
 )
 
 var (

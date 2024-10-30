@@ -1,38 +1,38 @@
-// Copyright 2023 The astranet Authors
-// This file is part of the astranet library.
+// Copyright 2023 The N42 Authors
+// This file is part of the N42 library.
 //
-// The astranet library is free software: you can redistribute it and/or modify
+// The N42 library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The astranet library is distributed in the hope that it will be useful,
+// The N42 library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the astranet library. If not, see <http://www.gnu.org/licenses/>.
+// along with the N42 library. If not, see <http://www.gnu.org/licenses/>.
 package vm
 
 import (
 	"crypto/sha256"
 	"encoding/binary"
 	"errors"
-	"github.com/astranetworld/ast/common/crypto/blake2b"
-	"github.com/astranetworld/ast/common/crypto/bls12381"
-	"github.com/astranetworld/ast/common/crypto/bn256"
-	"github.com/astranetworld/ast/common/types"
-	"github.com/astranetworld/ast/internal/avm/common"
+	"github.com/N42world/ast/common/crypto/blake2b"
+	"github.com/N42world/ast/common/crypto/bls12381"
+	"github.com/N42world/ast/common/crypto/bn256"
+	"github.com/N42world/ast/common/types"
+	"github.com/N42world/ast/internal/avm/common"
 	"math/big"
 
 	"github.com/holiman/uint256"
 
-	"github.com/astranetworld/ast/common/crypto"
-	"github.com/astranetworld/ast/common/math"
+	"github.com/N42world/ast/common/crypto"
+	"github.com/N42world/ast/common/math"
 
 	//lint:ignore SA1019 Needed for precompile
-	"github.com/astranetworld/ast/params"
+	"github.com/N42world/ast/params"
 	"golang.org/x/crypto/ripemd160"
 )
 

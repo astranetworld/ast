@@ -1,18 +1,18 @@
-// Copyright 2022 The astranet Authors
-// This file is part of the astranet library.
+// Copyright 2022 The N42 Authors
+// This file is part of the N42 library.
 //
-// The astranet library is free software: you can redistribute it and/or modify
+// The N42 library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The astranet library is distributed in the hope that it will be useful,
+// The N42 library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the astranet library. If not, see <http://www.gnu.org/licenses/>.
+// along with the N42 library. If not, see <http://www.gnu.org/licenses/>.
 
 package internal
 
@@ -20,9 +20,9 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/astranetworld/ast/contracts/deposit"
-	"github.com/astranetworld/ast/internal/metrics/prometheus"
-	"github.com/astranetworld/ast/internal/p2p"
+	"github.com/N42world/ast/contracts/deposit"
+	"github.com/N42world/ast/internal/metrics/prometheus"
+	"github.com/N42world/ast/internal/p2p"
 	"github.com/holiman/uint256"
 	"google.golang.org/protobuf/proto"
 	"sort"
@@ -30,18 +30,18 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/astranetworld/ast/modules/state"
-	"github.com/astranetworld/ast/params"
+	"github.com/N42world/ast/modules/state"
+	"github.com/N42world/ast/params"
 	"github.com/ledgerwatch/erigon-lib/kv"
 
-	"github.com/astranetworld/ast/api/protocol/msg_proto"
-	"github.com/astranetworld/ast/common"
-	block2 "github.com/astranetworld/ast/common/block"
-	"github.com/astranetworld/ast/common/types"
-	"github.com/astranetworld/ast/internal/consensus"
-	"github.com/astranetworld/ast/log"
-	event "github.com/astranetworld/ast/modules/event/v2"
-	"github.com/astranetworld/ast/modules/rawdb"
+	"github.com/N42world/ast/api/protocol/msg_proto"
+	"github.com/N42world/ast/common"
+	block2 "github.com/N42world/ast/common/block"
+	"github.com/N42world/ast/common/types"
+	"github.com/N42world/ast/internal/consensus"
+	"github.com/N42world/ast/log"
+	event "github.com/N42world/ast/modules/event/v2"
+	"github.com/N42world/ast/modules/rawdb"
 	lru "github.com/hashicorp/golang-lru/v2"
 	"github.com/libp2p/go-libp2p/core/peer"
 )
@@ -1055,7 +1055,7 @@ func (bc *BlockChain) insertChain(chain []block2.IBlock) (int, error) {
 		// write state
 		//if err := bc.ChainDB.Update(bc.ctx, func(tx kv.RwTx) error {
 		//	stateWrite := state.NewPlainStateWriter(batch, tx, block.Number64().Uint64())
-		//	if err := ibs.CommitBlock(params.astranetConfig.Rules(block.Number64().Uint64()), stateWrite); nil != err {
+		//	if err := ibs.CommitBlock(params.N42Config.Rules(block.Number64().Uint64()), stateWrite); nil != err {
 		//		return err
 		//	}
 		//	return nil

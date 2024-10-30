@@ -2,8 +2,7 @@ package p2p
 
 import (
 	"fmt"
-	"github.com/astranetworld/ast/conf"
-	"github.com/multiformats/go-multiaddr"
+	"github.com/N42world/ast/conf"
 	"net"
 	"runtime"
 

@@ -2,8 +2,8 @@ package common
 
 import (
 	"encoding/binary"
-	"github.com/astranetworld/ast/common/crypto/keccakf1600"
-	"github.com/astranetworld/ast/common/crypto/sha3"
+	"github.com/N42world/ast/common/crypto/keccakf1600"
+	"github.com/N42world/ast/common/crypto/sha3"
 )
 
 // DeriveX4Available indicates whether the system supports the quick fourway

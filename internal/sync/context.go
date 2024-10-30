@@ -1,8 +1,8 @@
 package sync
 
 import (
-	"github.com/astranetworld/ast/common"
-	"github.com/astranetworld/ast/internal/p2p"
+	"github.com/N42world/ast/common"
+	"github.com/N42world/ast/internal/p2p"
 	"github.com/libp2p/go-libp2p/core/network"
 	"github.com/libp2p/go-libp2p/core/protocol"
 	"github.com/pkg/errors"

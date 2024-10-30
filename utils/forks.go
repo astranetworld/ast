@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"github.com/astranetworld/ast/common/types"
+	"github.com/N42world/ast/common/types"
 	"github.com/holiman/uint256"
 )
 

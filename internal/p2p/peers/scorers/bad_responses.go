@@ -1,7 +1,7 @@
 package scorers
 
 import (
-	"github.com/astranetworld/ast/internal/p2p/peers/peerdata"
+	"github.com/N42world/ast/internal/p2p/peers/peerdata"
 	"time"
 
 	"github.com/libp2p/go-libp2p/core/peer"

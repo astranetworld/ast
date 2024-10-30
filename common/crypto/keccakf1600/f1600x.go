@@ -17,7 +17,7 @@
 package keccakf1600
 
 import (
-	"github.com/astranetworld/ast/common/crypto/sha3"
+	"github.com/N42world/ast/common/crypto/sha3"
 	"runtime"
 	"unsafe"
 

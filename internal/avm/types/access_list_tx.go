@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/astranetworld/ast/internal/avm/common"
+	"github.com/N42world/ast/internal/avm/common"
 	"math/big"
 )
 

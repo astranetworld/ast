@@ -9,8 +9,8 @@ package mode3aes
 import (
 	"crypto"
 	"errors"
-	"github.com/astranetworld/ast/common/crypto/dilithium/internal/common"
-	"github.com/astranetworld/ast/common/crypto/dilithium/mode3aes/internal"
+	"github.com/N42world/ast/common/crypto/dilithium/internal/common"
+	"github.com/N42world/ast/common/crypto/dilithium/mode3aes/internal"
 	"io"
 
 )

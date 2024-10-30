@@ -1,8 +1,8 @@
 package sync
 
 import (
-	"github.com/astranetworld/ast/common"
-	"github.com/astranetworld/ast/internal/p2p"
+	"github.com/N42world/ast/common"
+	"github.com/N42world/ast/internal/p2p"
 )
 
 type Option func(s *Service) error
