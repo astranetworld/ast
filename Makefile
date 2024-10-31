@@ -2,7 +2,7 @@ BUILD_TIME := $(shell date +"%Y-%m-%d %H:%M:%S")
 #GIT_COMMIT := $(shell git show -s --pretty=format:%h)
 GO_VERSION := $(shell go version)
 BUILD_PATH := ./build/bin/
-APP_NAME := N42
+APP_NAME := n42
 APP_PATH := ./cmd/n42
 SHELL := /bin/bash
 GO = go
@@ -77,7 +77,7 @@ n42: deps
 
 images:
 	@echo "docker images build ..."
-	DOCKER_BUILDKIT=1 docker build -t N42/ast:local .
+	DOCKER_BUILDKIT=1 docker build -t n42/ast:local .
 	@echo "Compile done!"
 
 up:

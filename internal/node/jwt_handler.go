@@ -17,6 +17,7 @@
 package node
 
 import (
+	"github.com/golang-jwt/jwt/v4"
 	"net/http"
 	"strings"
 	"time"
