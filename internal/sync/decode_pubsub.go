@@ -1,7 +1,7 @@
 package sync
 
 import (
-	"github.com/N42world/ast/internal/p2p"
+	"github.com/n42blockchain/N42/internal/p2p"
 	"strings"
 
 	pubsub "github.com/libp2p/go-libp2p-pubsub"

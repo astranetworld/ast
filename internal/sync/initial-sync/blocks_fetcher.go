@@ -2,15 +2,15 @@ package initialsync
 
 import (
 	"context"
-	"github.com/N42world/ast/api/protocol/sync_pb"
-	"github.com/N42world/ast/api/protocol/types_pb"
-	"github.com/N42world/ast/common"
-	"github.com/N42world/ast/common/crypto/rand"
-	"github.com/N42world/ast/internal/p2p"
-	leakybucket "github.com/N42world/ast/internal/p2p/leaky-bucket"
-	astsync "github.com/N42world/ast/internal/sync"
-	"github.com/N42world/ast/utils"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/api/protocol/sync_pb"
+	"github.com/n42blockchain/N42/api/protocol/types_pb"
+	"github.com/n42blockchain/N42/common"
+	"github.com/n42blockchain/N42/common/crypto/rand"
+	"github.com/n42blockchain/N42/internal/p2p"
+	leakybucket "github.com/n42blockchain/N42/internal/p2p/leaky-bucket"
+	astsync "github.com/n42blockchain/N42/internal/sync"
+	"github.com/n42blockchain/N42/utils"
 	"sync"
 	"time"
 

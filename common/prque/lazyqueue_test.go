@@ -17,7 +17,7 @@
 package prque
 
 import (
-	"github.com/N42world/ast/common/mclock"
+	"github.com/n42blockchain/N42/common/mclock"
 	"math/rand"
 	"sync"
 	"testing"

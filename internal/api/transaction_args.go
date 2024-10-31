@@ -21,18 +21,18 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/N42world/ast/log"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/log"
 	"math/big"
 
-	"github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/hexutil"
-	"github.com/N42world/ast/common/math"
-	"github.com/N42world/ast/common/transaction"
-	"github.com/N42world/ast/common/types"
-	mvm_common "github.com/N42world/ast/internal/avm/common"
-	mvm_types "github.com/N42world/ast/internal/avm/types"
-	"github.com/N42world/ast/modules/rpc/jsonrpc"
+	"github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/hexutil"
+	"github.com/n42blockchain/N42/common/math"
+	"github.com/n42blockchain/N42/common/transaction"
+	"github.com/n42blockchain/N42/common/types"
+	mvm_common "github.com/n42blockchain/N42/internal/avm/common"
+	mvm_types "github.com/n42blockchain/N42/internal/avm/types"
+	"github.com/n42blockchain/N42/modules/rpc/jsonrpc"
 )
 
 // TransactionArgs represents

@@ -17,7 +17,7 @@
 package v2
 
 import (
-	"github.com/N42world/ast/log"
+	"github.com/n42blockchain/N42/log"
 	"reflect"
 	"sync"
 )

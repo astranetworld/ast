@@ -27,11 +27,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/N42world/ast/accounts"
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/avm/common"
-	event "github.com/N42world/ast/modules/event/v2"
+	"github.com/n42blockchain/N42/accounts"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/avm/common"
+	event "github.com/n42blockchain/N42/modules/event/v2"
 )
 
 var testSigData = make([]byte, 32)

@@ -17,14 +17,14 @@
 package api
 
 import (
-	"github.com/N42world/ast/common"
-	"github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/hash"
-	"github.com/N42world/ast/common/hexutil"
-	"github.com/N42world/ast/common/transaction"
-	"github.com/N42world/ast/common/types"
-	mvm_types "github.com/N42world/ast/internal/avm/types"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common"
+	"github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/hash"
+	"github.com/n42blockchain/N42/common/hexutil"
+	"github.com/n42blockchain/N42/common/transaction"
+	"github.com/n42blockchain/N42/common/types"
+	mvm_types "github.com/n42blockchain/N42/internal/avm/types"
 	"math/big"
 )
 

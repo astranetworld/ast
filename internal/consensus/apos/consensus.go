@@ -1,14 +1,14 @@
 package apos
 
 import (
-	"github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/math"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/consensus"
-	"github.com/N42world/ast/log"
-	"github.com/N42world/ast/modules/state"
-	"github.com/N42world/ast/params"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/math"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/consensus"
+	"github.com/n42blockchain/N42/log"
+	"github.com/n42blockchain/N42/modules/state"
+	"github.com/n42blockchain/N42/params"
 	"sort"
 )
 

@@ -20,9 +20,9 @@ import (
 	"bytes"
 	"encoding/binary"
 	"fmt"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/modules"
-	"github.com/N42world/ast/modules/ethdb"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/modules"
+	"github.com/n42blockchain/N42/modules/ethdb"
 	"math"
 	"reflect"
 

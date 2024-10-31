@@ -18,7 +18,7 @@ syntax = "proto3";
 package state_pb;
 
 import "types_pb/types.proto";
-option go_package = "github.com/N42world/ast/api/protocol/state";
+option go_package = "github.com/n42blockchain/N42/api/protocol/state";
 
 message HashMap {
   types_pb.H256 key = 1;

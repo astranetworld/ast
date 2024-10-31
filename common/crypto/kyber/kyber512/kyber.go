@@ -9,7 +9,7 @@ package kyber512
 
 import (
 	cryptoRand "crypto/rand"
-	"github.com/N42world/ast/common/crypto/kyber/kyber512/internal"
+	"github.com/n42blockchain/N42/common/crypto/kyber/kyber512/internal"
 	"io"
 
 )

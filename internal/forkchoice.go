@@ -23,9 +23,9 @@ import (
 	"math/big"
 	mrand "math/rand"
 
-	block2 "github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/log"
+	block2 "github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/log"
 )
 
 // ChainReader defines a small collection of methods needed to access the local

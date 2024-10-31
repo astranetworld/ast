@@ -17,11 +17,11 @@
 package main
 
 import (
-	"github.com/N42world/ast/params"
+	"github.com/n42blockchain/N42/params"
 	"math/big"
 	"time"
 
-	"github.com/N42world/ast/conf"
+	"github.com/n42blockchain/N42/conf"
 )
 
 var DefaultConfig = conf.Config{

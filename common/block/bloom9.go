@@ -22,9 +22,9 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
 
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/crypto/cryptopool"
-	"github.com/N42world/ast/common/hexutil"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/crypto/cryptopool"
+	"github.com/n42blockchain/N42/common/hexutil"
 )
 
 type bytesBacked interface {

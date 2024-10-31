@@ -26,10 +26,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/N42world/ast/accounts"
-	common "github.com/N42world/ast/common/types"
 	"github.com/cespare/cp"
 	"github.com/davecgh/go-spew/spew"
+	"github.com/n42blockchain/N42/accounts"
+	common "github.com/n42blockchain/N42/common/types"
 )
 
 var (

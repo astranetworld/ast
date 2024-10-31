@@ -17,10 +17,10 @@
 package deposit
 
 import (
-	"github.com/N42world/ast/common/crypto/bls"
-	"github.com/N42world/ast/common/hexutil"
-	"github.com/N42world/ast/params"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/crypto/bls"
+	"github.com/n42blockchain/N42/common/hexutil"
+	"github.com/n42blockchain/N42/params"
 	"testing"
 )
 

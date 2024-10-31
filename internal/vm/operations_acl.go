@@ -18,10 +18,10 @@ package vm
 
 import (
 	"errors"
-	"github.com/N42world/ast/common/math"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/vm/stack"
-	"github.com/N42world/ast/params"
+	"github.com/n42blockchain/N42/common/math"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/vm/stack"
+	"github.com/n42blockchain/N42/params"
 
 	"github.com/holiman/uint256"
 )

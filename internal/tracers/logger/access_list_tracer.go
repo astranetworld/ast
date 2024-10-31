@@ -17,11 +17,11 @@
 package logger
 
 import (
-	"github.com/N42world/ast/common/transaction"
+	"github.com/n42blockchain/N42/common/transaction"
 	"math/big"
 
-	common "github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/vm"
+	common "github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/vm"
 )
 
 // accessList is an accumulator for the set of accounts and storage slots an EVM

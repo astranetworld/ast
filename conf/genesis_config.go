@@ -17,10 +17,10 @@
 package conf
 
 import (
-	"github.com/N42world/ast/common/types"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/types"
 
-	"github.com/N42world/ast/params"
+	"github.com/n42blockchain/N42/params"
 )
 
 type Genesis struct {

@@ -17,7 +17,7 @@
 package vm
 
 import (
-	"github.com/N42world/ast/internal/vm/stack"
+	"github.com/n42blockchain/N42/internal/vm/stack"
 )
 
 func memoryKeccak256(stack *stack.Stack) (uint64, bool) {

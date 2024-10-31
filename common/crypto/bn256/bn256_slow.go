@@ -7,7 +7,7 @@
 // Package bn256 implements the Optimal Ate pairing over a 256-bit Barreto-Naehrig curve.
 package bn256
 
-import bn256 "github.com/N42world/ast/common/crypto/bn256/google"
+import bn256 "github.com/n42blockchain/N42/common/crypto/bn256/google"
 
 // G1 is an abstract cyclic group. The zero value is suitable for use as the
 // output of an operation, but cannot be used as an input.

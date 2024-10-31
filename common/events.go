@@ -17,10 +17,10 @@
 package common
 
 import (
-	"github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/transaction"
-	"github.com/N42world/ast/modules/state"
 	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/transaction"
+	"github.com/n42blockchain/N42/modules/state"
 )
 
 // NewLocalTxsEvent local txs

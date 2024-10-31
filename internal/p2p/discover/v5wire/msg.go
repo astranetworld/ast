@@ -18,13 +18,13 @@ package v5wire
 
 import (
 	"fmt"
-	"github.com/N42world/ast/common/hexutil"
+	"github.com/n42blockchain/N42/common/hexutil"
 	"net"
 
-	"github.com/N42world/ast/common/mclock"
-	"github.com/N42world/ast/internal/avm/rlp"
-	"github.com/N42world/ast/internal/p2p/enode"
-	"github.com/N42world/ast/internal/p2p/enr"
+	"github.com/n42blockchain/N42/common/mclock"
+	"github.com/n42blockchain/N42/internal/avm/rlp"
+	"github.com/n42blockchain/N42/internal/p2p/enode"
+	"github.com/n42blockchain/N42/internal/p2p/enr"
 )
 
 // Packet is implemented by all message types.

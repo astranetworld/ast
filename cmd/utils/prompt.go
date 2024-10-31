@@ -17,7 +17,7 @@ package utils
 
 import (
 	"fmt"
-	"github.com/N42world/ast/console/prompt"
+	"github.com/n42blockchain/N42/console/prompt"
 )
 
 // GetPassPhrase displays the given text(prompt) to the user and requests some textual

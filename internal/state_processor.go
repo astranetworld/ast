@@ -18,20 +18,20 @@ package internal
 
 import (
 	"fmt"
-	"github.com/N42world/ast/common"
-	"github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/transaction"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/consensus"
-	"github.com/N42world/ast/internal/consensus/misc"
-	vm2 "github.com/N42world/ast/internal/vm"
-	"github.com/N42world/ast/internal/vm/evmtypes"
-	"github.com/N42world/ast/modules/ethdb"
-	"github.com/N42world/ast/modules/state"
-	"github.com/N42world/ast/params"
 	"github.com/holiman/uint256"
 	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/n42blockchain/N42/common"
+	"github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/transaction"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/consensus"
+	"github.com/n42blockchain/N42/internal/consensus/misc"
+	vm2 "github.com/n42blockchain/N42/internal/vm"
+	"github.com/n42blockchain/N42/internal/vm/evmtypes"
+	"github.com/n42blockchain/N42/modules/ethdb"
+	"github.com/n42blockchain/N42/modules/state"
+	"github.com/n42blockchain/N42/params"
 )
 
 // StateProcessor is a basic Processor, which takes care of transitioning

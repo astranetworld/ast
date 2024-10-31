@@ -2,11 +2,12 @@ package utils
 
 import (
 	"crypto/ecdsa"
+	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/libp2p/go-libp2p/core/crypto"
 	"github.com/pkg/errors"
 	"math/big"
 
-	ast_crypto "github.com/N42world/ast/common/crypto"
+	n42_crypto "github.com/n42blockchain/N42/common/crypto"
 )
 
 func ConvertFromInterfacePrivKey(privkey crypto.PrivKey) (*ecdsa.PrivateKey, error) {
@@ -21,8 +22,8 @@ func ConvertFromInterfacePrivKey(privkey crypto.PrivKey) (*ecdsa.PrivateKey, err
 	privKey := new(ecdsa.PrivateKey)
 	k := new(big.Int).SetBytes(rawKey)
 	privKey.D = k
-	privKey.Curve = ast_crypto.S256() // Temporary hack, so libp2p Secp256k1 is recognized as geth Secp256k1 in disc v5.1.
-	privKey.X, privKey.Y = ast_crypto.S256().ScalarBaseMult(rawKey)
+	privKey.Curve = n42_crypto.S256() // Temporary hack, so libp2p Secp256k1 is recognized as geth Secp256k1 in disc v5.1.
+	privKey.X, privKey.Y = n42_crypto.S256().ScalarBaseMult(rawKey)
 	return privKey, nil
 }
 

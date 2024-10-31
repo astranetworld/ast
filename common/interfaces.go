@@ -18,14 +18,14 @@ package common
 
 import (
 	"context"
-	"github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/message"
-	"github.com/N42world/ast/common/transaction"
-	"github.com/N42world/ast/common/types"
 	"github.com/holiman/uint256"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
 	"github.com/libp2p/go-libp2p/core/host"
 	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/message"
+	"github.com/n42blockchain/N42/common/transaction"
+	"github.com/n42blockchain/N42/common/types"
 	"google.golang.org/protobuf/proto"
 )
 

@@ -20,9 +20,9 @@ import (
 	"encoding/json"
 	"github.com/holiman/uint256"
 
-	common "github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/tracers"
-	"github.com/N42world/ast/internal/vm"
+	common "github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/tracers"
+	"github.com/n42blockchain/N42/internal/vm"
 )
 
 func init() {

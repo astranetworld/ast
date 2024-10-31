@@ -17,13 +17,13 @@
 package vm
 
 import (
-	"github.com/N42world/ast/internal/vm/evmtypes"
-	"github.com/N42world/ast/params"
+	"github.com/n42blockchain/N42/internal/vm/evmtypes"
+	"github.com/n42blockchain/N42/params"
 	"math/big"
 
 	"github.com/holiman/uint256"
 
-	"github.com/N42world/ast/common/types"
+	"github.com/n42blockchain/N42/common/types"
 )
 
 // CallContext provides a basic interface for the EVM calling conventions. The EVM

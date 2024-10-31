@@ -17,7 +17,7 @@
 package conf
 
 import (
-	"github.com/N42world/ast/params"
+	"github.com/n42blockchain/N42/params"
 	"math/big"
 )
 

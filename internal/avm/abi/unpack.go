@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"reflect"
 
-	"github.com/N42world/ast/internal/avm/common"
+	"github.com/n42blockchain/N42/internal/avm/common"
 )
 
 var (

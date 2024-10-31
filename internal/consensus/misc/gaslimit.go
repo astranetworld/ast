@@ -20,7 +20,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/N42world/ast/params"
+	"github.com/n42blockchain/N42/params"
 )
 
 // VerifyGaslimit verifies the header gas limit according increase/decrease

@@ -21,9 +21,9 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/N42world/ast/common/math"
-	common "github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/vm"
+	"github.com/n42blockchain/N42/common/math"
+	common "github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/vm"
 )
 
 type JSONLogger struct {

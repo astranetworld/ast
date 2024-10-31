@@ -18,7 +18,7 @@ syntax = "proto3";
 package consensus_pb;
 
 import "types_pb/types.proto";
-option go_package = "github.com/N42world/ast/api/protocol/consensus_proto";
+option go_package = "github.com/n42blockchain/N42/api/protocol/consensus_proto";
 
 message PBSigners {
   repeated PBSigner signer = 1;

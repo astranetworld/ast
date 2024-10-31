@@ -20,13 +20,13 @@ import (
 	"bytes"
 	"encoding/binary"
 	"fmt"
-	"github.com/N42world/ast/common/account"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/log"
-	"github.com/N42world/ast/modules"
 	"github.com/google/btree"
 	"github.com/holiman/uint256"
 	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/n42blockchain/N42/common/account"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/log"
+	"github.com/n42blockchain/N42/modules"
 )
 
 type storageItem struct {

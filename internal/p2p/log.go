@@ -1,9 +1,9 @@
 package p2p
 
 import (
-	astLog "github.com/N42world/ast/log"
 	"github.com/libp2p/go-libp2p/core/peer"
 	ma "github.com/multiformats/go-multiaddr"
+	astLog "github.com/n42blockchain/N42/log"
 	"strconv"
 	"strings"
 )

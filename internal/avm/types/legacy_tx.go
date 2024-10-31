@@ -19,7 +19,7 @@ package types
 import (
 	"math/big"
 
-	"github.com/N42world/ast/internal/avm/common"
+	"github.com/n42blockchain/N42/internal/avm/common"
 )
 
 // LegacyTx is the transaction data of regular Ethereum transactions.

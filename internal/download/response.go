@@ -17,12 +17,12 @@
 package download
 
 import (
-	"github.com/N42world/ast/api/protocol/sync_proto"
-	"github.com/N42world/ast/api/protocol/types_pb"
-	"github.com/N42world/ast/common"
-	"github.com/N42world/ast/common/message"
-	"github.com/N42world/ast/log"
-	"github.com/N42world/ast/utils"
+	"github.com/n42blockchain/N42/api/protocol/sync_proto"
+	"github.com/n42blockchain/N42/api/protocol/types_pb"
+	"github.com/n42blockchain/N42/common"
+	"github.com/n42blockchain/N42/common/message"
+	"github.com/n42blockchain/N42/log"
+	"github.com/n42blockchain/N42/utils"
 	"google.golang.org/protobuf/proto"
 
 	"github.com/holiman/uint256"

@@ -18,11 +18,11 @@ package state
 
 import (
 	"encoding/binary"
-	"github.com/N42world/ast/common/account"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/modules"
 	"github.com/holiman/uint256"
 	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/n42blockchain/N42/common/account"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/modules"
 	"google.golang.org/protobuf/proto"
 )
 

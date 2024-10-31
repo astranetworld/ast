@@ -17,9 +17,9 @@
 package vm
 
 import (
-	"github.com/N42world/ast/common/transaction"
-	"github.com/N42world/ast/common/types"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/transaction"
+	"github.com/n42blockchain/N42/common/types"
 )
 
 // EVMLogger is used to collect execution traces from an EVM transaction

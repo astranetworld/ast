@@ -17,7 +17,7 @@
 package netutil
 
 import (
-	"github.com/N42world/ast/common/mclock"
+	"github.com/n42blockchain/N42/common/mclock"
 	"time"
 )
 

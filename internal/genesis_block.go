@@ -24,22 +24,22 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/N42world/ast/params/networkname"
+	"github.com/n42blockchain/N42/params/networkname"
 	"math/big"
 	"sync"
 
-	"github.com/N42world/ast/modules"
-	"github.com/N42world/ast/modules/rawdb"
-	"github.com/N42world/ast/modules/state"
-	"github.com/N42world/ast/params"
 	"github.com/c2h5oh/datasize"
 	"github.com/holiman/uint256"
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/erigon-lib/kv/mdbx"
+	"github.com/n42blockchain/N42/modules"
+	"github.com/n42blockchain/N42/modules/rawdb"
+	"github.com/n42blockchain/N42/modules/state"
+	"github.com/n42blockchain/N42/params"
 
-	block2 "github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/conf"
+	block2 "github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/conf"
 )
 
 var ErrGenesisNoConfig = errors.New("genesis has no chain configuration")

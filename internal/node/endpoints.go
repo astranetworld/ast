@@ -17,7 +17,7 @@
 package node
 
 import (
-	"github.com/N42world/ast/modules/rpc/jsonrpc"
+	"github.com/n42blockchain/N42/modules/rpc/jsonrpc"
 )
 
 func checkModuleAvailability(modules []string, apis []jsonrpc.API) (bad, available []string) {

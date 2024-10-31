@@ -17,8 +17,8 @@
 package vm
 
 import (
-	"github.com/N42world/ast/common/types"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/types"
 )
 
 // ContractRef is a reference to the contract's backing object

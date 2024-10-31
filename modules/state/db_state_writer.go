@@ -19,18 +19,18 @@ package state
 import (
 	"bytes"
 	"fmt"
-	"github.com/N42world/ast/common/account"
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/modules"
+	"github.com/n42blockchain/N42/common/account"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/modules"
 	"math"
 
-	"github.com/N42world/ast/modules/changeset"
+	"github.com/n42blockchain/N42/modules/changeset"
 
 	"github.com/RoaringBitmap/roaring/roaring64"
 
-	"github.com/N42world/ast/modules/ethdb/bitmapdb"
 	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/n42blockchain/N42/modules/ethdb/bitmapdb"
 )
 
 func originalAccountData(original *account.StateAccount, omitHashes bool) []byte {

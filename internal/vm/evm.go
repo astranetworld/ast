@@ -16,12 +16,12 @@
 package vm
 
 import (
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/common/u256"
-	"github.com/N42world/ast/internal/vm/evmtypes"
-	"github.com/N42world/ast/params"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/common/u256"
+	"github.com/n42blockchain/N42/internal/vm/evmtypes"
+	"github.com/n42blockchain/N42/params"
 	"sync/atomic"
 )
 

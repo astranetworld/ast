@@ -1,8 +1,8 @@
 package p2p
 
 import (
-	"github.com/N42world/ast/api/protocol/sync_pb"
-	ssztype "github.com/N42world/ast/common/types/ssz"
+	"github.com/n42blockchain/N42/api/protocol/sync_pb"
+	ssztype "github.com/n42blockchain/N42/common/types/ssz"
 	"reflect"
 
 	"github.com/pkg/errors"

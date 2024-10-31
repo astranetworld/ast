@@ -3,8 +3,8 @@ package initialsync
 import (
 	"errors"
 	"fmt"
-	"github.com/N42world/ast/api/protocol/types_pb"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/api/protocol/types_pb"
 	"sort"
 	"time"
 

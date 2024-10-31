@@ -19,7 +19,7 @@ package types_pb;
 
 import "ext/options.proto";
 
-option go_package = "github.com/N42world/ast/api/protocol/types_pb";
+option go_package = "github.com/n42blockchain/N42/api/protocol/types_pb";
 
 
 message H128 {

@@ -1,7 +1,7 @@
 package p2p
 
 import (
-	"github.com/N42world/ast/api/protocol/types_pb"
+	"github.com/n42blockchain/N42/api/protocol/types_pb"
 	"reflect"
 
 	"google.golang.org/protobuf/proto"

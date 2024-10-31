@@ -16,7 +16,7 @@
 
 package bind
 
-import "github.com/N42world/ast/accounts/abi"
+import "github.com/n42blockchain/N42/accounts/abi"
 
 // tmplData is the data structure required to fill the binding template.
 type tmplData struct {

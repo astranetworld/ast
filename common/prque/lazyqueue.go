@@ -18,7 +18,7 @@ package prque
 
 import (
 	"container/heap"
-	"github.com/N42world/ast/common/mclock"
+	"github.com/n42blockchain/N42/common/mclock"
 	"time"
 )
 

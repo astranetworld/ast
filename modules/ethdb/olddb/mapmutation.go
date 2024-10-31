@@ -4,14 +4,14 @@ import (
 	"context"
 	"encoding/binary"
 	"fmt"
-	"github.com/N42world/ast/modules"
+	"github.com/n42blockchain/N42/modules"
 	"sync"
 	"time"
 	"unsafe"
 
-	"github.com/N42world/ast/modules/ethdb"
 	"github.com/ledgerwatch/erigon-lib/etl"
 	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/n42blockchain/N42/modules/ethdb"
 )
 
 type mapmutation struct {

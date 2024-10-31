@@ -20,12 +20,12 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/N42world/ast/common/hexutil"
+	"github.com/n42blockchain/N42/common/hexutil"
 	"math"
 	"strconv"
 	"strings"
 
-	"github.com/N42world/ast/common/types"
+	"github.com/n42blockchain/N42/common/types"
 )
 
 type API struct {

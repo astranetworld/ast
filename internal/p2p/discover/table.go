@@ -26,16 +26,16 @@ import (
 	crand "crypto/rand"
 	"encoding/binary"
 	"fmt"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/p2p/netutil"
-	"github.com/N42world/ast/log"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/p2p/netutil"
+	"github.com/n42blockchain/N42/log"
 	mrand "math/rand"
 	"net"
 	"sort"
 	"sync"
 	"time"
 
-	"github.com/N42world/ast/internal/p2p/enode"
+	"github.com/n42blockchain/N42/internal/p2p/enode"
 )
 
 const (

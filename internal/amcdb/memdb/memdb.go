@@ -18,7 +18,7 @@ package memdb
 
 import (
 	"fmt"
-	"github.com/N42world/ast/common/db"
+	"github.com/n42blockchain/N42/common/db"
 	"sync"
 )
 

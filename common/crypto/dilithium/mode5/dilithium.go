@@ -9,8 +9,8 @@ package mode5
 import (
 	"crypto"
 	"errors"
-	"github.com/N42world/ast/common/crypto/dilithium/internal/common"
-	"github.com/N42world/ast/common/crypto/dilithium/mode5/internal"
+	"github.com/n42blockchain/N42/common/crypto/dilithium/internal/common"
+	"github.com/n42blockchain/N42/common/crypto/dilithium/mode5/internal"
 	"io"
 
 )

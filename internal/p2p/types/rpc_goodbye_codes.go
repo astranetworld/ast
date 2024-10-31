@@ -1,6 +1,6 @@
 package p2ptypes
 
-import ssztype "github.com/N42world/ast/common/types/ssz"
+import ssztype "github.com/n42blockchain/N42/common/types/ssz"
 
 // RPCGoodbyeCode represents goodbye code, used in sync package.
 type RPCGoodbyeCode = ssztype.SSZUint64

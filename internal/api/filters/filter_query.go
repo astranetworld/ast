@@ -4,11 +4,11 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/N42world/ast/common/hexutil"
-	"github.com/N42world/ast/common/types"
-	mvm_common "github.com/N42world/ast/internal/avm/common"
-	mvm_types "github.com/N42world/ast/internal/avm/types"
-	"github.com/N42world/ast/modules/rpc/jsonrpc"
+	"github.com/n42blockchain/N42/common/hexutil"
+	"github.com/n42blockchain/N42/common/types"
+	mvm_common "github.com/n42blockchain/N42/internal/avm/common"
+	mvm_types "github.com/n42blockchain/N42/internal/avm/types"
+	"github.com/n42blockchain/N42/modules/rpc/jsonrpc"
 	"math/big"
 )
 

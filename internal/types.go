@@ -17,10 +17,10 @@
 package internal
 
 import (
-	"github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/modules/state"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/modules/state"
 )
 
 // Validator is an interface which defines the standard for block validation. It

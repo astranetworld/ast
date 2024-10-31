@@ -19,8 +19,8 @@ package jsonrpc_test
 import (
 	"context"
 	"fmt"
-	"github.com/N42world/ast/common/hexutil"
-	"github.com/N42world/ast/modules/rpc/jsonrpc"
+	"github.com/n42blockchain/N42/common/hexutil"
+	"github.com/n42blockchain/N42/modules/rpc/jsonrpc"
 )
 
 // In this example, our client wishes to track the latest 'block number'

@@ -2,11 +2,11 @@ package scorers
 
 import (
 	"errors"
-	"github.com/N42world/ast/api/protocol/sync_pb"
-	"github.com/N42world/ast/internal/p2p/peers/peerdata"
-	p2ptypes "github.com/N42world/ast/internal/p2p/types"
-	"github.com/N42world/ast/utils"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/api/protocol/sync_pb"
+	"github.com/n42blockchain/N42/internal/p2p/peers/peerdata"
+	p2ptypes "github.com/n42blockchain/N42/internal/p2p/types"
+	"github.com/n42blockchain/N42/utils"
 	"math"
 	"time"
 

@@ -2,7 +2,8 @@ package p2p
 
 import (
 	"fmt"
-	"github.com/N42world/ast/conf"
+	"github.com/multiformats/go-multiaddr"
+	"github.com/n42blockchain/N42/conf"
 	"net"
 	"runtime"
 

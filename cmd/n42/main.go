@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/N42world/ast/params"
+	"github.com/n42blockchain/N42/params"
 	// Force-load the tracer engines to trigger registration
-	_ "github.com/N42world/ast/internal/tracers/js"
-	_ "github.com/N42world/ast/internal/tracers/native"
+	_ "github.com/n42blockchain/N42/internal/tracers/js"
+	_ "github.com/n42blockchain/N42/internal/tracers/native"
 )
 
 func main() {

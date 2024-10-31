@@ -3,8 +3,8 @@ package p2p
 import (
 	"context"
 	"encoding/hex"
-	"github.com/N42world/ast/api/protocol/msg_proto"
-	"github.com/N42world/ast/utils"
+	"github.com/n42blockchain/N42/api/protocol/msg_proto"
+	"github.com/n42blockchain/N42/utils"
 	"strings"
 	"time"
 

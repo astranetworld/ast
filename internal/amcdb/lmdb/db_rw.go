@@ -19,8 +19,8 @@ package lmdb
 import (
 	"context"
 	"fmt"
-	"github.com/N42world/ast/common/db"
 	"github.com/erigontech/mdbx-go/mdbx"
+	"github.com/n42blockchain/N42/common/db"
 	"sync"
 )
 

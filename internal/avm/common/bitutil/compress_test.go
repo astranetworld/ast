@@ -21,7 +21,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/N42world/ast/common/hexutil"
+	"github.com/n42blockchain/N42/common/hexutil"
 )
 
 // Tests that data bitset encoding and decoding works and is bijective.

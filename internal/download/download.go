@@ -19,20 +19,20 @@ package download
 import (
 	"context"
 	"fmt"
-	"github.com/N42world/ast/utils"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/utils"
 	"google.golang.org/protobuf/proto"
 	"hash"
 	"sync"
 	"sync/atomic"
 	"time"
 
-	"github.com/N42world/ast/api/protocol/sync_proto"
-	"github.com/N42world/ast/api/protocol/types_pb"
-	"github.com/N42world/ast/common"
-	"github.com/N42world/ast/log"
-	event "github.com/N42world/ast/modules/event/v2"
 	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/n42blockchain/N42/api/protocol/sync_proto"
+	"github.com/n42blockchain/N42/api/protocol/types_pb"
+	"github.com/n42blockchain/N42/common"
+	"github.com/n42blockchain/N42/log"
+	event "github.com/n42blockchain/N42/modules/event/v2"
 	"go.uber.org/zap"
 )
 

@@ -6,9 +6,9 @@ import (
 	"encoding/json"
 	"math/big"
 
-	"github.com/N42world/ast/common/hexutil"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/vm"
+	"github.com/n42blockchain/N42/common/hexutil"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/vm"
 )
 
 var _ = (*callFrameMarshaling)(nil)

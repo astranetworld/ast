@@ -17,7 +17,7 @@ package stack
 
 import (
 	"fmt"
-	"github.com/N42world/ast/log"
+	"github.com/n42blockchain/N42/log"
 	"sync"
 
 	"github.com/holiman/uint256"

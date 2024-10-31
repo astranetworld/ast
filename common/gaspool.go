@@ -18,7 +18,7 @@ package common
 
 import (
 	"fmt"
-	"github.com/N42world/ast/core"
+	"github.com/n42blockchain/N42/core"
 	"math"
 )
 

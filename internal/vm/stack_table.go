@@ -17,7 +17,7 @@
 package vm
 
 import (
-	"github.com/N42world/ast/params"
+	"github.com/n42blockchain/N42/params"
 )
 
 func maxStack(pop, push int) int {

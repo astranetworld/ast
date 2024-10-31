@@ -3,8 +3,8 @@ package types
 import (
 	"encoding/json"
 	"errors"
-	"github.com/N42world/ast/common/hexutil"
-	"github.com/N42world/ast/internal/avm/common"
+	"github.com/n42blockchain/N42/common/hexutil"
+	"github.com/n42blockchain/N42/internal/avm/common"
 )
 
 type Log struct {

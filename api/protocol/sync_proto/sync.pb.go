@@ -23,7 +23,7 @@
 package sync_proto
 
 import (
-	types_pb "github.com/N42world/ast/api/protocol/types_pb"
+	types_pb "github.com/n42blockchain/N42/api/protocol/types_pb"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

@@ -27,10 +27,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/N42world/ast/accounts"
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/types"
 	"github.com/google/uuid"
+	"github.com/n42blockchain/N42/accounts"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/types"
 )
 
 const (

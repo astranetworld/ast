@@ -17,8 +17,8 @@
 package transaction
 
 import (
-	"github.com/N42world/ast/common/types"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/types"
 )
 
 type SakuragiTx struct {

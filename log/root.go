@@ -21,8 +21,8 @@ import (
 	"os"
 	"sync"
 
-	"github.com/N42world/ast/conf"
-	prefixed "github.com/N42world/ast/log/logrus-prefixed-formatter"
+	"github.com/n42blockchain/N42/conf"
+	prefixed "github.com/n42blockchain/N42/log/logrus-prefixed-formatter"
 	"github.com/sirupsen/logrus"
 
 	lumberjack "gopkg.in/natefinch/lumberjack.v2"

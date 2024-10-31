@@ -3,7 +3,7 @@
 
 package keccakf1600
 
-import "github.com/N42world/ast/common/crypto/sha3"
+import "github.com/n42blockchain/N42/common/crypto/sha3"
 
 func permuteSIMDx2(state []uint64, turbo bool) { f1600x2ARM(&state[0], &sha3.RC, turbo) }
 

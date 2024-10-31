@@ -18,13 +18,13 @@ package download
 
 import (
 	"context"
-	"github.com/N42world/ast/api/protocol/sync_proto"
-	"github.com/N42world/ast/common"
-	"github.com/N42world/ast/common/message"
-	"github.com/N42world/ast/log"
-	"github.com/N42world/ast/utils"
 	"github.com/holiman/uint256"
 	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/n42blockchain/N42/api/protocol/sync_proto"
+	"github.com/n42blockchain/N42/common"
+	"github.com/n42blockchain/N42/common/message"
+	"github.com/n42blockchain/N42/log"
+	"github.com/n42blockchain/N42/utils"
 	"go.uber.org/zap"
 	"google.golang.org/protobuf/proto"
 	"math/rand"

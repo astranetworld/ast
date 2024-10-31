@@ -1,8 +1,8 @@
 package utils
 
 import (
-	"github.com/N42world/ast/common/types"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/types"
 )
 
 // CreateForkDigest creates a fork digest from a genesis time and genesis

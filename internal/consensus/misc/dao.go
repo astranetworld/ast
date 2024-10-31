@@ -18,10 +18,10 @@ package misc
 
 import (
 	"errors"
-	"github.com/N42world/ast/params"
+	"github.com/n42blockchain/N42/params"
 
-	"github.com/N42world/ast/modules/state"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/modules/state"
 )
 
 var (

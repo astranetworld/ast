@@ -36,7 +36,7 @@ package main
 
 import (
 	"github.com/sirupsen/logrus"
-	prefixed "github.com/N42world/ast/log/logrus-prefixed-formatter"
+	prefixed "github.com/n42blockchain/N42/log/logrus-prefixed-formatter"
 )
 
 var log = logrus.New()

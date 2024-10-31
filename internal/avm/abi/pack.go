@@ -22,8 +22,8 @@ import (
 	"math/big"
 	"reflect"
 
-	"github.com/N42world/ast/common/math"
-	"github.com/N42world/ast/internal/avm/common"
+	"github.com/n42blockchain/N42/common/math"
+	"github.com/n42blockchain/N42/internal/avm/common"
 )
 
 // packBytesSlice packs the given bytes as [L, V] as the canonical representation

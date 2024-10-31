@@ -5,8 +5,8 @@ package native
 import (
 	"encoding/json"
 
-	"github.com/N42world/ast/common/hexutil"
-	"github.com/N42world/ast/common/types"
+	"github.com/n42blockchain/N42/common/hexutil"
+	"github.com/n42blockchain/N42/common/types"
 )
 
 var _ = (*flatCallResultMarshaling)(nil)

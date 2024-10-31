@@ -4,8 +4,8 @@ package dilithium
 
 import (
 	"fmt"
-	"github.com/N42world/ast/common/crypto/dilithium/internal/common"
-	"github.com/N42world/ast/common/crypto/dilithium/mode3"
+	"github.com/n42blockchain/N42/common/crypto/dilithium/internal/common"
+	"github.com/n42blockchain/N42/common/crypto/dilithium/mode3"
 	"io"
 
 )

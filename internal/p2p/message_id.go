@@ -1,9 +1,9 @@
 package p2p
 
 import (
-	"github.com/N42world/ast/common/hash"
-	"github.com/N42world/ast/common/types"
 	pubsubpb "github.com/libp2p/go-libp2p-pubsub/pb"
+	"github.com/n42blockchain/N42/common/hash"
+	"github.com/n42blockchain/N42/common/types"
 )
 
 // MsgID is a content addressable ID function.

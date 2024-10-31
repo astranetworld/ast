@@ -24,9 +24,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/avm/common"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/avm/common"
 )
 
 func tmpKeyStoreIface(t *testing.T, encrypted bool) (dir string, ks keyStore) {

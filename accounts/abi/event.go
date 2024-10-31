@@ -18,8 +18,8 @@ package abi
 
 import (
 	"fmt"
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/types"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/types"
 	"strings"
 )
 

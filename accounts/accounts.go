@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/N42world/ast/common"
-	"github.com/N42world/ast/common/transaction"
-	"github.com/N42world/ast/common/types"
-	event "github.com/N42world/ast/modules/event/v2"
+	"github.com/n42blockchain/N42/common"
+	"github.com/n42blockchain/N42/common/transaction"
+	"github.com/n42blockchain/N42/common/types"
+	event "github.com/n42blockchain/N42/modules/event/v2"
 	"golang.org/x/crypto/sha3"
 )
 

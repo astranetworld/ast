@@ -6,12 +6,12 @@ package sync
 
 import (
 	"context"
-	"github.com/N42world/ast/common"
-	block2 "github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/p2p"
-	"github.com/N42world/ast/utils"
 	lru "github.com/hashicorp/golang-lru/v2"
+	"github.com/n42blockchain/N42/common"
+	block2 "github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/p2p"
+	"github.com/n42blockchain/N42/utils"
 	"sync"
 	"time"
 

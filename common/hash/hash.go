@@ -18,9 +18,9 @@ package hash
 
 import (
 	"bytes"
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/avm/rlp"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/avm/rlp"
 	"sync"
 
 	"golang.org/x/crypto/sha3"

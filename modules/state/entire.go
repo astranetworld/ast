@@ -18,12 +18,12 @@ package state
 
 import (
 	"bytes"
-	"github.com/N42world/ast/common/account"
-	"github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/avm/rlp"
-	types2 "github.com/N42world/ast/internal/avm/types"
-	"github.com/N42world/ast/modules"
+	"github.com/n42blockchain/N42/common/account"
+	"github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/avm/rlp"
+	types2 "github.com/n42blockchain/N42/internal/avm/types"
+	"github.com/n42blockchain/N42/modules"
 	"io"
 	"unsafe"
 )

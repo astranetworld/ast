@@ -16,7 +16,7 @@
 
 syntax = "proto3";
 package sync_bp;
-option go_package = "github.com/N42world/ast/api/protocol/sync_pb";
+option go_package = "github.com/n42blockchain/N42/api/protocol/sync_pb";
 
 import "types_pb/types.proto";
 

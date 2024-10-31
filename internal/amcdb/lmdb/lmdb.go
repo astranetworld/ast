@@ -23,12 +23,12 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/N42world/ast/common/db"
-	"github.com/N42world/ast/conf"
-	"github.com/N42world/ast/log"
-	"github.com/N42world/ast/utils"
 	"github.com/c2h5oh/datasize"
 	"github.com/erigontech/mdbx-go/mdbx"
+	"github.com/n42blockchain/N42/common/db"
+	"github.com/n42blockchain/N42/conf"
+	"github.com/n42blockchain/N42/log"
+	"github.com/n42blockchain/N42/utils"
 )
 
 var (

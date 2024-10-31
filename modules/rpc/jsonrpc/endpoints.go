@@ -17,7 +17,7 @@
 package jsonrpc
 
 import (
-	"github.com/N42world/ast/log"
+	"github.com/n42blockchain/N42/log"
 	"net"
 	"strings"
 )

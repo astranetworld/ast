@@ -24,10 +24,10 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/crypto/ecies"
-	"github.com/N42world/ast/common/hexutil"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/crypto/ecies"
+	"github.com/n42blockchain/N42/common/hexutil"
 	"golang.org/x/crypto/sha3"
 	"io"
 	"io/ioutil"
@@ -41,13 +41,13 @@ import (
 	"sync"
 	"time"
 
-	commTyp "github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/log"
-	"github.com/N42world/ast/modules/state"
 	"github.com/go-kit/kit/transport/http/jsonrpc"
 	"github.com/gorilla/websocket"
+	commTyp "github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/log"
+	"github.com/n42blockchain/N42/modules/state"
 
-	"github.com/N42world/ast/common/crypto/bls"
+	"github.com/n42blockchain/N42/common/crypto/bls"
 )
 
 const (

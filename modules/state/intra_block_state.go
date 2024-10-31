@@ -19,22 +19,22 @@ package state
 
 import (
 	"fmt"
-	"github.com/N42world/ast/common/account"
-	"github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/hash"
+	"github.com/n42blockchain/N42/common/account"
+	"github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/hash"
 
-	"github.com/N42world/ast/common/transaction"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/avm/rlp"
-	"github.com/N42world/ast/log"
+	"github.com/n42blockchain/N42/common/transaction"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/avm/rlp"
+	"github.com/n42blockchain/N42/log"
 	"golang.org/x/crypto/sha3"
 	"sort"
 	"unsafe"
 
 	"github.com/holiman/uint256"
 
-	"github.com/N42world/ast/params"
+	"github.com/n42blockchain/N42/params"
 )
 
 type revision struct {

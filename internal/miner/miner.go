@@ -18,13 +18,13 @@ package miner
 
 import (
 	"context"
-	"github.com/N42world/ast/common"
-	"github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/conf"
-	"github.com/N42world/ast/internal/consensus"
-	"github.com/N42world/ast/log"
-	event "github.com/N42world/ast/modules/event/v2"
+	"github.com/n42blockchain/N42/common"
+	"github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/conf"
+	"github.com/n42blockchain/N42/internal/consensus"
+	"github.com/n42blockchain/N42/log"
+	event "github.com/n42blockchain/N42/modules/event/v2"
 	"golang.org/x/sync/errgroup"
 	"time"
 )

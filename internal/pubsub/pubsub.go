@@ -23,11 +23,11 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/N42world/ast/common"
-	"github.com/N42world/ast/common/message"
-	"github.com/N42world/ast/log"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
 	"github.com/libp2p/go-libp2p/core/host"
+	"github.com/n42blockchain/N42/common"
+	"github.com/n42blockchain/N42/common/message"
+	"github.com/n42blockchain/N42/log"
 )
 
 var (

@@ -20,11 +20,11 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-	"github.com/N42world/ast/common/types"
+	"github.com/n42blockchain/N42/common/types"
 	"math/big"
 	"reflect"
 
-	"github.com/N42world/ast/common/crypto"
+	"github.com/n42blockchain/N42/common/crypto"
 )
 
 // MakeTopics converts a filter query argument list into a filter topic set.

@@ -3,14 +3,14 @@ package peerdata
 import (
 	"context"
 	"errors"
-	"github.com/N42world/ast/api/protocol/msg_proto"
-	"github.com/N42world/ast/api/protocol/sync_pb"
-	"github.com/N42world/ast/internal/p2p/enr"
-	"github.com/N42world/ast/utils"
 	"github.com/holiman/uint256"
 	"github.com/libp2p/go-libp2p/core/network"
 	"github.com/libp2p/go-libp2p/core/peer"
 	ma "github.com/multiformats/go-multiaddr"
+	"github.com/n42blockchain/N42/api/protocol/msg_proto"
+	"github.com/n42blockchain/N42/api/protocol/sync_pb"
+	"github.com/n42blockchain/N42/internal/p2p/enr"
+	"github.com/n42blockchain/N42/utils"
 	"sync"
 	"time"
 )

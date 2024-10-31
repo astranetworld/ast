@@ -5,10 +5,10 @@ package blst
 import (
 	"fmt"
 
-	"github.com/N42world/ast/common/crypto/bls/common"
-	"github.com/N42world/ast/common/hexutil"
-	"github.com/N42world/ast/log"
 	lru "github.com/hashicorp/golang-lru"
+	"github.com/n42blockchain/N42/common/crypto/bls/common"
+	"github.com/n42blockchain/N42/common/hexutil"
+	"github.com/n42blockchain/N42/log"
 	"github.com/pkg/errors"
 )
 

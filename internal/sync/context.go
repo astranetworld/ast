@@ -1,10 +1,10 @@
 package sync
 
 import (
-	"github.com/N42world/ast/common"
-	"github.com/N42world/ast/internal/p2p"
 	"github.com/libp2p/go-libp2p/core/network"
 	"github.com/libp2p/go-libp2p/core/protocol"
+	"github.com/n42blockchain/N42/common"
+	"github.com/n42blockchain/N42/internal/p2p"
 	"github.com/pkg/errors"
 )
 

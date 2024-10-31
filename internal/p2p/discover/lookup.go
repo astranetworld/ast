@@ -21,7 +21,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/N42world/ast/internal/p2p/enode"
+	"github.com/n42blockchain/N42/internal/p2p/enode"
 )
 
 // lookup performs a network search for nodes close to the given target. It approaches the

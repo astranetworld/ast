@@ -28,7 +28,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/N42world/ast/common/hexutil"
+	"github.com/n42blockchain/N42/common/hexutil"
 	"golang.org/x/crypto/sha3"
 )
 

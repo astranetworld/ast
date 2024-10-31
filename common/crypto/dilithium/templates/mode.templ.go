@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/N42world/ast/common/crypto/dilithium/internal/common"
-	"github.com/N42world/ast/common/crypto/dilithium/{{.Pkg}}"
+	"github.com/n42blockchain/N42/common/crypto/dilithium/internal/common"
+	"github.com/n42blockchain/N42/common/crypto/dilithium/{{.Pkg}}"
 )
 
 // {{.Impl}} implements the mode.Mode interface for {{.Name}}.

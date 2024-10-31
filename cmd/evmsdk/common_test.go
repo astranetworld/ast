@@ -20,7 +20,7 @@ import (
 	"crypto/rand"
 	"encoding/hex"
 	"fmt"
-	"github.com/N42world/ast/common/crypto"
+	"github.com/n42blockchain/N42/common/crypto"
 	"testing"
 )
 

@@ -17,7 +17,7 @@
 package state
 
 import (
-	"github.com/N42world/ast/common/types"
+	"github.com/n42blockchain/N42/common/types"
 )
 
 type accessList struct {

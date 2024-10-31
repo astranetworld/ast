@@ -18,8 +18,8 @@ package jsonrpc
 
 import (
 	"context"
-	"github.com/N42world/ast/log"
 	mapset "github.com/deckarep/golang-set"
+	"github.com/n42blockchain/N42/log"
 	"io"
 	"sync/atomic"
 )

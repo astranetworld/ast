@@ -1,9 +1,9 @@
 package scorers
 
 import (
-	"github.com/N42world/ast/api/protocol/msg_proto"
-	"github.com/N42world/ast/internal/p2p/peers/peerdata"
 	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/n42blockchain/N42/api/protocol/msg_proto"
+	"github.com/n42blockchain/N42/internal/p2p/peers/peerdata"
 )
 
 var _ Scorer = (*GossipScorer)(nil)

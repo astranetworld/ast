@@ -15,10 +15,10 @@ import (
 	"bytes"
 	"crypto/subtle"
 	"io"
-	"github.com/N42world/ast/common/crypto/kem"
-	"github.com/N42world/ast/common/crypto/sha3"
+	"github.com/n42blockchain/N42/common/crypto/kem"
+	"github.com/n42blockchain/N42/common/crypto/sha3"
 
-	cpapke "github.com/N42world/ast/common/crypto/pke/kyber/{{.Pkg}}"
+	cpapke "github.com/n42blockchain/N42/common/crypto/pke/kyber/{{.Pkg}}"
 	cryptoRand "crypto/rand"
 )
 

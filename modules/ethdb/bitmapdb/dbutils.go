@@ -19,7 +19,7 @@ package bitmapdb
 import (
 	"bytes"
 	"encoding/binary"
-	"github.com/N42world/ast/modules/ethdb"
+	"github.com/n42blockchain/N42/modules/ethdb"
 	"math"
 	"sort"
 	"sync"

@@ -19,7 +19,7 @@ package abi
 import (
 	"math/big"
 
-	"github.com/N42world/ast/internal/avm/common"
+	"github.com/n42blockchain/N42/internal/avm/common"
 )
 
 type packUnpackTest struct {

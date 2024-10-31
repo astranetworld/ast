@@ -14,7 +14,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/N42world/ast/common/crypto/dilithium/internal/common/params"
+	"github.com/n42blockchain/N42/common/crypto/dilithium/internal/common/params"
 )
 
 type Mode struct {

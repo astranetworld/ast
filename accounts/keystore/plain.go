@@ -22,7 +22,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/N42world/ast/common/types"
+	"github.com/n42blockchain/N42/common/types"
 )
 
 type keyStorePlain struct {

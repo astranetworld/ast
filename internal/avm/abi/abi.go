@@ -21,8 +21,8 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/utils"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/utils"
 	"io"
 )
 

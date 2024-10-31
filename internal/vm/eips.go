@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/N42world/ast/params"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/params"
 )
 
 var activators = map[int]func(*JumpTable){

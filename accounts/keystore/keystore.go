@@ -32,11 +32,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/N42world/ast/accounts"
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/transaction"
-	"github.com/N42world/ast/common/types"
-	event "github.com/N42world/ast/modules/event/v2"
+	"github.com/n42blockchain/N42/accounts"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/transaction"
+	"github.com/n42blockchain/N42/common/types"
+	event "github.com/n42blockchain/N42/modules/event/v2"
 )
 
 var (

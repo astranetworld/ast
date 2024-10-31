@@ -17,13 +17,13 @@
 package download
 
 import (
-	"github.com/N42world/ast/utils"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/utils"
 	"math/rand"
 	"time"
 
-	block2 "github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/log"
+	block2 "github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/log"
 )
 
 func (d *Downloader) processHeaders() error {

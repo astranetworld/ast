@@ -19,20 +19,20 @@ import (
 	"crypto/sha256"
 	"encoding/binary"
 	"errors"
-	"github.com/N42world/ast/common/crypto/blake2b"
-	"github.com/N42world/ast/common/crypto/bls12381"
-	"github.com/N42world/ast/common/crypto/bn256"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/avm/common"
+	"github.com/n42blockchain/N42/common/crypto/blake2b"
+	"github.com/n42blockchain/N42/common/crypto/bls12381"
+	"github.com/n42blockchain/N42/common/crypto/bn256"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/avm/common"
 	"math/big"
 
 	"github.com/holiman/uint256"
 
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/math"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/math"
 
 	//lint:ignore SA1019 Needed for precompile
-	"github.com/N42world/ast/params"
+	"github.com/n42blockchain/N42/params"
 	"golang.org/x/crypto/ripemd160"
 )
 

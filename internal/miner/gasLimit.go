@@ -16,7 +16,7 @@
 
 package miner
 
-import "github.com/N42world/ast/params"
+import "github.com/n42blockchain/N42/params"
 
 func CalcGasLimit(parentGasLimit, desiredLimit uint64) uint64 {
 	delta := parentGasLimit/params.GasLimitBoundDivisor - 1

@@ -26,7 +26,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/N42world/ast/internal/avm/common"
+	"github.com/n42blockchain/N42/internal/avm/common"
 )
 
 // TestPack tests the general pack/unpack tests in packing_test.go

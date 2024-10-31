@@ -19,7 +19,7 @@ package evmsdk
 import (
 	"encoding/hex"
 
-	"github.com/N42world/ast/common/crypto/bls"
+	"github.com/n42blockchain/N42/common/crypto/bls"
 )
 
 func BlsSign(privKey, msg string) (interface{}, error) {

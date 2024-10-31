@@ -3,11 +3,11 @@ package initialsync
 import (
 	"context"
 	"errors"
-	"github.com/N42world/ast/api/protocol/types_pb"
-	"github.com/N42world/ast/common"
-	"github.com/N42world/ast/internal/p2p"
-	astsync "github.com/N42world/ast/internal/sync"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/api/protocol/types_pb"
+	"github.com/n42blockchain/N42/common"
+	"github.com/n42blockchain/N42/internal/p2p"
+	astsync "github.com/n42blockchain/N42/internal/sync"
 	"time"
 
 	"github.com/libp2p/go-libp2p/core/peer"

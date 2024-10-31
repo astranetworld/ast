@@ -1,4 +1,4 @@
-module github.com/N42world/ast/common/crypto/keccakf1600/internal/asm
+module github.com/n42blockchain/N42/common/crypto/keccakf1600/internal/asm
 go 1.12
 
 require (

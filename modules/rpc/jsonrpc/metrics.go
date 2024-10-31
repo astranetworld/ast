@@ -2,7 +2,7 @@ package jsonrpc
 
 import (
 	"fmt"
-	"github.com/N42world/ast/internal/metrics/prometheus"
+	"github.com/n42blockchain/N42/internal/metrics/prometheus"
 )
 
 var (

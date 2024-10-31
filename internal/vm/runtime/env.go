@@ -17,9 +17,9 @@
 package runtime
 
 import (
-	"github.com/N42world/ast/internal"
-	"github.com/N42world/ast/internal/vm"
-	"github.com/N42world/ast/internal/vm/evmtypes"
+	"github.com/n42blockchain/N42/internal"
+	"github.com/n42blockchain/N42/internal/vm"
+	"github.com/n42blockchain/N42/internal/vm/evmtypes"
 )
 
 func NewEnv(cfg *Config) *vm.EVM {

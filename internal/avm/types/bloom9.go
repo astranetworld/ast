@@ -18,8 +18,8 @@ package types
 import (
 	"encoding/binary"
 	"fmt"
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/hexutil"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/hexutil"
 	"math/big"
 )
 

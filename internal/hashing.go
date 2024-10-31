@@ -18,9 +18,9 @@ package internal
 
 import (
 	"bytes"
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/utils"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/utils"
 	"sync"
 
 	"golang.org/x/crypto/sha3"

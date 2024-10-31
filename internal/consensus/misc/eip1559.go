@@ -18,10 +18,10 @@ package misc
 
 import (
 	"fmt"
-	"github.com/N42world/ast/common"
-	"github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/math"
-	"github.com/N42world/ast/params"
+	"github.com/n42blockchain/N42/common"
+	"github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/math"
+	"github.com/n42blockchain/N42/params"
 	"math/big"
 )
 

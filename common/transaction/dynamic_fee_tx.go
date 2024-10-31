@@ -17,10 +17,10 @@
 package transaction
 
 import (
-	"github.com/N42world/ast/common/hash"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/avm/common"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/hash"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/avm/common"
 )
 
 type DynamicFeeTx struct {

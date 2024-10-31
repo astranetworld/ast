@@ -17,7 +17,7 @@
 package internal
 
 import (
-	block2 "github.com/N42world/ast/common/block"
+	block2 "github.com/n42blockchain/N42/common/block"
 	"time"
 )
 

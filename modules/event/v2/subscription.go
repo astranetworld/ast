@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/N42world/ast/common/mclock"
+	"github.com/n42blockchain/N42/common/mclock"
 )
 
 // Subscription represents a stream of events. The carrier of the events is typically a

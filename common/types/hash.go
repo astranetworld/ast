@@ -22,7 +22,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/N42world/ast/common/hexutil"
+	"github.com/n42blockchain/N42/common/hexutil"
 
 	"hash"
 	"math/big"

@@ -23,8 +23,8 @@ import (
 	"math/big"
 	"testing"
 
-	common "github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/modules/state"
+	common "github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/modules/state"
 )
 
 type dummyContractRef struct {
@@ -75,7 +75,7 @@ func (*dummyStatedb) SetState(_ common.Address, _ *common.Hash, _ uint256.Int)  
 //}
 
 // Tests that blank fields don't appear in logs when JSON marshalled, to reduce
-// logs bloat and confusion. See https://github.com/N42world/ast/issues/24487
+// logs bloat and confusion. See https://github.com/n42blockchain/N42/issues/24487
 func TestStructLogMarshalingOmitEmpty(t *testing.T) {
 	tests := []struct {
 		name string

@@ -20,19 +20,19 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/N42world/ast/internal/vm/evmtypes"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/internal/vm/evmtypes"
 	"math/big"
 
 	"github.com/dop251/goja"
 
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/hexutil"
-	common "github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/tracers"
-	jsassets "github.com/N42world/ast/internal/tracers/js/internal/tracers"
-	"github.com/N42world/ast/internal/vm"
-	"github.com/N42world/ast/internal/vm/stack"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/hexutil"
+	common "github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/tracers"
+	jsassets "github.com/n42blockchain/N42/internal/tracers/js/internal/tracers"
+	"github.com/n42blockchain/N42/internal/vm"
+	"github.com/n42blockchain/N42/internal/vm/stack"
 )
 
 const (

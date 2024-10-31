@@ -1,12 +1,12 @@
 package evmtypes
 
 import (
-	"github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/transaction"
+	"github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/transaction"
 	"math/big"
 
-	libcommon "github.com/N42world/ast/common/types"
 	"github.com/holiman/uint256"
+	libcommon "github.com/n42blockchain/N42/common/types"
 )
 
 // BlockContext provides the EVM with auxiliary information. Once provided

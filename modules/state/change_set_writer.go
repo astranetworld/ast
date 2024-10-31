@@ -18,15 +18,15 @@ package state
 
 import (
 	"fmt"
-	"github.com/N42world/ast/common/account"
-	"github.com/N42world/ast/modules/changeset"
+	"github.com/n42blockchain/N42/common/account"
+	"github.com/n42blockchain/N42/modules/changeset"
 
-	"github.com/N42world/ast/common/hexutil"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/avm/common"
-	"github.com/N42world/ast/modules"
 	"github.com/holiman/uint256"
 	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/n42blockchain/N42/common/hexutil"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/avm/common"
+	"github.com/n42blockchain/N42/modules"
 )
 
 // ChangeSetWriter is a mock StateWriter that accumulates changes in-memory into ChangeSets.

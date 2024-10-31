@@ -20,10 +20,10 @@ import (
 	"crypto/ecdsa"
 	"errors"
 	"fmt"
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/internal/avm/common"
-	"github.com/N42world/ast/params"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/internal/avm/common"
+	"github.com/n42blockchain/N42/params"
 	"math/big"
 )
 

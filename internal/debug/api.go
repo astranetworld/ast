@@ -19,8 +19,9 @@ package debug
 import (
 	"bytes"
 	"errors"
-	"github.com/N42world/ast/log"
-	rpc "github.com/N42world/ast/modules/rpc/jsonrpc"
+	"github.com/hashicorp/go-bexpr"
+	"github.com/n42blockchain/N42/log"
+	rpc "github.com/n42blockchain/N42/modules/rpc/jsonrpc"
 	"io"
 	"os"
 	"os/user"

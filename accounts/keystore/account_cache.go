@@ -27,10 +27,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/N42world/ast/accounts"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/log"
 	mapset "github.com/deckarep/golang-set/v2"
+	"github.com/n42blockchain/N42/accounts"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/log"
 )
 
 // Minimum amount of time between cache reloads. This limit applies if the platform does

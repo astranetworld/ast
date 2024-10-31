@@ -22,8 +22,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/N42world/ast/common/crypto"
-	types2 "github.com/N42world/ast/common/types"
+	"github.com/n42blockchain/N42/common/crypto"
+	types2 "github.com/n42blockchain/N42/common/types"
 )
 
 type Error struct {

@@ -18,12 +18,12 @@ package rawdb
 
 import (
 	"context"
-	"github.com/N42world/ast/modules"
-	"github.com/N42world/ast/params"
 	"github.com/c2h5oh/datasize"
 	"github.com/ledgerwatch/erigon-lib/common/cmp"
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/erigon-lib/kv/mdbx"
+	"github.com/n42blockchain/N42/modules"
+	"github.com/n42blockchain/N42/params"
 	"golang.org/x/sync/semaphore"
 	"runtime"
 

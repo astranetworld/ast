@@ -18,11 +18,11 @@ package block
 
 import (
 	"fmt"
-	"github.com/N42world/ast/api/protocol/types_pb"
-	"github.com/N42world/ast/common/types"
+	"github.com/n42blockchain/N42/api/protocol/types_pb"
+	"github.com/n42blockchain/N42/common/types"
 
-	"github.com/N42world/ast/utils"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/utils"
 	"google.golang.org/protobuf/proto"
 )
 

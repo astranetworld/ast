@@ -18,8 +18,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/log"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/log"
 	"net/http"
 	_ "net/http/pprof"
 	"os"
@@ -29,13 +29,13 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/N42world/ast/accounts"
+	"github.com/n42blockchain/N42/accounts"
 
-	"github.com/N42world/ast/accounts/keystore"
-	"github.com/N42world/ast/cmd/utils"
+	"github.com/n42blockchain/N42/accounts/keystore"
+	"github.com/n42blockchain/N42/cmd/utils"
 
-	"github.com/N42world/ast/conf"
-	"github.com/N42world/ast/internal/node"
+	"github.com/n42blockchain/N42/conf"
+	"github.com/n42blockchain/N42/internal/node"
 )
 
 func appRun(ctx *cli.Context) error {

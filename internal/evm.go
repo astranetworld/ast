@@ -18,12 +18,12 @@ package internal
 
 import (
 	"fmt"
-	"github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/consensus"
-	"github.com/N42world/ast/internal/vm/evmtypes"
-	"github.com/N42world/ast/params"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/consensus"
+	"github.com/n42blockchain/N42/internal/vm/evmtypes"
+	"github.com/n42blockchain/N42/params"
 )
 
 // NewEVMBlockContext creates a new context for use in the EVM.

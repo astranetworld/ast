@@ -23,14 +23,14 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/N42world/ast/api/protocol/sync_proto"
-	"github.com/N42world/ast/api/protocol/types_pb"
-	"github.com/N42world/ast/common"
-	"github.com/N42world/ast/common/message"
-	"github.com/N42world/ast/common/transaction"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/log"
 	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/n42blockchain/N42/api/protocol/sync_proto"
+	"github.com/n42blockchain/N42/api/protocol/types_pb"
+	"github.com/n42blockchain/N42/common"
+	"github.com/n42blockchain/N42/common/message"
+	"github.com/n42blockchain/N42/common/transaction"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/log"
 	"go.uber.org/zap"
 )
 

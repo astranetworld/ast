@@ -3,10 +3,10 @@ BUILD_TIME := $(shell date +"%Y-%m-%d %H:%M:%S")
 GO_VERSION := $(shell go version)
 BUILD_PATH := ./build/bin/
 APP_NAME := N42
-APP_PATH := ./cmd/ast
+APP_PATH := ./cmd/n42
 SHELL := /bin/bash
 GO = go
-#LDFLAGS := -ldflags "-w -s -X github.com/N42world/ast/version.BuildNumber=${GIT_COMMIT} -X 'github.com/N42world/ast/version.BuildTime=${BUILD_TIME}' -X 'github.com/N42world/ast/version.GoVersion=${GO_VERSION}'"
+#LDFLAGS := -ldflags "-w -s -X github.com/n42blockchain/N42/version.BuildNumber=${GIT_COMMIT} -X 'github.com/n42blockchain/N42/version.BuildTime=${BUILD_TIME}' -X 'github.com/n42blockchain/N42/version.GoVersion=${GO_VERSION}'"
 
 
 # Variables below for building on host OS, and are ignored for docker
@@ -27,7 +27,7 @@ CGO_CFLAGS += -Wno-unknown-warning-option -Wno-enum-int-mismatch -Wno-strict-pro
 GIT_COMMIT ?= $(shell git rev-list -1 HEAD)
 GIT_BRANCH ?= $(shell git rev-parse --abbrev-ref HEAD)
 GIT_TAG    ?= $(shell git describe --tags '--match=v*' --dirty)
-PACKAGE = github.com/N42world/ast
+PACKAGE = github.com/n42blockchain/N42
 
 BUILD_TAGS = nosqlite,noboltdb
 GO_FLAGS += -trimpath -tags $(BUILD_TAGS) -buildvcs=false
@@ -69,7 +69,7 @@ deps: go-version
 	go mod tidy
 	@echo "deps done!"
 
-ast: deps
+n42: deps
 	@echo "start build $(APP_NAME)..."
 	#go build -v ${LDFLAGS} -o $(BUILD_PATH)$(APP_NAME)  ${APP_PATH}
 	$(GOBUILD) -o $(BUILD_PATH)$(APP_NAME)  ${APP_PATH}

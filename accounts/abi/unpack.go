@@ -19,8 +19,8 @@ package abi
 import (
 	"encoding/binary"
 	"fmt"
-	"github.com/N42world/ast/common"
-	"github.com/N42world/ast/common/types"
+	"github.com/n42blockchain/N42/common"
+	"github.com/n42blockchain/N42/common/types"
 	"math/big"
 	"reflect"
 )

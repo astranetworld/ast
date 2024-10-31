@@ -18,9 +18,9 @@
 package state
 
 import (
-	"github.com/N42world/ast/common/account"
-	"github.com/N42world/ast/common/types"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/account"
+	"github.com/n42blockchain/N42/common/types"
 )
 
 const (

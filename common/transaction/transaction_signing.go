@@ -20,12 +20,12 @@ import (
 	"crypto/ecdsa"
 	"errors"
 	"fmt"
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/hash"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/common/u256"
-	"github.com/N42world/ast/params"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/hash"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/common/u256"
+	"github.com/n42blockchain/N42/params"
 	"math/big"
 )
 

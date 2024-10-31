@@ -15,7 +15,7 @@ import (
 	cryptoRand "crypto/rand"
 	"io"
 
-	"github.com/N42world/ast/common/crypto/pke/kyber/{{.Pkg}}/internal"
+	"github.com/n42blockchain/N42/common/crypto/pke/kyber/{{.Pkg}}/internal"
 )
 
 const (

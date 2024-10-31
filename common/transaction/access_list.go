@@ -17,9 +17,9 @@
 package transaction
 
 import (
-	"github.com/N42world/ast/common/hash"
-	"github.com/N42world/ast/common/types"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/hash"
+	"github.com/n42blockchain/N42/common/types"
 )
 
 type AccessList []AccessTuple

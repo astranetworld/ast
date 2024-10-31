@@ -3,11 +3,11 @@ package p2p
 import (
 	"bytes"
 	"fmt"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/p2p/enode"
-	"github.com/N42world/ast/internal/p2p/enr"
-	"github.com/N42world/ast/utils"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/p2p/enode"
+	"github.com/n42blockchain/N42/internal/p2p/enr"
+	"github.com/n42blockchain/N42/utils"
 	"github.com/pkg/errors"
 )
 

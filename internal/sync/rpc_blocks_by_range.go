@@ -3,12 +3,12 @@ package sync
 import (
 	"context"
 	"fmt"
-	"github.com/N42world/ast/api/protocol/sync_pb"
-	types "github.com/N42world/ast/common/block"
-	p2ptypes "github.com/N42world/ast/internal/p2p/types"
-	"github.com/N42world/ast/log"
-	"github.com/N42world/ast/utils"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/api/protocol/sync_pb"
+	types "github.com/n42blockchain/N42/common/block"
+	p2ptypes "github.com/n42blockchain/N42/internal/p2p/types"
+	"github.com/n42blockchain/N42/log"
+	"github.com/n42blockchain/N42/utils"
 	"time"
 
 	libp2pcore "github.com/libp2p/go-libp2p/core"

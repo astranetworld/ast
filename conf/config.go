@@ -19,7 +19,8 @@ package conf
 import (
 	"bufio"
 	"fmt"
-	"github.com/N42world/ast/params"
+	"github.com/n42blockchain/N42/params"
+	"gopkg.in/yaml.v2"
 	"os"
 )
 

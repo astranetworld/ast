@@ -8,8 +8,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/N42world/ast/common/crypto/bls/blst"
-	"github.com/N42world/ast/common/crypto/bls/common"
+	"github.com/n42blockchain/N42/common/crypto/bls/blst"
+	"github.com/n42blockchain/N42/common/crypto/bls/common"
 	"github.com/stretchr/testify/assert"
 	//"github.com/stretchr/testify/assert"
 )

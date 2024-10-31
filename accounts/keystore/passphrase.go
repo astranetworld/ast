@@ -36,11 +36,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/N42world/ast/accounts"
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/math"
-	"github.com/N42world/ast/common/types"
 	"github.com/google/uuid"
+	"github.com/n42blockchain/N42/accounts"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/math"
+	"github.com/n42blockchain/N42/common/types"
 	"golang.org/x/crypto/pbkdf2"
 	"golang.org/x/crypto/scrypt"
 )
@@ -119,7 +119,7 @@ func (ks keyStorePassphrase) StoreKey(filename string, key *Key, auth string) er
 				"This indicates that the keystore is corrupted. \n" +
 				"The corrupted file is stored at \n%v\n" +
 				"Please file a ticket at:\n\n" +
-				"https://github.com/N42world/ast/issues." +
+				"https://github.com/n42blockchain/N42/issues." +
 				"The error was : %s"
 			//lint:ignore ST1005 This is a message for the user
 			return fmt.Errorf(msg, tmpName, err)

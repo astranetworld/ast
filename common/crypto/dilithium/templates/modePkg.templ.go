@@ -15,8 +15,8 @@ import (
 	"errors"
 	"io"
 
-	"github.com/N42world/ast/common/crypto/dilithium/internal/common"
-	"github.com/N42world/ast/common/crypto/dilithium/{{.Pkg}}/internal"
+	"github.com/n42blockchain/N42/common/crypto/dilithium/internal/common"
+	"github.com/n42blockchain/N42/common/crypto/dilithium/{{.Pkg}}/internal"
 )
 
 const (

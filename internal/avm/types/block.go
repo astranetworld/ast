@@ -4,9 +4,9 @@ import (
 	"encoding/binary"
 	"encoding/json"
 	"errors"
-	"github.com/N42world/ast/common/hexutil"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/avm/common"
+	"github.com/n42blockchain/N42/common/hexutil"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/avm/common"
 	"math/big"
 	"reflect"
 )

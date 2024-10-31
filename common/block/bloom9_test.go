@@ -17,12 +17,12 @@ package block
 
 import (
 	"fmt"
-	"github.com/N42world/ast/common/transaction"
-	"github.com/N42world/ast/common/types"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/transaction"
+	"github.com/n42blockchain/N42/common/types"
 	"testing"
 
-	"github.com/N42world/ast/common/crypto"
+	"github.com/n42blockchain/N42/common/crypto"
 )
 
 func TestBloom(t *testing.T) {

@@ -17,7 +17,7 @@
 package main
 
 import (
-	"github.com/N42world/ast/params/networkname"
+	"github.com/n42blockchain/N42/params/networkname"
 )
 
 var (

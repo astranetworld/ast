@@ -19,7 +19,7 @@ package params
 import (
 	"math/big"
 
-	"github.com/N42world/ast/common/types"
+	"github.com/n42blockchain/N42/common/types"
 )
 
 // DAOForkBlockExtra is the block header extra-data field to set for the DAO fork

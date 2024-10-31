@@ -5,7 +5,7 @@
 package main
 
 import (
-	"github.com/N42world/ast/common/crypto/dilithium/internal/common/params"
+	"github.com/n42blockchain/N42/common/crypto/dilithium/internal/common/params"
 )
 
 // XXX align Poly on 16 bytes such that we can use aligned moves

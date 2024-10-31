@@ -19,16 +19,16 @@ package apos
 import (
 	"bytes"
 	"encoding/json"
-	"github.com/N42world/ast/params"
+	"github.com/n42blockchain/N42/params"
 	"sort"
 	"time"
 
-	"github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/avm/common"
-	"github.com/N42world/ast/log"
-	"github.com/N42world/ast/modules/rawdb"
 	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/avm/common"
+	"github.com/n42blockchain/N42/log"
+	"github.com/n42blockchain/N42/modules/rawdb"
 
 	lru "github.com/hashicorp/golang-lru"
 )

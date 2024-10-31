@@ -21,8 +21,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/N42world/ast/common/types"
-	event "github.com/N42world/ast/modules/event/v2"
+	"github.com/n42blockchain/N42/common/types"
+	event "github.com/n42blockchain/N42/modules/event/v2"
 )
 
 // managerSubBufferSize determines how many incoming wallet events

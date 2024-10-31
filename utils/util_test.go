@@ -19,8 +19,8 @@ package utils
 import (
 	"crypto/rand"
 	"encoding/hex"
-	"github.com/N42world/ast/common/types"
 	"github.com/libp2p/go-libp2p/core/crypto"
+	"github.com/n42blockchain/N42/common/types"
 	"testing"
 )
 

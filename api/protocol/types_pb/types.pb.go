@@ -23,7 +23,7 @@
 package types_pb
 
 import (
-	_ "github.com/N42world/ast/api/protocol/ext"
+	_ "github.com/n42blockchain/N42/api/protocol/ext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

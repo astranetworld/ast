@@ -24,13 +24,13 @@ import (
 	"strings"
 	"sync/atomic"
 
-	types "github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/hexutil"
-	"github.com/N42world/ast/common/math"
-	common "github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/vm"
-	"github.com/N42world/ast/params"
 	"github.com/holiman/uint256"
+	types "github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/hexutil"
+	"github.com/n42blockchain/N42/common/math"
+	common "github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/vm"
+	"github.com/n42blockchain/N42/params"
 )
 
 // Storage represents a contract's storage.

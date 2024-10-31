@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/N42world/ast/common/crypto/bls/common"
-	"github.com/N42world/ast/common/crypto/rand"
+	"github.com/n42blockchain/N42/common/crypto/bls/common"
+	"github.com/n42blockchain/N42/common/crypto/rand"
 
 	"github.com/pkg/errors"
 	blst "github.com/supranational/blst/bindings/go"

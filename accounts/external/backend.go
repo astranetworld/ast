@@ -21,15 +21,15 @@ package external
 //	"math/big"
 //	"sync"
 //
-//	"github.com/N42world/ast/accounts"
-//	"github.com/N42world/ast/common"
-//	types2 "github.com/N42world/ast/common/types"
-//	"github.com/N42world/ast/internal/avm/common/hexutil"
-//	"github.com/N42world/ast/internal/avm/types"
-//	"github.com/N42world/ast/log"
-//	event "github.com/N42world/ast/modules/event/v2"
-//	"github.com/N42world/ast/rpc"
-//	"github.com/N42world/ast/signer/core/apitypes"
+//	"github.com/n42blockchain/N42/accounts"
+//	"github.com/n42blockchain/N42/common"
+//	types2 "github.com/n42blockchain/N42/common/types"
+//	"github.com/n42blockchain/N42/internal/avm/common/hexutil"
+//	"github.com/n42blockchain/N42/internal/avm/types"
+//	"github.com/n42blockchain/N42/log"
+//	event "github.com/n42blockchain/N42/modules/event/v2"
+//	"github.com/n42blockchain/N42/rpc"
+//	"github.com/n42blockchain/N42/signer/core/apitypes"
 //)
 //
 //type ExternalBackend struct {

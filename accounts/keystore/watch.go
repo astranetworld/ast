@@ -23,7 +23,7 @@ import (
 	"github.com/fsnotify/fsnotify"
 	"time"
 
-	"github.com/N42world/ast/log"
+	"github.com/n42blockchain/N42/log"
 )
 
 type watcher struct {

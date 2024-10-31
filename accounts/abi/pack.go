@@ -19,9 +19,9 @@ package abi
 import (
 	"errors"
 	"fmt"
-	"github.com/N42world/ast/common"
-	"github.com/N42world/ast/common/math"
-	"github.com/N42world/ast/common/types"
+	"github.com/n42blockchain/N42/common"
+	"github.com/n42blockchain/N42/common/math"
+	"github.com/n42blockchain/N42/common/types"
 	"math/big"
 	"reflect"
 )

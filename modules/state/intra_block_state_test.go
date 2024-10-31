@@ -31,9 +31,9 @@ import (
 	"testing"
 	"testing/quick"
 
-	"github.com/N42world/ast/common/types"
 	"github.com/holiman/uint256"
 	"github.com/ledgerwatch/erigon-lib/kv/memdb"
+	"github.com/n42blockchain/N42/common/types"
 )
 
 func TestSnapshotRandom(t *testing.T) {

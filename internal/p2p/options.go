@@ -3,9 +3,10 @@ package p2p
 import (
 	"crypto/ecdsa"
 	"fmt"
-	"github.com/N42world/ast/params"
-	"github.com/N42world/ast/utils"
+	"github.com/libp2p/go-libp2p"
 	libp2pquic "github.com/libp2p/go-libp2p/p2p/transport/quic"
+	"github.com/n42blockchain/N42/params"
+	"github.com/n42blockchain/N42/utils"
 	"net"
 
 	"github.com/libp2p/go-libp2p/core/peer"

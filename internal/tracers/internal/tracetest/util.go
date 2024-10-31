@@ -21,8 +21,8 @@ import (
 	"unicode"
 
 	// Force-load native and js packages, to trigger registration
-	_ "github.com/N42world/ast/internal/tracers/js"
-	_ "github.com/N42world/ast/internal/tracers/native"
+	_ "github.com/n42blockchain/N42/internal/tracers/js"
+	_ "github.com/n42blockchain/N42/internal/tracers/native"
 )
 
 // To generate a new callTracer test, copy paste the makeTest method below into

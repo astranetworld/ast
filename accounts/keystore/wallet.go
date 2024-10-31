@@ -19,10 +19,10 @@ package keystore
 import (
 	"math/big"
 
-	"github.com/N42world/ast/accounts"
-	"github.com/N42world/ast/common"
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/transaction"
+	"github.com/n42blockchain/N42/accounts"
+	"github.com/n42blockchain/N42/common"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/transaction"
 )
 
 // keystoreWallet implements the accounts.Wallet interface for the original

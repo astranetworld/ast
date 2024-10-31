@@ -23,11 +23,11 @@ import (
 	"math/big"
 	"sync/atomic"
 
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/hexutil"
-	common "github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/tracers"
-	"github.com/N42world/ast/internal/vm"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/hexutil"
+	common "github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/tracers"
+	"github.com/n42blockchain/N42/internal/vm"
 )
 
 //go:generate go run github.com/fjl/gencodec -type account -field-override accountMarshaling -out gen_account_json.go

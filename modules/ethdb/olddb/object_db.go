@@ -19,11 +19,11 @@ package olddb
 import (
 	"context"
 	"fmt"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/log"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/log"
 
-	"github.com/N42world/ast/modules/ethdb"
 	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/n42blockchain/N42/modules/ethdb"
 )
 
 // ObjectDatabase - is an object-style interface of DB accessing

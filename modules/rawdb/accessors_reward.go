@@ -18,11 +18,11 @@ package rawdb
 
 import (
 	"fmt"
-	"github.com/N42world/ast/common/types"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/types"
 
-	"github.com/N42world/ast/modules"
 	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/n42blockchain/N42/modules"
 )
 
 // PutAccountReward

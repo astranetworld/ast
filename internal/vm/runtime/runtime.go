@@ -17,16 +17,16 @@
 package runtime
 
 import (
-	"github.com/N42world/ast/common/types"
-	vm2 "github.com/N42world/ast/internal/vm"
-	"github.com/N42world/ast/modules/state"
+	"github.com/n42blockchain/N42/common/types"
+	vm2 "github.com/n42blockchain/N42/internal/vm"
+	"github.com/n42blockchain/N42/modules/state"
 	"math"
 	"math/big"
 	"time"
 
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/params"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/params"
 )
 
 // Config is a basic type specifying certain configuration flags for running

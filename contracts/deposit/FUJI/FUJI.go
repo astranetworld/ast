@@ -19,12 +19,12 @@ package fujideposit
 import (
 	"bytes"
 	"embed"
-	"github.com/N42world/ast/accounts/abi"
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/hexutil"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/log"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/accounts/abi"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/hexutil"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/log"
 	"github.com/pkg/errors"
 	"math/big"
 )

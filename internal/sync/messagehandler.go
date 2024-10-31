@@ -5,7 +5,7 @@ package sync
 import (
 	"context"
 	"fmt"
-	astLog "github.com/N42world/ast/log"
+	astLog "github.com/n42blockchain/N42/log"
 	"go.opencensus.io/trace"
 	"runtime/debug"
 

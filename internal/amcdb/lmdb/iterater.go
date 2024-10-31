@@ -17,8 +17,8 @@
 package lmdb
 
 import (
-	"github.com/N42world/ast/common/db"
 	"github.com/erigontech/mdbx-go/mdbx"
+	"github.com/n42blockchain/N42/common/db"
 	"runtime"
 )
 

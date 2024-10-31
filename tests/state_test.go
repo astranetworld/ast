@@ -20,7 +20,7 @@ import (
 	"embed"
 	"encoding/json"
 	"fmt"
-	"github.com/N42world/ast/conf"
+	"github.com/n42blockchain/N42/conf"
 )
 
 //go:embed  allocs

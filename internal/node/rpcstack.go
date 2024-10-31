@@ -20,7 +20,7 @@ import (
 	"compress/gzip"
 	"context"
 	"fmt"
-	"github.com/N42world/ast/log"
+	"github.com/n42blockchain/N42/log"
 	"github.com/rs/cors"
 	"io"
 	"io/ioutil"
@@ -32,8 +32,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/N42world/ast/conf"
-	"github.com/N42world/ast/modules/rpc/jsonrpc"
+	"github.com/n42blockchain/N42/conf"
+	"github.com/n42blockchain/N42/modules/rpc/jsonrpc"
 )
 
 type httpConfig struct {

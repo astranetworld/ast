@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"github.com/N42world/ast/common/math"
+	"github.com/n42blockchain/N42/common/math"
 	"io"
 	"math/big"
 	"sync"

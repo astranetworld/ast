@@ -3,7 +3,7 @@
 package internal
 
 import (
-	"github.com/N42world/ast/common/crypto/pke/kyber/internal/common"
+	"github.com/n42blockchain/N42/common/crypto/pke/kyber/internal/common"
 )
 
 // A k by k matrix of polynomials.

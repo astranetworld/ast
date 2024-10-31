@@ -19,10 +19,10 @@ package state
 import (
 	"bytes"
 	"fmt"
-	"github.com/N42world/ast/common/account"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/avm/rlp"
-	"github.com/N42world/ast/utils"
+	"github.com/n42blockchain/N42/common/account"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/avm/rlp"
+	"github.com/n42blockchain/N42/utils"
 	"io"
 	"math/big"
 

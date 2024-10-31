@@ -18,15 +18,15 @@ package internal
 
 import (
 	"fmt"
-	"github.com/N42world/ast/common/block"
-	"github.com/N42world/ast/common/crypto/bls"
-	"github.com/N42world/ast/common/hexutil"
-	"github.com/N42world/ast/common/transaction"
-	"github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/consensus"
-	"github.com/N42world/ast/log"
-	"github.com/N42world/ast/modules/state"
-	"github.com/N42world/ast/params"
+	"github.com/n42blockchain/N42/common/block"
+	"github.com/n42blockchain/N42/common/crypto/bls"
+	"github.com/n42blockchain/N42/common/hexutil"
+	"github.com/n42blockchain/N42/common/transaction"
+	"github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/consensus"
+	"github.com/n42blockchain/N42/log"
+	"github.com/n42blockchain/N42/modules/state"
+	"github.com/n42blockchain/N42/params"
 )
 
 // BlockValidator is responsible for validating block headers, uncles and

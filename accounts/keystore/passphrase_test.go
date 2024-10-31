@@ -20,7 +20,7 @@ import (
 	"os"
 	"testing"
 
-	common "github.com/N42world/ast/common/types"
+	common "github.com/n42blockchain/N42/common/types"
 )
 
 const (

@@ -18,8 +18,8 @@ package params
 
 import (
 	"fmt"
-	"github.com/N42world/ast/modules"
 	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/n42blockchain/N42/modules"
 )
 
 var (

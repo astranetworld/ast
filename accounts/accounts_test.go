@@ -18,12 +18,12 @@ package accounts
 
 import (
 	"bytes"
-	"github.com/N42world/ast/common/crypto"
-	"github.com/N42world/ast/common/math"
 	"github.com/ledgerwatch/secp256k1"
+	"github.com/n42blockchain/N42/common/crypto"
+	"github.com/n42blockchain/N42/common/math"
 	"testing"
 
-	"github.com/N42world/ast/common/hexutil"
+	"github.com/n42blockchain/N42/common/hexutil"
 )
 
 func TestTextHash(t *testing.T) {

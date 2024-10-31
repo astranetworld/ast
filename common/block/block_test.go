@@ -19,8 +19,8 @@ package block
 import (
 	"encoding/hex"
 	"encoding/json"
-	"github.com/N42world/ast/api/protocol/types_pb"
-	"github.com/N42world/ast/internal/avm/rlp"
+	"github.com/n42blockchain/N42/api/protocol/types_pb"
+	"github.com/n42blockchain/N42/internal/avm/rlp"
 	"google.golang.org/protobuf/proto"
 	"testing"
 )

@@ -18,8 +18,8 @@ package network
 
 import (
 	"bytes"
-	"github.com/N42world/ast/common/message"
 	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/n42blockchain/N42/common/message"
 	"io"
 )
 

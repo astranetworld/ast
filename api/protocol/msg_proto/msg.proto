@@ -18,7 +18,7 @@ syntax = "proto3";
 package msg_proto;
 
 import "types_pb/types.proto";
-option go_package = "github.com/N42world/ast/api/protocol/msg_proto";
+option go_package = "github.com/n42blockchain/N42/api/protocol/msg_proto";
 
 message MessageData {
   string clientVersion = 2; //client version

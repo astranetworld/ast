@@ -24,10 +24,10 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/N42world/ast/common/hexutil"
-	common "github.com/N42world/ast/common/types"
-	"github.com/N42world/ast/internal/tracers"
-	"github.com/N42world/ast/internal/vm"
+	"github.com/n42blockchain/N42/common/hexutil"
+	common "github.com/n42blockchain/N42/common/types"
+	"github.com/n42blockchain/N42/internal/tracers"
+	"github.com/n42blockchain/N42/internal/vm"
 )
 
 //go:generate go run github.com/fjl/gencodec -type flatCallAction -field-override flatCallActionMarshaling -out gen_flatcallaction_json.go

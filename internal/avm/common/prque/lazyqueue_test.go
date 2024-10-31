@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/N42world/ast/internal/avm/common/mclock"
+	"github.com/n42blockchain/N42/internal/avm/common/mclock"
 )
 
 const (

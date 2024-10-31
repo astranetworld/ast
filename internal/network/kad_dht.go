@@ -19,7 +19,7 @@ package network
 import (
 	"context"
 	"fmt"
-	"github.com/N42world/ast/log"
+	"github.com/n42blockchain/N42/log"
 	"time"
 
 	kademliaDHT "github.com/libp2p/go-libp2p-kad-dht"

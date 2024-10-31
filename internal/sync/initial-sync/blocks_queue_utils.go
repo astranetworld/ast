@@ -3,8 +3,8 @@ package initialsync
 import (
 	"context"
 	"errors"
-	"github.com/N42world/ast/utils"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/utils"
 )
 
 // resetWithBlocks removes all state machines, then re-adds enough machines to contain all provided

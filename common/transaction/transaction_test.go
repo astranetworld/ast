@@ -19,9 +19,9 @@ package transaction
 import (
 	"crypto/rand"
 	"encoding/json"
-	"github.com/N42world/ast/common/types"
 	"github.com/holiman/uint256"
 	"github.com/libp2p/go-libp2p/core/crypto"
+	"github.com/n42blockchain/N42/common/types"
 	"testing"
 )
 

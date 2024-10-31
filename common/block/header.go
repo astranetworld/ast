@@ -20,14 +20,14 @@ import (
 	"encoding/binary"
 	"encoding/json"
 	"fmt"
-	"github.com/N42world/ast/utils"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/utils"
 	"google.golang.org/protobuf/proto"
 	"sync/atomic"
 
-	"github.com/N42world/ast/api/protocol/types_pb"
-	"github.com/N42world/ast/common/hexutil"
-	"github.com/N42world/ast/common/types"
+	"github.com/n42blockchain/N42/api/protocol/types_pb"
+	"github.com/n42blockchain/N42/common/hexutil"
+	"github.com/n42blockchain/N42/common/types"
 )
 
 type BlockNonce [8]byte

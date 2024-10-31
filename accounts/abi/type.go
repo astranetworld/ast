@@ -19,7 +19,7 @@ package abi
 import (
 	"errors"
 	"fmt"
-	"github.com/N42world/ast/common/types"
+	"github.com/n42blockchain/N42/common/types"
 	"reflect"
 	"regexp"
 	"strconv"

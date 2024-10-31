@@ -17,8 +17,8 @@
 package state
 
 import (
-	"github.com/N42world/ast/common/types"
 	"github.com/holiman/uint256"
+	"github.com/n42blockchain/N42/common/types"
 )
 
 // journalEntry is a modification entry in the state change journal that can be
