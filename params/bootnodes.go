@@ -26,6 +26,5 @@ var MainnetBootnodes = []string{
 // TestnetBootnodes are the enode URLs of the P2P bootstrap nodes running on
 // the testnet N42 network.
 var TestnetBootnodes = []string{
-	// United States, Ashburn, Virginia
-	"enr:-Iu4QHueEtPvrAPTBugWBDmI06cow_TZueImElCeweCFY7v1XJTqio-maM5A34Oak7nSbMIwewU_FkE5Io2h7XFtb3YFgmlkgnY0gmlwhDbzU5iJc2VjcDI1NmsxoQMe8my_5ApPL7TVv5D_0JDbKBqJLSvDGUWA3q2TEVM1jIN0Y3CCJ2aDdWRwgidl", //
+	"enr:-Je4QJ9YaddwBpjH8J1arDbLf7aOzNyuvYUoiYh8Wo2cR--XOilxttk1QMsCsGFAYoX1bNX9teZWVO6VJvBfHy0it7wBhmFzdEVucoS8iGe2gmlkgnY0gmlwhAWh_DuJc2VjcDI1NmsxoQJXwjUBMWh3C3YTD-UW_M2Df1piKwkCal8z7WahqX4QOYN0Y3CCJ2aDdWRwgidl", //
 }
