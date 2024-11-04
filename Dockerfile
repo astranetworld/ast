@@ -10,7 +10,7 @@ ENV GO111MODULE="on"
 RUN go mod tidy && go build  -o ./build/bin/n42 ./cmd/n42
 
 
-FROM alpine:3.15
+FROM alpine:3.20
 #libstdc++
 RUN apk add --no-cache ca-certificates curl tzdata
 # copy compiled artifacts from builder
@@ -25,10 +25,10 @@ ARG GID=1000
 RUN adduser -D -u $UID -g $GID n42
 
 
-ENV DATA /home/n42/data
+ENV DATA /home/n42
 # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
 RUN mkdir -p "$DATA" && chown -R n42:n42 "$DATA" && chmod 777 "$DATA"
-VOLUME /home/n42/data
+VOLUME /home/n42
 
 USER n42
 WORKDIR /home/n42

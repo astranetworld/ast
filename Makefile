@@ -77,7 +77,7 @@ n42: deps
 
 images:
 	@echo "docker images build ..."
-	DOCKER_BUILDKIT=1 docker build -t n42/ast:local .
+	DOCKER_BUILDKIT=1 docker build -t n42/n42:local .
 	@echo "Compile done!"
 
 up:
