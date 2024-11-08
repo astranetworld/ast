@@ -39,11 +39,7 @@ import (
 var sigChannel = make(chan AggSign, 10)
 
 var validVerifers = map[string]string{
-	"ast4541Fc1CCB4e042a3BaDFE46904F9D22d127B682": "157aee59b889a8a9e3ecec11e4f79f6c065e3d21c6da2222b916c54f8c820d9c",
-	"ast9BA336835422BAeFc537d75642959d2a866500a3": "00121edadf6e723f2fe8c23d2359f57a7058986a1b8458d23eb29db7204afea7",
-	"astf13d680bA12717fE27d33caB983c5C755Ff74358": "5de474bbf3fee5dfda9047287f596c6e6c0271876305357e399fffba6a5f9a9f",
-	"astd1ff88affe38dfb65c621706dff6468ecd418bff": "4c1ad066cc2971c94a8aca6a7d3e4bdd86891922c5b1d39e6d0da8cad9262be4",
-	"astb9e94477f5f88b5e8da2e97e8506d6e4fcf04e5b": "2c02dd3cf600af9a8567e5cc5ff158c1b89e1f3ea21bff61f505d141a96a60ee",
+	//"astb9e94477f5f88b5e8da2e97e8506d6e4fcf04e5b": "2c02dd3cf600af9a8567e5cc5ff158c1b89e1f3ea21bff61f505d141a96a60ee",
 }
 
 //type WithCodeAndHash struct {

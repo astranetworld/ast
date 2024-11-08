@@ -824,7 +824,7 @@ func NetworkIDByChainName(chain string) uint64 {
 	case networkname.MainnetChainName:
 		return 97
 	case networkname.TestnetChainName:
-		return 100100100
+		return 10042
 	default:
 		config := ChainConfigByChainName(chain)
 		if config == nil {

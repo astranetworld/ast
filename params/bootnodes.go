@@ -26,5 +26,5 @@ var MainnetBootnodes = []string{
 // TestnetBootnodes are the enode URLs of the P2P bootstrap nodes running on
 // the testnet N42 network.
 var TestnetBootnodes = []string{
-	"enr:-Je4QJ9YaddwBpjH8J1arDbLf7aOzNyuvYUoiYh8Wo2cR--XOilxttk1QMsCsGFAYoX1bNX9teZWVO6VJvBfHy0it7wBhmFzdEVucoS8iGe2gmlkgnY0gmlwhAWh_DuJc2VjcDI1NmsxoQJXwjUBMWh3C3YTD-UW_M2Df1piKwkCal8z7WahqX4QOYN0Y3CCJ2aDdWRwgidl", //
+	"enr:-Je4QNvwxHKua9TMkdz38rdpxh0-haLEJn8-wAM9UqdUG_oHPbZpoNq9e-aPw7y58GvFMjQ0Pl-AUd1sGGLE_gTlZRcChmFzdEVucoS8iGe2gmlkgnY0gmlwhAWh_DuJc2VjcDI1NmsxoQJXwjUBMWh3C3YTD-UW_M2Df1piKwkCal8z7WahqX4QOYN0Y3CCJ2aDdWRwgidl", //
 }
