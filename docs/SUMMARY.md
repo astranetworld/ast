@@ -1,4 +1,4 @@
-# ast docs
+# N42 docs
 
 1. [Introduction](./intro.md)
 1. [Installation](./installation/installation.md)
